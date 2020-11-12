@@ -64,5 +64,17 @@ namespace panel
         {
 
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            MediaPlayer test2 = new MediaPlayer();
+            test2.TopLevel = false;
+            panel3.Controls.Add(test2);
+            test2.Show();
+            test2.Dock = DockStyle.Fill;
+            test2.BringToFront();
+        }
     }
 }
