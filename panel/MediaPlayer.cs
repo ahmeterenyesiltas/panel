@@ -102,5 +102,12 @@ namespace panel
         {
             axWindowsMediaPlayer1.Ctlcontrols.fastReverse();
         }
+
+        private void trackBar2_Scroll(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.settings.volume = trackBar2.Value;
+           
+            
+        }
     }
 }
