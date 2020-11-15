@@ -63,6 +63,26 @@ namespace panel.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap EMİNİ_YENDİM {
+            get {
+                object obj = ResourceManager.GetObject("EMİNİ YENDİM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap KEBAP {
+            get {
+                object obj = ResourceManager.GetObject("KEBAP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap restaurant_menu_96px {
             get {
                 object obj = ResourceManager.GetObject("restaurant_menu_96px", resourceCulture);
