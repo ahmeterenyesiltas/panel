@@ -76,5 +76,29 @@ namespace panel
             test2.Dock = DockStyle.Fill;
             test2.BringToFront();
         }
+
+        private void Orderbtn_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            siparis siparis = new siparis();
+            siparis.TopLevel = false;
+            panel3.Controls.Add(siparis);
+            siparis.Show();
+            siparis.Dock = DockStyle.Fill;
+            siparis.BringToFront();
+        }
+
+        private void OrderLeftbtn_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            siparis siparis = new siparis();
+            siparis.TopLevel = false;
+            panel3.Controls.Add(siparis);
+            siparis.Show();
+            siparis.Dock = DockStyle.Fill;
+            siparis.BringToFront();
+        }
     }
 }
