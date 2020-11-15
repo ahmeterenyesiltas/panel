@@ -142,5 +142,8 @@
   <ItemGroup>
     <None Include="Resources\EMİNİ YENDİM.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KEBAP.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

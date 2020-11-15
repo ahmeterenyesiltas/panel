@@ -36,5 +36,10 @@ namespace panel
         {
 
         }
+
+        private void checkedListBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
