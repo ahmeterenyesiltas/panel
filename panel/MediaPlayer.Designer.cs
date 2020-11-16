@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MediaPlayer));
             this.pnlMedia1 = new System.Windows.Forms.Panel();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
             this.btnMediaDelete = new System.Windows.Forms.Button();
             this.btnVolumeUp = new System.Windows.Forms.Button();
             this.btnVolumeDown = new System.Windows.Forms.Button();
@@ -46,13 +47,10 @@
             this.pnlMedia2 = new System.Windows.Forms.Panel();
             this.lblMedia = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
             this.pnlMedia1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.pnlMedia2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMedia1
@@ -75,6 +73,14 @@
             this.pnlMedia1.Name = "pnlMedia1";
             this.pnlMedia1.Size = new System.Drawing.Size(1662, 105);
             this.pnlMedia1.TabIndex = 0;
+            // 
+            // trackBar2
+            // 
+            this.trackBar2.Location = new System.Drawing.Point(12, 37);
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(104, 56);
+            this.trackBar2.TabIndex = 11;
+            this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
             // 
             // btnMediaDelete
             // 
@@ -250,28 +256,12 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // trackBar1
-            // 
-            this.trackBar1.Location = new System.Drawing.Point(0, 0);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(104, 56);
-            this.trackBar1.TabIndex = 4;
-            // 
-            // trackBar2
-            // 
-            this.trackBar2.Location = new System.Drawing.Point(12, 37);
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(104, 56);
-            this.trackBar2.TabIndex = 11;
-            this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
-            // 
             // MediaPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1662, 793);
-            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.pnlMedia1);
             this.Controls.Add(this.pnlMedia2);
             this.Controls.Add(this.axWindowsMediaPlayer1);
@@ -282,13 +272,11 @@
             this.Load += new System.EventHandler(this.MediaPlayer_Load);
             this.pnlMedia1.ResumeLayout(false);
             this.pnlMedia1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.pnlMedia2.ResumeLayout(false);
             this.pnlMedia2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -312,6 +300,5 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label lblMedia;
         private System.Windows.Forms.TrackBar trackBar2;
-        private System.Windows.Forms.TrackBar trackBar1;
     }
 }
