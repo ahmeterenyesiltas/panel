@@ -91,6 +91,9 @@
     <Compile Include="siparis.Designer.cs">
       <DependentUpon>siparis.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="floors.resx">
+      <DependentUpon>floors.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ilkform.resx">
       <DependentUpon>ilkform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="info.resx">
+      <DependentUpon>info.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MediaPlayer.resx">
       <DependentUpon>MediaPlayer.cs</DependentUpon>
@@ -162,6 +168,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\up_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Googleharitalar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yemeksepeti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yemeksepeti1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kampanya.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about us.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
