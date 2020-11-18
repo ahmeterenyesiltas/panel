@@ -68,8 +68,8 @@ namespace panel
 
                 Form1 form1 = new Form1();                //Form objesini oluşturduk burda doğru şifre girince çağırsın diye çok önemli
                 form1.ShowDialog();                             //Form çağırmak için .Show() da kullanabiliriz ama bunu çağırarak birdaha açılmasını engelliyoruz kalıcı olarak göstererek bu baya önemli
-                                                               //Show Dialog açıkken yani Form1 e tıklanmıycak bu fonks sayesinde sadece FormHome tıklanılabilir olucak
-
+                                                                //Show Dialog açıkken yani Form1 e tıklanmıycak bu fonks sayesinde sadece FormHome tıklanılabilir olucak
+                this.Close();
             }
             else
             {
