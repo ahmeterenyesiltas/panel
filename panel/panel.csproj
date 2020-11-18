@@ -65,6 +65,12 @@
     <Compile Include="info.Designer.cs">
       <DependentUpon>info.cs</DependentUpon>
     </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
     <Compile Include="MediaPlayer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,12 @@
     <Compile Include="siparis.Designer.cs">
       <DependentUpon>siparis.cs</DependentUpon>
     </Compile>
+    <Compile Include="YemekMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YemekMenu.Designer.cs">
+      <DependentUpon>YemekMenu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="floors.resx">
       <DependentUpon>floors.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="info.resx">
       <DependentUpon>info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MediaPlayer.resx">
       <DependentUpon>MediaPlayer.cs</DependentUpon>
@@ -121,6 +136,9 @@
     </Compile>
     <EmbeddedResource Include="siparis.resx">
       <DependentUpon>siparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YemekMenu.resx">
+      <DependentUpon>YemekMenu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

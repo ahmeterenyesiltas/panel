@@ -99,15 +99,15 @@ namespace panel
         {
             panel3.Visible = true;
             panel3.Controls.Clear();
-            ikinciform test2 = new ikinciform();
+            floors test2 = new floors();
             test2.TopLevel = false;
             panel3.Controls.Add(test2);
             test2.Show();
             test2.Dock = DockStyle.Fill;
             test2.BringToFront();
         }
-       
         
+
         private bool isCollapsed;   //Dropdown panel Button
         
         private void timer1_Tick(object sender, EventArgs e)
@@ -132,6 +132,54 @@ namespace panel
                     isCollapsed = true;
                 }
             }
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            YemekMenu menu = new YemekMenu();
+            menu.TopLevel = false;
+            panel3.Controls.Add(menu);
+            menu.Show();
+            menu.Dock = DockStyle.Fill;
+            menu.BringToFront();
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            info infsayfa = new info();
+            infsayfa.TopLevel = false;
+            panel3.Controls.Add(infsayfa);
+            infsayfa.Show();
+            infsayfa.Dock = DockStyle.Fill;
+            infsayfa.BringToFront();
+        }
+
+        private void btnMenuLeft_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            YemekMenu menu = new YemekMenu();
+            menu.TopLevel = false;
+            panel3.Controls.Add(menu);
+            menu.Show();
+            menu.Dock = DockStyle.Fill;
+            menu.BringToFront();
+        }
+
+        private void btnInfoLeft_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            info infsayfa = new info();
+            infsayfa.TopLevel = false;
+            panel3.Controls.Add(infsayfa);
+            infsayfa.Show();
+            infsayfa.Dock = DockStyle.Fill;
+            infsayfa.BringToFront();
         }
     }
 }
