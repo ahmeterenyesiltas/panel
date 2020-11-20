@@ -32,11 +32,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelFloorDrop = new System.Windows.Forms.Panel();
+            this.leftfloor3btn = new System.Windows.Forms.Button();
+            this.leftfloor2btn = new System.Windows.Forms.Button();
+            this.leftfloor1btn = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnInfoLeft = new System.Windows.Forms.Button();
+            this.btnMenuLeft = new System.Windows.Forms.Button();
+            this.OrderLeftbtn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.Cancelbtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -62,36 +73,37 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
-            this.Cancelbtn = new System.Windows.Forms.Button();
-            this.btnInfoLeft = new System.Windows.Forms.Button();
-            this.btnMenuLeft = new System.Windows.Forms.Button();
-            this.leftfloor3btn = new System.Windows.Forms.Button();
-            this.leftfloor2btn = new System.Windows.Forms.Button();
-            this.leftfloor1btn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.OrderLeftbtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.panelParkDroop = new System.Windows.Forms.Panel();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panelFloorDrop.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panelParkDroop.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.Controls.Add(this.panelFloorDrop);
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.btnInfoLeft);
             this.panel1.Controls.Add(this.btnMenuLeft);
-            this.panel1.Controls.Add(this.panelFloorDrop);
             this.panel1.Controls.Add(this.OrderLeftbtn);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.button13);
+            this.panel1.Controls.Add(this.panelParkDroop);
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -105,13 +117,90 @@
             this.panelFloorDrop.Controls.Add(this.leftfloor2btn);
             this.panelFloorDrop.Controls.Add(this.leftfloor1btn);
             this.panelFloorDrop.Controls.Add(this.button2);
-            this.panelFloorDrop.Location = new System.Drawing.Point(12, 520);
+            this.panelFloorDrop.Location = new System.Drawing.Point(10, 520);
             this.panelFloorDrop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelFloorDrop.MaximumSize = new System.Drawing.Size(181, 206);
             this.panelFloorDrop.MinimumSize = new System.Drawing.Size(181, 64);
             this.panelFloorDrop.Name = "panelFloorDrop";
-            this.panelFloorDrop.Size = new System.Drawing.Size(181, 64);
+            this.panelFloorDrop.Size = new System.Drawing.Size(181, 65);
             this.panelFloorDrop.TabIndex = 26;
+            // 
+            // leftfloor3btn
+            // 
+            this.leftfloor3btn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.leftfloor3btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.leftfloor3btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.leftfloor3btn.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.leftfloor3btn.Image = ((System.Drawing.Image)(resources.GetObject("leftfloor3btn.Image")));
+            this.leftfloor3btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.leftfloor3btn.Location = new System.Drawing.Point(0, 160);
+            this.leftfloor3btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.leftfloor3btn.MaximumSize = new System.Drawing.Size(181, 48);
+            this.leftfloor3btn.MinimumSize = new System.Drawing.Size(181, 48);
+            this.leftfloor3btn.Name = "leftfloor3btn";
+            this.leftfloor3btn.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.leftfloor3btn.Size = new System.Drawing.Size(181, 48);
+            this.leftfloor3btn.TabIndex = 5;
+            this.leftfloor3btn.Text = "Floor 3";
+            this.leftfloor3btn.UseVisualStyleBackColor = false;
+            // 
+            // leftfloor2btn
+            // 
+            this.leftfloor2btn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.leftfloor2btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.leftfloor2btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.leftfloor2btn.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.leftfloor2btn.Image = ((System.Drawing.Image)(resources.GetObject("leftfloor2btn.Image")));
+            this.leftfloor2btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.leftfloor2btn.Location = new System.Drawing.Point(0, 112);
+            this.leftfloor2btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.leftfloor2btn.MaximumSize = new System.Drawing.Size(181, 48);
+            this.leftfloor2btn.MinimumSize = new System.Drawing.Size(181, 48);
+            this.leftfloor2btn.Name = "leftfloor2btn";
+            this.leftfloor2btn.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.leftfloor2btn.Size = new System.Drawing.Size(181, 48);
+            this.leftfloor2btn.TabIndex = 4;
+            this.leftfloor2btn.Text = "Floor 2";
+            this.leftfloor2btn.UseVisualStyleBackColor = false;
+            // 
+            // leftfloor1btn
+            // 
+            this.leftfloor1btn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.leftfloor1btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.leftfloor1btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.leftfloor1btn.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.leftfloor1btn.Image = ((System.Drawing.Image)(resources.GetObject("leftfloor1btn.Image")));
+            this.leftfloor1btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.leftfloor1btn.Location = new System.Drawing.Point(0, 64);
+            this.leftfloor1btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.leftfloor1btn.MaximumSize = new System.Drawing.Size(181, 48);
+            this.leftfloor1btn.MinimumSize = new System.Drawing.Size(181, 48);
+            this.leftfloor1btn.Name = "leftfloor1btn";
+            this.leftfloor1btn.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.leftfloor1btn.Size = new System.Drawing.Size(181, 48);
+            this.leftfloor1btn.TabIndex = 3;
+            this.leftfloor1btn.Text = "Floor 1";
+            this.leftfloor1btn.UseVisualStyleBackColor = false;
+            this.leftfloor1btn.Click += new System.EventHandler(this.leftfloor1btn_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.Image = global::panel.Properties.Resources.Down_30px;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.MaximumSize = new System.Drawing.Size(181, 64);
+            this.button2.MinimumSize = new System.Drawing.Size(181, 64);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(181, 64);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Floors";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel5
             // 
@@ -136,6 +225,120 @@
             this.label1.Size = new System.Drawing.Size(177, 27);
             this.label1.TabIndex = 2;
             this.label1.Text = "RMS SYSTEM";
+            // 
+            // btnInfoLeft
+            // 
+            this.btnInfoLeft.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnInfoLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInfoLeft.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnInfoLeft.Image = ((System.Drawing.Image)(resources.GetObject("btnInfoLeft.Image")));
+            this.btnInfoLeft.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInfoLeft.Location = new System.Drawing.Point(10, 452);
+            this.btnInfoLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnInfoLeft.MaximumSize = new System.Drawing.Size(181, 64);
+            this.btnInfoLeft.MinimumSize = new System.Drawing.Size(181, 64);
+            this.btnInfoLeft.Name = "btnInfoLeft";
+            this.btnInfoLeft.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnInfoLeft.Size = new System.Drawing.Size(181, 64);
+            this.btnInfoLeft.TabIndex = 29;
+            this.btnInfoLeft.Text = "Info";
+            this.btnInfoLeft.UseVisualStyleBackColor = false;
+            this.btnInfoLeft.Click += new System.EventHandler(this.btnInfoLeft_Click);
+            // 
+            // btnMenuLeft
+            // 
+            this.btnMenuLeft.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnMenuLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenuLeft.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenuLeft.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuLeft.Image")));
+            this.btnMenuLeft.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenuLeft.Location = new System.Drawing.Point(10, 179);
+            this.btnMenuLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMenuLeft.MaximumSize = new System.Drawing.Size(181, 64);
+            this.btnMenuLeft.MinimumSize = new System.Drawing.Size(181, 64);
+            this.btnMenuLeft.Name = "btnMenuLeft";
+            this.btnMenuLeft.Padding = new System.Windows.Forms.Padding(1);
+            this.btnMenuLeft.Size = new System.Drawing.Size(181, 64);
+            this.btnMenuLeft.TabIndex = 28;
+            this.btnMenuLeft.Text = "Menu";
+            this.btnMenuLeft.UseVisualStyleBackColor = true;
+            this.btnMenuLeft.Click += new System.EventHandler(this.btnMenuLeft_Click);
+            // 
+            // OrderLeftbtn
+            // 
+            this.OrderLeftbtn.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.OrderLeftbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OrderLeftbtn.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.OrderLeftbtn.Image = ((System.Drawing.Image)(resources.GetObject("OrderLeftbtn.Image")));
+            this.OrderLeftbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.OrderLeftbtn.Location = new System.Drawing.Point(10, 384);
+            this.OrderLeftbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.OrderLeftbtn.MaximumSize = new System.Drawing.Size(181, 64);
+            this.OrderLeftbtn.MinimumSize = new System.Drawing.Size(181, 64);
+            this.OrderLeftbtn.Name = "OrderLeftbtn";
+            this.OrderLeftbtn.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.OrderLeftbtn.Size = new System.Drawing.Size(181, 64);
+            this.OrderLeftbtn.TabIndex = 27;
+            this.OrderLeftbtn.Text = "Order";
+            this.OrderLeftbtn.UseVisualStyleBackColor = false;
+            this.OrderLeftbtn.Click += new System.EventHandler(this.OrderLeftbtn_Click);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial Narrow", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Location = new System.Drawing.Point(10, 246);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.MaximumSize = new System.Drawing.Size(181, 64);
+            this.button1.MinimumSize = new System.Drawing.Size(181, 64);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(181, 64);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Tables";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(8, 111);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.MaximumSize = new System.Drawing.Size(181, 64);
+            this.button3.MinimumSize = new System.Drawing.Size(181, 64);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(1);
+            this.button3.Size = new System.Drawing.Size(181, 64);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "     Main Menu";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
+            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button13.Location = new System.Drawing.Point(10, 316);
+            this.button13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button13.MaximumSize = new System.Drawing.Size(181, 64);
+            this.button13.MinimumSize = new System.Drawing.Size(181, 64);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(181, 64);
+            this.button13.TabIndex = 3;
+            this.button13.Text = "Media Player   ";
+            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // panel2
             // 
@@ -170,6 +373,21 @@
             this.panel4.Size = new System.Drawing.Size(200, 105);
             this.panel4.TabIndex = 1;
             // 
+            // Cancelbtn
+            // 
+            this.Cancelbtn.BackColor = System.Drawing.Color.DarkGray;
+            this.Cancelbtn.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.Cancelbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cancelbtn.ForeColor = System.Drawing.Color.AliceBlue;
+            this.Cancelbtn.Image = ((System.Drawing.Image)(resources.GetObject("Cancelbtn.Image")));
+            this.Cancelbtn.Location = new System.Drawing.Point(75, 12);
+            this.Cancelbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Cancelbtn.Name = "Cancelbtn";
+            this.Cancelbtn.Size = new System.Drawing.Size(115, 63);
+            this.Cancelbtn.TabIndex = 3;
+            this.Cancelbtn.UseVisualStyleBackColor = false;
+            this.Cancelbtn.Click += new System.EventHandler(this.button12_Click);
+            // 
             // panel3
             // 
             this.panel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -184,6 +402,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1711, 965);
             this.panel3.TabIndex = 3;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // label2
             // 
@@ -580,211 +799,120 @@
             this.btnMenu.UseVisualStyleBackColor = false;
             this.btnMenu.Click += new System.EventHandler(this.button4_Click_1);
             // 
-            // Cancelbtn
+            // panelParkDroop
             // 
-            this.Cancelbtn.BackColor = System.Drawing.Color.DarkGray;
-            this.Cancelbtn.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.Cancelbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cancelbtn.ForeColor = System.Drawing.Color.AliceBlue;
-            this.Cancelbtn.Image = ((System.Drawing.Image)(resources.GetObject("Cancelbtn.Image")));
-            this.Cancelbtn.Location = new System.Drawing.Point(75, 12);
-            this.Cancelbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Cancelbtn.Name = "Cancelbtn";
-            this.Cancelbtn.Size = new System.Drawing.Size(115, 63);
-            this.Cancelbtn.TabIndex = 3;
-            this.Cancelbtn.UseVisualStyleBackColor = false;
-            this.Cancelbtn.Click += new System.EventHandler(this.button12_Click);
+            this.panelParkDroop.Controls.Add(this.button24);
+            this.panelParkDroop.Controls.Add(this.button25);
+            this.panelParkDroop.Location = new System.Drawing.Point(12, 589);
+            this.panelParkDroop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelParkDroop.MaximumSize = new System.Drawing.Size(181, 115);
+            this.panelParkDroop.MinimumSize = new System.Drawing.Size(181, 64);
+            this.panelParkDroop.Name = "panelParkDroop";
+            this.panelParkDroop.Size = new System.Drawing.Size(181, 64);
+            this.panelParkDroop.TabIndex = 31;
+            this.panelParkDroop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelParkDroop_Paint);
             // 
-            // btnInfoLeft
+            // button24
             // 
-            this.btnInfoLeft.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnInfoLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInfoLeft.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnInfoLeft.Image = ((System.Drawing.Image)(resources.GetObject("btnInfoLeft.Image")));
-            this.btnInfoLeft.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInfoLeft.Location = new System.Drawing.Point(10, 452);
-            this.btnInfoLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnInfoLeft.MaximumSize = new System.Drawing.Size(181, 64);
-            this.btnInfoLeft.MinimumSize = new System.Drawing.Size(181, 64);
-            this.btnInfoLeft.Name = "btnInfoLeft";
-            this.btnInfoLeft.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnInfoLeft.Size = new System.Drawing.Size(181, 64);
-            this.btnInfoLeft.TabIndex = 29;
-            this.btnInfoLeft.Text = "Info";
-            this.btnInfoLeft.UseVisualStyleBackColor = false;
-            this.btnInfoLeft.Click += new System.EventHandler(this.btnInfoLeft_Click);
+            this.button24.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button24.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button24.Image = ((System.Drawing.Image)(resources.GetObject("button24.Image")));
+            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button24.Location = new System.Drawing.Point(0, 64);
+            this.button24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button24.MaximumSize = new System.Drawing.Size(181, 48);
+            this.button24.MinimumSize = new System.Drawing.Size(181, 48);
+            this.button24.Name = "button24";
+            this.button24.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.button24.Size = new System.Drawing.Size(181, 48);
+            this.button24.TabIndex = 3;
+            this.button24.Text = "Add Car";
+            this.button24.UseVisualStyleBackColor = false;
+            this.button24.Click += new System.EventHandler(this.button24_Click_1);
             // 
-            // btnMenuLeft
+            // button25
             // 
-            this.btnMenuLeft.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnMenuLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenuLeft.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuLeft.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuLeft.Image")));
-            this.btnMenuLeft.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenuLeft.Location = new System.Drawing.Point(10, 179);
-            this.btnMenuLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnMenuLeft.MaximumSize = new System.Drawing.Size(181, 64);
-            this.btnMenuLeft.MinimumSize = new System.Drawing.Size(181, 64);
-            this.btnMenuLeft.Name = "btnMenuLeft";
-            this.btnMenuLeft.Padding = new System.Windows.Forms.Padding(1);
-            this.btnMenuLeft.Size = new System.Drawing.Size(181, 64);
-            this.btnMenuLeft.TabIndex = 28;
-            this.btnMenuLeft.Text = "Menu";
-            this.btnMenuLeft.UseVisualStyleBackColor = true;
-            this.btnMenuLeft.Click += new System.EventHandler(this.btnMenuLeft_Click);
+            this.button25.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button25.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button25.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button25.Image = global::panel.Properties.Resources.Down_30px;
+            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button25.Location = new System.Drawing.Point(0, 0);
+            this.button25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button25.MaximumSize = new System.Drawing.Size(181, 64);
+            this.button25.MinimumSize = new System.Drawing.Size(181, 64);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(181, 64);
+            this.button25.TabIndex = 1;
+            this.button25.Text = "Park";
+            this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.button25_Click_1);
             // 
-            // leftfloor3btn
+            // timer2
             // 
-            this.leftfloor3btn.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.leftfloor3btn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.leftfloor3btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.leftfloor3btn.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.leftfloor3btn.Image = ((System.Drawing.Image)(resources.GetObject("leftfloor3btn.Image")));
-            this.leftfloor3btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.leftfloor3btn.Location = new System.Drawing.Point(0, 160);
-            this.leftfloor3btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.leftfloor3btn.MaximumSize = new System.Drawing.Size(181, 48);
-            this.leftfloor3btn.MinimumSize = new System.Drawing.Size(181, 48);
-            this.leftfloor3btn.Name = "leftfloor3btn";
-            this.leftfloor3btn.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.leftfloor3btn.Size = new System.Drawing.Size(181, 48);
-            this.leftfloor3btn.TabIndex = 5;
-            this.leftfloor3btn.Text = "Floor 3";
-            this.leftfloor3btn.UseVisualStyleBackColor = false;
+            this.timer2.Interval = 15;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // leftfloor2btn
+            // panel6
             // 
-            this.leftfloor2btn.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.leftfloor2btn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.leftfloor2btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.leftfloor2btn.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.leftfloor2btn.Image = ((System.Drawing.Image)(resources.GetObject("leftfloor2btn.Image")));
-            this.leftfloor2btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.leftfloor2btn.Location = new System.Drawing.Point(0, 112);
-            this.leftfloor2btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.leftfloor2btn.MaximumSize = new System.Drawing.Size(181, 48);
-            this.leftfloor2btn.MinimumSize = new System.Drawing.Size(181, 48);
-            this.leftfloor2btn.Name = "leftfloor2btn";
-            this.leftfloor2btn.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.leftfloor2btn.Size = new System.Drawing.Size(181, 48);
-            this.leftfloor2btn.TabIndex = 4;
-            this.leftfloor2btn.Text = "Floor 2";
-            this.leftfloor2btn.UseVisualStyleBackColor = false;
+            this.panel6.Controls.Add(this.button4);
+            this.panel6.Controls.Add(this.button9);
+            this.panel6.Location = new System.Drawing.Point(12, 657);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel6.MaximumSize = new System.Drawing.Size(181, 115);
+            this.panel6.MinimumSize = new System.Drawing.Size(181, 64);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(181, 64);
+            this.panel6.TabIndex = 32;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
-            // leftfloor1btn
+            // button4
             // 
-            this.leftfloor1btn.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.leftfloor1btn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.leftfloor1btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.leftfloor1btn.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.leftfloor1btn.Image = ((System.Drawing.Image)(resources.GetObject("leftfloor1btn.Image")));
-            this.leftfloor1btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.leftfloor1btn.Location = new System.Drawing.Point(0, 64);
-            this.leftfloor1btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.leftfloor1btn.MaximumSize = new System.Drawing.Size(181, 48);
-            this.leftfloor1btn.MinimumSize = new System.Drawing.Size(181, 48);
-            this.leftfloor1btn.Name = "leftfloor1btn";
-            this.leftfloor1btn.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.leftfloor1btn.Size = new System.Drawing.Size(181, 48);
-            this.leftfloor1btn.TabIndex = 3;
-            this.leftfloor1btn.Text = "Floor 1";
-            this.leftfloor1btn.UseVisualStyleBackColor = false;
-            this.leftfloor1btn.Click += new System.EventHandler(this.leftfloor1btn_Click);
+            this.button4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Arial Black", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(0, 64);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.MaximumSize = new System.Drawing.Size(181, 48);
+            this.button4.MinimumSize = new System.Drawing.Size(181, 48);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(181, 48);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Add Campaign";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button2
+            // button9
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Image = global::panel.Properties.Resources.Down_30px;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.MaximumSize = new System.Drawing.Size(181, 64);
-            this.button2.MinimumSize = new System.Drawing.Size(181, 64);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(181, 64);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Floors";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button9.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button9.Image = global::panel.Properties.Resources.Down_30px;
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button9.Location = new System.Drawing.Point(0, 0);
+            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button9.MaximumSize = new System.Drawing.Size(181, 64);
+            this.button9.MinimumSize = new System.Drawing.Size(181, 64);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(181, 64);
+            this.button9.TabIndex = 1;
+            this.button9.Text = "Campaign";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // OrderLeftbtn
+            // timer3
             // 
-            this.OrderLeftbtn.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.OrderLeftbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OrderLeftbtn.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.OrderLeftbtn.Image = ((System.Drawing.Image)(resources.GetObject("OrderLeftbtn.Image")));
-            this.OrderLeftbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.OrderLeftbtn.Location = new System.Drawing.Point(10, 384);
-            this.OrderLeftbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.OrderLeftbtn.MaximumSize = new System.Drawing.Size(181, 64);
-            this.OrderLeftbtn.MinimumSize = new System.Drawing.Size(181, 64);
-            this.OrderLeftbtn.Name = "OrderLeftbtn";
-            this.OrderLeftbtn.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.OrderLeftbtn.Size = new System.Drawing.Size(181, 64);
-            this.OrderLeftbtn.TabIndex = 27;
-            this.OrderLeftbtn.Text = "Order";
-            this.OrderLeftbtn.UseVisualStyleBackColor = false;
-            this.OrderLeftbtn.Click += new System.EventHandler(this.OrderLeftbtn_Click);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(10, 246);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.MaximumSize = new System.Drawing.Size(181, 64);
-            this.button1.MinimumSize = new System.Drawing.Size(181, 64);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(181, 64);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Tables";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(8, 111);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.MaximumSize = new System.Drawing.Size(181, 64);
-            this.button3.MinimumSize = new System.Drawing.Size(181, 64);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(1);
-            this.button3.Size = new System.Drawing.Size(181, 64);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "     Main Menu";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.Location = new System.Drawing.Point(10, 316);
-            this.button13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button13.MaximumSize = new System.Drawing.Size(181, 64);
-            this.button13.MinimumSize = new System.Drawing.Size(181, 64);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(181, 64);
-            this.button13.TabIndex = 3;
-            this.button13.Text = "Media Player   ";
-            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.timer3.Interval = 15;
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
             // Form1
             // 
@@ -829,6 +957,8 @@
             this.panel4.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panelParkDroop.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -878,6 +1008,14 @@
         private System.Windows.Forms.Button leftfloor3btn;
         private System.Windows.Forms.Button btnMenuLeft;
         private System.Windows.Forms.Button btnInfoLeft;
+        private System.Windows.Forms.Panel panelParkDroop;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Timer timer3;
     }
 }
 

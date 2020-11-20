@@ -18,6 +18,12 @@ namespace panel
             InitializeComponent();
         }
 
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             panel3.Visible = true;
@@ -193,5 +199,110 @@ namespace panel
             pmanager.Dock = DockStyle.Fill;
             pmanager.BringToFront();
         }
+
+        
+
+       
+         //yusuf Car Park
+        private void button25_Click_1(object sender, EventArgs e)
+        {
+            timer2.Start();
+        }
+
+        private void button24_Click_1(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            AddCar addCar = new AddCar();
+            addCar.TopLevel = false;
+            panel3.Controls.Add(addCar);
+            addCar.Show();
+            addCar.Dock = DockStyle.Fill;
+            addCar.BringToFront();
+        }
+
+        private void panelParkDroop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (isCollapsed)
+            {
+                button25.Image = Resources.up_30px;
+                panelParkDroop.Height += 10;
+                if (panelParkDroop.Size == panelParkDroop.MaximumSize)
+                {
+                    timer2.Stop();
+                    isCollapsed = false;
+                }
+            }
+            else
+            {
+                button25.Image = Resources.Down_30px;
+                panelParkDroop.Height -= 10;
+                if (panelParkDroop.Size == panelParkDroop.MinimumSize)
+                {
+                    timer2.Stop();
+                    isCollapsed = true;
+                }
+            }
+        //Yusuf Car Park
+        
+        }
+        
+        
+        //Yusuf Campaign
+        private void panel6_Paint(object sender, PaintEventArgs e)         //Bu panel Campaign Classının Dropdown Paneli
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            timer3.Start();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            AddCampaign addcampaign = new AddCampaign();
+            addcampaign.TopLevel = false;
+            panel3.Controls.Add(addcampaign);
+            addcampaign.Show();
+            addcampaign.Dock = DockStyle.Fill;
+            addcampaign.BringToFront();
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            if (isCollapsed)
+            {
+                button9.Image = Resources.up_30px;
+                panel6.Height += 10;
+                if (panel6.Size == panel6.MaximumSize)
+                {
+                    timer3.Stop();
+                    isCollapsed = false;
+                }
+            }
+            else
+            {
+                button9.Image = Resources.Down_30px;
+                panel6.Height -= 10;
+                if (panel6.Size == panel6.MinimumSize)
+                {
+                    timer3.Stop();
+                    isCollapsed = true;
+                }
+            }
+        }
+     //Yusuf Campaign
+
+    
+    
+    
     }
 }
