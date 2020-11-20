@@ -181,5 +181,17 @@ namespace panel
             infsayfa.Dock = DockStyle.Fill;
             infsayfa.BringToFront();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            PersonelManager pmanager = new PersonelManager();
+            pmanager.TopLevel = false;
+            panel3.Controls.Add(pmanager);
+            pmanager.Show();
+            pmanager.Dock = DockStyle.Fill;
+            pmanager.BringToFront();
+        }
     }
 }

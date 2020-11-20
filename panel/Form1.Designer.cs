@@ -63,6 +63,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
             this.Cancelbtn = new System.Windows.Forms.Button();
+            this.btnInfoLeft = new System.Windows.Forms.Button();
             this.btnMenuLeft = new System.Windows.Forms.Button();
             this.leftfloor3btn = new System.Windows.Forms.Button();
             this.leftfloor2btn = new System.Windows.Forms.Button();
@@ -72,7 +73,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.btnInfoLeft = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelFloorDrop.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -536,10 +536,11 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(209, 158);
             this.button6.TabIndex = 9;
-            this.button6.Text = "          Waiters";
+            this.button6.Text = "           Personels";
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -593,6 +594,25 @@
             this.Cancelbtn.TabIndex = 3;
             this.Cancelbtn.UseVisualStyleBackColor = false;
             this.Cancelbtn.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // btnInfoLeft
+            // 
+            this.btnInfoLeft.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnInfoLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInfoLeft.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnInfoLeft.Image = ((System.Drawing.Image)(resources.GetObject("btnInfoLeft.Image")));
+            this.btnInfoLeft.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInfoLeft.Location = new System.Drawing.Point(10, 452);
+            this.btnInfoLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnInfoLeft.MaximumSize = new System.Drawing.Size(181, 64);
+            this.btnInfoLeft.MinimumSize = new System.Drawing.Size(181, 64);
+            this.btnInfoLeft.Name = "btnInfoLeft";
+            this.btnInfoLeft.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnInfoLeft.Size = new System.Drawing.Size(181, 64);
+            this.btnInfoLeft.TabIndex = 29;
+            this.btnInfoLeft.Text = "Info";
+            this.btnInfoLeft.UseVisualStyleBackColor = false;
+            this.btnInfoLeft.Click += new System.EventHandler(this.btnInfoLeft_Click);
             // 
             // btnMenuLeft
             // 
@@ -765,25 +785,6 @@
             this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // btnInfoLeft
-            // 
-            this.btnInfoLeft.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnInfoLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInfoLeft.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnInfoLeft.Image = ((System.Drawing.Image)(resources.GetObject("btnInfoLeft.Image")));
-            this.btnInfoLeft.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInfoLeft.Location = new System.Drawing.Point(10, 452);
-            this.btnInfoLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnInfoLeft.MaximumSize = new System.Drawing.Size(181, 64);
-            this.btnInfoLeft.MinimumSize = new System.Drawing.Size(181, 64);
-            this.btnInfoLeft.Name = "btnInfoLeft";
-            this.btnInfoLeft.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnInfoLeft.Size = new System.Drawing.Size(181, 64);
-            this.btnInfoLeft.TabIndex = 29;
-            this.btnInfoLeft.Text = "Info";
-            this.btnInfoLeft.UseVisualStyleBackColor = false;
-            this.btnInfoLeft.Click += new System.EventHandler(this.btnInfoLeft_Click);
             // 
             // Form1
             // 
