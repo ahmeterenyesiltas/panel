@@ -107,6 +107,12 @@
     <Compile Include="ilkform.Designer.cs">
       <DependentUpon>ilkform.cs</DependentUpon>
     </Compile>
+    <Compile Include="müsteri_takip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="müsteri_takip.Designer.cs">
+      <DependentUpon>müsteri_takip.cs</DependentUpon>
+    </Compile>
     <Compile Include="PersonelManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MediaPlayer.resx">
       <DependentUpon>MediaPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="müsteri_takip.resx">
+      <DependentUpon>müsteri_takip.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PersonelManager.resx">
       <DependentUpon>PersonelManager.cs</DependentUpon>

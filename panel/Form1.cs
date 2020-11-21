@@ -323,6 +323,22 @@ namespace panel
             kamera.Dock = DockStyle.Fill;
             kamera.BringToFront();
         }
+
+        private void musteri_yonetim_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            müsteri_takip musteri_takip = new müsteri_takip();
+            musteri_takip.TopLevel = false;
+            panel3.Controls.Add(musteri_takip);
+            musteri_takip.Show();
+            musteri_takip.Dock = DockStyle.Fill;
+            musteri_takip.BringToFront();
+        }
+
+
+
+
         //Yusuf Campaign
 
 

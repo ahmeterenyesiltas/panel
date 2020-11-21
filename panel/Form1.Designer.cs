@@ -31,8 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnKamera = new System.Windows.Forms.Button();
-            this.stok_takip = new System.Windows.Forms.Button();
+            this.musteri_yonetim = new System.Windows.Forms.Button();
             this.panelFloorDrop = new System.Windows.Forms.Panel();
             this.leftfloor3btn = new System.Windows.Forms.Button();
             this.leftfloor2btn = new System.Windows.Forms.Button();
@@ -52,6 +51,8 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.btnKamera = new System.Windows.Forms.Button();
+            this.stok_takip = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -96,6 +97,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.Controls.Add(this.musteri_yonetim);
             this.panel1.Controls.Add(this.panelFloorDrop);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.btnInfoLeft);
@@ -115,25 +117,15 @@
             this.panel1.Size = new System.Drawing.Size(199, 1070);
             this.panel1.TabIndex = 0;
             // 
-            // btnKamera
+            // musteri_yonetim
             // 
-            this.btnKamera.Location = new System.Drawing.Point(0, 786);
-            this.btnKamera.Name = "btnKamera";
-            this.btnKamera.Size = new System.Drawing.Size(199, 57);
-            this.btnKamera.TabIndex = 34;
-            this.btnKamera.Text = "Kameralar";
-            this.btnKamera.UseVisualStyleBackColor = true;
-            this.btnKamera.Click += new System.EventHandler(this.btnKamera_Click);
-            // 
-            // stok_takip
-            // 
-            this.stok_takip.Location = new System.Drawing.Point(0, 728);
-            this.stok_takip.Name = "stok_takip";
-            this.stok_takip.Size = new System.Drawing.Size(199, 59);
-            this.stok_takip.TabIndex = 33;
-            this.stok_takip.Text = "Stok Takip";
-            this.stok_takip.UseVisualStyleBackColor = true;
-            this.stok_takip.Click += new System.EventHandler(this.stok_takip_Click);
+            this.musteri_yonetim.Location = new System.Drawing.Point(0, 856);
+            this.musteri_yonetim.Name = "musteri_yonetim";
+            this.musteri_yonetim.Size = new System.Drawing.Size(199, 60);
+            this.musteri_yonetim.TabIndex = 35;
+            this.musteri_yonetim.Text = "Müşteri Yönetim";
+            this.musteri_yonetim.UseVisualStyleBackColor = true;
+            this.musteri_yonetim.Click += new System.EventHandler(this.musteri_yonetim_Click);
             // 
             // panelFloorDrop
             // 
@@ -468,6 +460,26 @@
             this.button9.Text = "Campaign";
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // btnKamera
+            // 
+            this.btnKamera.Location = new System.Drawing.Point(0, 793);
+            this.btnKamera.Name = "btnKamera";
+            this.btnKamera.Size = new System.Drawing.Size(199, 57);
+            this.btnKamera.TabIndex = 34;
+            this.btnKamera.Text = "Kameralar";
+            this.btnKamera.UseVisualStyleBackColor = true;
+            this.btnKamera.Click += new System.EventHandler(this.btnKamera_Click);
+            // 
+            // stok_takip
+            // 
+            this.stok_takip.Location = new System.Drawing.Point(0, 728);
+            this.stok_takip.Name = "stok_takip";
+            this.stok_takip.Size = new System.Drawing.Size(199, 59);
+            this.stok_takip.TabIndex = 33;
+            this.stok_takip.Text = "Stok Takip";
+            this.stok_takip.UseVisualStyleBackColor = true;
+            this.stok_takip.Click += new System.EventHandler(this.stok_takip_Click);
             // 
             // panel2
             // 
@@ -1042,6 +1054,7 @@
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Button stok_takip;
         private System.Windows.Forms.Button btnKamera;
+        private System.Windows.Forms.Button musteri_yonetim;
     }
 }
 

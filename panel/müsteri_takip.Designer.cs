@@ -1,0 +1,255 @@
+﻿namespace panel
+{
+    partial class müsteri_takip
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.musteri_gp1 = new System.Windows.Forms.GroupBox();
+            this.musteriLbl6 = new System.Windows.Forms.Label();
+            this.musteriLbl5 = new System.Windows.Forms.Label();
+            this.musteriLbl4 = new System.Windows.Forms.Label();
+            this.musteriLbl3 = new System.Windows.Forms.Label();
+            this.musteriLbl2 = new System.Windows.Forms.Label();
+            this.StoktextBox5 = new System.Windows.Forms.TextBox();
+            this.StoktextBox4 = new System.Windows.Forms.TextBox();
+            this.StoktextBox3 = new System.Windows.Forms.TextBox();
+            this.StoktextBox2 = new System.Windows.Forms.TextBox();
+            this.StoktextBox1 = new System.Windows.Forms.TextBox();
+            this.musteriLbl1 = new System.Windows.Forms.Label();
+            this.btnMusteri1 = new System.Windows.Forms.Button();
+            this.btnMusteri2 = new System.Windows.Forms.Button();
+            this.btnMusteri3 = new System.Windows.Forms.Button();
+            this.btnMusteri4 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.musteri_gp1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // musteri_gp1
+            // 
+            this.musteri_gp1.Controls.Add(this.musteriLbl6);
+            this.musteri_gp1.Controls.Add(this.musteriLbl5);
+            this.musteri_gp1.Controls.Add(this.musteriLbl4);
+            this.musteri_gp1.Controls.Add(this.musteriLbl3);
+            this.musteri_gp1.Controls.Add(this.musteriLbl2);
+            this.musteri_gp1.Controls.Add(this.StoktextBox5);
+            this.musteri_gp1.Controls.Add(this.StoktextBox4);
+            this.musteri_gp1.Controls.Add(this.StoktextBox3);
+            this.musteri_gp1.Controls.Add(this.StoktextBox2);
+            this.musteri_gp1.Controls.Add(this.StoktextBox1);
+            this.musteri_gp1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.musteri_gp1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.musteri_gp1.Location = new System.Drawing.Point(87, 253);
+            this.musteri_gp1.Name = "musteri_gp1";
+            this.musteri_gp1.Size = new System.Drawing.Size(388, 446);
+            this.musteri_gp1.TabIndex = 1;
+            this.musteri_gp1.TabStop = false;
+            this.musteri_gp1.Text = "MÜŞTERİ YÖNETİM";
+            // 
+            // musteriLbl6
+            // 
+            this.musteriLbl6.AutoSize = true;
+            this.musteriLbl6.Location = new System.Drawing.Point(39, 383);
+            this.musteriLbl6.Name = "musteriLbl6";
+            this.musteriLbl6.Size = new System.Drawing.Size(90, 25);
+            this.musteriLbl6.TabIndex = 10;
+            this.musteriLbl6.Text = "Cinsiyet";
+            // 
+            // musteriLbl5
+            // 
+            this.musteriLbl5.AutoSize = true;
+            this.musteriLbl5.Location = new System.Drawing.Point(60, 298);
+            this.musteriLbl5.Name = "musteriLbl5";
+            this.musteriLbl5.Size = new System.Drawing.Size(69, 25);
+            this.musteriLbl5.TabIndex = 9;
+            this.musteriLbl5.Text = "Adres";
+            // 
+            // musteriLbl4
+            // 
+            this.musteriLbl4.AutoSize = true;
+            this.musteriLbl4.Location = new System.Drawing.Point(60, 223);
+            this.musteriLbl4.Name = "musteriLbl4";
+            this.musteriLbl4.Size = new System.Drawing.Size(74, 25);
+            this.musteriLbl4.TabIndex = 8;
+            this.musteriLbl4.Text = "E-Mail";
+            // 
+            // musteriLbl3
+            // 
+            this.musteriLbl3.AutoSize = true;
+            this.musteriLbl3.Location = new System.Drawing.Point(49, 143);
+            this.musteriLbl3.Name = "musteriLbl3";
+            this.musteriLbl3.Size = new System.Drawing.Size(85, 25);
+            this.musteriLbl3.TabIndex = 7;
+            this.musteriLbl3.Text = "Telefon";
+            // 
+            // musteriLbl2
+            // 
+            this.musteriLbl2.AutoSize = true;
+            this.musteriLbl2.Location = new System.Drawing.Point(27, 66);
+            this.musteriLbl2.Name = "musteriLbl2";
+            this.musteriLbl2.Size = new System.Drawing.Size(107, 25);
+            this.musteriLbl2.TabIndex = 6;
+            this.musteriLbl2.Text = "Ad Soyad";
+            // 
+            // StoktextBox5
+            // 
+            this.StoktextBox5.Location = new System.Drawing.Point(167, 378);
+            this.StoktextBox5.Name = "StoktextBox5";
+            this.StoktextBox5.Size = new System.Drawing.Size(160, 30);
+            this.StoktextBox5.TabIndex = 4;
+            // 
+            // StoktextBox4
+            // 
+            this.StoktextBox4.Location = new System.Drawing.Point(167, 295);
+            this.StoktextBox4.Name = "StoktextBox4";
+            this.StoktextBox4.Size = new System.Drawing.Size(160, 30);
+            this.StoktextBox4.TabIndex = 3;
+            // 
+            // StoktextBox3
+            // 
+            this.StoktextBox3.Location = new System.Drawing.Point(167, 220);
+            this.StoktextBox3.Name = "StoktextBox3";
+            this.StoktextBox3.Size = new System.Drawing.Size(160, 30);
+            this.StoktextBox3.TabIndex = 2;
+            // 
+            // StoktextBox2
+            // 
+            this.StoktextBox2.Location = new System.Drawing.Point(167, 138);
+            this.StoktextBox2.Name = "StoktextBox2";
+            this.StoktextBox2.Size = new System.Drawing.Size(160, 30);
+            this.StoktextBox2.TabIndex = 1;
+            // 
+            // StoktextBox1
+            // 
+            this.StoktextBox1.Location = new System.Drawing.Point(167, 61);
+            this.StoktextBox1.Name = "StoktextBox1";
+            this.StoktextBox1.Size = new System.Drawing.Size(160, 30);
+            this.StoktextBox1.TabIndex = 0;
+            // 
+            // musteriLbl1
+            // 
+            this.musteriLbl1.AutoSize = true;
+            this.musteriLbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.musteriLbl1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.musteriLbl1.Location = new System.Drawing.Point(746, 29);
+            this.musteriLbl1.Name = "musteriLbl1";
+            this.musteriLbl1.Size = new System.Drawing.Size(351, 39);
+            this.musteriLbl1.TabIndex = 2;
+            this.musteriLbl1.Text = "MÜŞTERİ YÖNETİM";
+            this.musteriLbl1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // btnMusteri1
+            // 
+            this.btnMusteri1.Location = new System.Drawing.Point(584, 314);
+            this.btnMusteri1.Name = "btnMusteri1";
+            this.btnMusteri1.Size = new System.Drawing.Size(148, 61);
+            this.btnMusteri1.TabIndex = 3;
+            this.btnMusteri1.Text = "EKLE";
+            this.btnMusteri1.UseVisualStyleBackColor = true;
+            // 
+            // btnMusteri2
+            // 
+            this.btnMusteri2.Location = new System.Drawing.Point(584, 396);
+            this.btnMusteri2.Name = "btnMusteri2";
+            this.btnMusteri2.Size = new System.Drawing.Size(148, 61);
+            this.btnMusteri2.TabIndex = 4;
+            this.btnMusteri2.Text = "SİL";
+            this.btnMusteri2.UseVisualStyleBackColor = true;
+            // 
+            // btnMusteri3
+            // 
+            this.btnMusteri3.Location = new System.Drawing.Point(584, 476);
+            this.btnMusteri3.Name = "btnMusteri3";
+            this.btnMusteri3.Size = new System.Drawing.Size(148, 61);
+            this.btnMusteri3.TabIndex = 5;
+            this.btnMusteri3.Text = "GUNCELLE";
+            this.btnMusteri3.UseVisualStyleBackColor = true;
+            // 
+            // btnMusteri4
+            // 
+            this.btnMusteri4.Location = new System.Drawing.Point(584, 558);
+            this.btnMusteri4.Name = "btnMusteri4";
+            this.btnMusteri4.Size = new System.Drawing.Size(148, 61);
+            this.btnMusteri4.TabIndex = 6;
+            this.btnMusteri4.Text = "GORUNTULE";
+            this.btnMusteri4.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(836, 253);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(943, 446);
+            this.dataGridView1.TabIndex = 7;
+            // 
+            // müsteri_takip
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ClientSize = new System.Drawing.Size(1942, 732);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnMusteri4);
+            this.Controls.Add(this.btnMusteri3);
+            this.Controls.Add(this.btnMusteri2);
+            this.Controls.Add(this.btnMusteri1);
+            this.Controls.Add(this.musteriLbl1);
+            this.Controls.Add(this.musteri_gp1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "müsteri_takip";
+            this.Text = "müsteri_takip";
+            this.musteri_gp1.ResumeLayout(false);
+            this.musteri_gp1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.GroupBox musteri_gp1;
+        private System.Windows.Forms.Label musteriLbl6;
+        private System.Windows.Forms.Label musteriLbl5;
+        private System.Windows.Forms.Label musteriLbl4;
+        private System.Windows.Forms.Label musteriLbl3;
+        private System.Windows.Forms.Label musteriLbl2;
+        private System.Windows.Forms.TextBox StoktextBox5;
+        private System.Windows.Forms.TextBox StoktextBox4;
+        private System.Windows.Forms.TextBox StoktextBox3;
+        private System.Windows.Forms.TextBox StoktextBox2;
+        private System.Windows.Forms.TextBox StoktextBox1;
+        private System.Windows.Forms.Label musteriLbl1;
+        private System.Windows.Forms.Button btnMusteri1;
+        private System.Windows.Forms.Button btnMusteri2;
+        private System.Windows.Forms.Button btnMusteri3;
+        private System.Windows.Forms.Button btnMusteri4;
+        private System.Windows.Forms.DataGridView dataGridView1;
+    }
+}

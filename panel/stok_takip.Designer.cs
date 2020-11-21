@@ -360,9 +360,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.Location = new System.Drawing.Point(345, 48);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 25);
+            this.label5.Size = new System.Drawing.Size(101, 25);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Cari Kod";
+            this.label5.Text = "Stok Kod";
             // 
             // label4
             // 
