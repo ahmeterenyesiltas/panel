@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnKamera = new System.Windows.Forms.Button();
             this.stok_takip = new System.Windows.Forms.Button();
             this.panelFloorDrop = new System.Windows.Forms.Panel();
             this.leftfloor3btn = new System.Windows.Forms.Button();
@@ -82,7 +83,6 @@
             this.btnMenu = new System.Windows.Forms.Button();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
-            this.btnKamera = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelFloorDrop.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -96,8 +96,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel1.Controls.Add(this.btnKamera);
-            this.panel1.Controls.Add(this.stok_takip);
             this.panel1.Controls.Add(this.panelFloorDrop);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.btnInfoLeft);
@@ -108,12 +106,24 @@
             this.panel1.Controls.Add(this.button13);
             this.panel1.Controls.Add(this.panelParkDroop);
             this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.btnKamera);
+            this.panel1.Controls.Add(this.stok_takip);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(199, 1070);
             this.panel1.TabIndex = 0;
+            // 
+            // btnKamera
+            // 
+            this.btnKamera.Location = new System.Drawing.Point(0, 786);
+            this.btnKamera.Name = "btnKamera";
+            this.btnKamera.Size = new System.Drawing.Size(199, 57);
+            this.btnKamera.TabIndex = 34;
+            this.btnKamera.Text = "Kameralar";
+            this.btnKamera.UseVisualStyleBackColor = true;
+            this.btnKamera.Click += new System.EventHandler(this.btnKamera_Click);
             // 
             // stok_takip
             // 
@@ -927,16 +937,6 @@
             // 
             this.timer3.Interval = 15;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
-            // 
-            // btnKamera
-            // 
-            this.btnKamera.Location = new System.Drawing.Point(0, 786);
-            this.btnKamera.Name = "btnKamera";
-            this.btnKamera.Size = new System.Drawing.Size(199, 57);
-            this.btnKamera.TabIndex = 34;
-            this.btnKamera.Text = "Kameralar";
-            this.btnKamera.UseVisualStyleBackColor = true;
-            this.btnKamera.Click += new System.EventHandler(this.btnKamera_Click);
             // 
             // Form1
             // 
