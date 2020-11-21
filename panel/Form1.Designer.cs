@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.stok_takip = new System.Windows.Forms.Button();
             this.panelFloorDrop = new System.Windows.Forms.Panel();
             this.leftfloor3btn = new System.Windows.Forms.Button();
             this.leftfloor2btn = new System.Windows.Forms.Button();
@@ -44,6 +45,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
+            this.panelParkDroop = new System.Windows.Forms.Panel();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -73,27 +80,24 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
-            this.panelParkDroop = new System.Windows.Forms.Panel();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.btnKamera = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelFloorDrop.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panelParkDroop.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.panelParkDroop.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.Controls.Add(this.btnKamera);
+            this.panel1.Controls.Add(this.stok_takip);
             this.panel1.Controls.Add(this.panelFloorDrop);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.btnInfoLeft);
@@ -110,6 +114,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(199, 1070);
             this.panel1.TabIndex = 0;
+            // 
+            // stok_takip
+            // 
+            this.stok_takip.Location = new System.Drawing.Point(0, 728);
+            this.stok_takip.Name = "stok_takip";
+            this.stok_takip.Size = new System.Drawing.Size(199, 59);
+            this.stok_takip.TabIndex = 33;
+            this.stok_takip.Text = "Stok Takip";
+            this.stok_takip.UseVisualStyleBackColor = true;
+            this.stok_takip.Click += new System.EventHandler(this.stok_takip_Click);
             // 
             // panelFloorDrop
             // 
@@ -339,6 +353,111 @@
             this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // panelParkDroop
+            // 
+            this.panelParkDroop.Controls.Add(this.button24);
+            this.panelParkDroop.Controls.Add(this.button25);
+            this.panelParkDroop.Location = new System.Drawing.Point(12, 589);
+            this.panelParkDroop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelParkDroop.MaximumSize = new System.Drawing.Size(181, 115);
+            this.panelParkDroop.MinimumSize = new System.Drawing.Size(181, 64);
+            this.panelParkDroop.Name = "panelParkDroop";
+            this.panelParkDroop.Size = new System.Drawing.Size(181, 64);
+            this.panelParkDroop.TabIndex = 31;
+            this.panelParkDroop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelParkDroop_Paint);
+            // 
+            // button24
+            // 
+            this.button24.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button24.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button24.Image = ((System.Drawing.Image)(resources.GetObject("button24.Image")));
+            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button24.Location = new System.Drawing.Point(0, 64);
+            this.button24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button24.MaximumSize = new System.Drawing.Size(181, 48);
+            this.button24.MinimumSize = new System.Drawing.Size(181, 48);
+            this.button24.Name = "button24";
+            this.button24.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.button24.Size = new System.Drawing.Size(181, 48);
+            this.button24.TabIndex = 3;
+            this.button24.Text = "Add Car";
+            this.button24.UseVisualStyleBackColor = false;
+            this.button24.Click += new System.EventHandler(this.button24_Click_1);
+            // 
+            // button25
+            // 
+            this.button25.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button25.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button25.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button25.Image = global::panel.Properties.Resources.Down_30px;
+            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button25.Location = new System.Drawing.Point(0, 0);
+            this.button25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button25.MaximumSize = new System.Drawing.Size(181, 64);
+            this.button25.MinimumSize = new System.Drawing.Size(181, 64);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(181, 64);
+            this.button25.TabIndex = 1;
+            this.button25.Text = "Park";
+            this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.button25_Click_1);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.button4);
+            this.panel6.Controls.Add(this.button9);
+            this.panel6.Location = new System.Drawing.Point(12, 657);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel6.MaximumSize = new System.Drawing.Size(181, 115);
+            this.panel6.MinimumSize = new System.Drawing.Size(181, 64);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(181, 64);
+            this.panel6.TabIndex = 32;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Arial Black", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(0, 64);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.MaximumSize = new System.Drawing.Size(181, 48);
+            this.button4.MinimumSize = new System.Drawing.Size(181, 48);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(181, 48);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Add Campaign";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button9.Image = global::panel.Properties.Resources.Down_30px;
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button9.Location = new System.Drawing.Point(0, 0);
+            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button9.MaximumSize = new System.Drawing.Size(181, 64);
+            this.button9.MinimumSize = new System.Drawing.Size(181, 64);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(181, 64);
+            this.button9.TabIndex = 1;
+            this.button9.Text = "Campaign";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // panel2
             // 
@@ -799,120 +918,25 @@
             this.btnMenu.UseVisualStyleBackColor = false;
             this.btnMenu.Click += new System.EventHandler(this.button4_Click_1);
             // 
-            // panelParkDroop
-            // 
-            this.panelParkDroop.Controls.Add(this.button24);
-            this.panelParkDroop.Controls.Add(this.button25);
-            this.panelParkDroop.Location = new System.Drawing.Point(12, 589);
-            this.panelParkDroop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelParkDroop.MaximumSize = new System.Drawing.Size(181, 115);
-            this.panelParkDroop.MinimumSize = new System.Drawing.Size(181, 64);
-            this.panelParkDroop.Name = "panelParkDroop";
-            this.panelParkDroop.Size = new System.Drawing.Size(181, 64);
-            this.panelParkDroop.TabIndex = 31;
-            this.panelParkDroop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelParkDroop_Paint);
-            // 
-            // button24
-            // 
-            this.button24.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button24.Image = ((System.Drawing.Image)(resources.GetObject("button24.Image")));
-            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button24.Location = new System.Drawing.Point(0, 64);
-            this.button24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button24.MaximumSize = new System.Drawing.Size(181, 48);
-            this.button24.MinimumSize = new System.Drawing.Size(181, 48);
-            this.button24.Name = "button24";
-            this.button24.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.button24.Size = new System.Drawing.Size(181, 48);
-            this.button24.TabIndex = 3;
-            this.button24.Text = "Add Car";
-            this.button24.UseVisualStyleBackColor = false;
-            this.button24.Click += new System.EventHandler(this.button24_Click_1);
-            // 
-            // button25
-            // 
-            this.button25.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button25.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button25.Image = global::panel.Properties.Resources.Down_30px;
-            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button25.Location = new System.Drawing.Point(0, 0);
-            this.button25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button25.MaximumSize = new System.Drawing.Size(181, 64);
-            this.button25.MinimumSize = new System.Drawing.Size(181, 64);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(181, 64);
-            this.button25.TabIndex = 1;
-            this.button25.Text = "Park";
-            this.button25.UseVisualStyleBackColor = false;
-            this.button25.Click += new System.EventHandler(this.button25_Click_1);
-            // 
             // timer2
             // 
             this.timer2.Interval = 15;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.button4);
-            this.panel6.Controls.Add(this.button9);
-            this.panel6.Location = new System.Drawing.Point(12, 657);
-            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel6.MaximumSize = new System.Drawing.Size(181, 115);
-            this.panel6.MinimumSize = new System.Drawing.Size(181, 64);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(181, 64);
-            this.panel6.TabIndex = 32;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial Black", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 64);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.MaximumSize = new System.Drawing.Size(181, 48);
-            this.button4.MinimumSize = new System.Drawing.Size(181, 48);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(181, 48);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Add Campaign";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button9.Image = global::panel.Properties.Resources.Down_30px;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.Location = new System.Drawing.Point(0, 0);
-            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button9.MaximumSize = new System.Drawing.Size(181, 64);
-            this.button9.MinimumSize = new System.Drawing.Size(181, 64);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(181, 64);
-            this.button9.TabIndex = 1;
-            this.button9.Text = "Campaign";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
             // timer3
             // 
             this.timer3.Interval = 15;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
+            // btnKamera
+            // 
+            this.btnKamera.Location = new System.Drawing.Point(0, 786);
+            this.btnKamera.Name = "btnKamera";
+            this.btnKamera.Size = new System.Drawing.Size(199, 57);
+            this.btnKamera.TabIndex = 34;
+            this.btnKamera.Text = "Kameralar";
+            this.btnKamera.UseVisualStyleBackColor = true;
+            this.btnKamera.Click += new System.EventHandler(this.btnKamera_Click);
             // 
             // Form1
             // 
@@ -952,13 +976,13 @@
             this.panelFloorDrop.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panelParkDroop.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panelParkDroop.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1016,6 +1040,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Button stok_takip;
+        private System.Windows.Forms.Button btnKamera;
     }
 }
 

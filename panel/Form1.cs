@@ -299,10 +299,34 @@ namespace panel
                 }
             }
         }
-     //Yusuf Campaign
 
-    
-    
-    
+        private void stok_takip_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            stok_takip stok_takip = new stok_takip();
+            stok_takip.TopLevel = false;
+            panel3.Controls.Add(stok_takip);
+            stok_takip.Show();
+            stok_takip.Dock = DockStyle.Fill;
+            stok_takip.BringToFront();
+        }
+
+        private void btnKamera_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            kamera kamera = new kamera();
+            kamera.TopLevel = false;
+            panel3.Controls.Add(kamera);
+            kamera.Show();
+            kamera.Dock = DockStyle.Fill;
+            kamera.BringToFront();
+        }
+        //Yusuf Campaign
+
+
+
+
     }
 }
