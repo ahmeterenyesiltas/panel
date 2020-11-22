@@ -54,9 +54,9 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(12, 661);
+            this.button1.Location = new System.Drawing.Point(12, 644);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 54);
+            this.button1.Size = new System.Drawing.Size(170, 54);
             this.button1.TabIndex = 0;
             this.button1.Text = "SİPARİŞ GİR";
             this.button1.UseVisualStyleBackColor = false;
@@ -67,7 +67,7 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.Location = new System.Drawing.Point(296, 661);
+            this.button2.Location = new System.Drawing.Point(331, 643);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(136, 54);
             this.button2.TabIndex = 3;
@@ -79,7 +79,7 @@
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button3.Location = new System.Drawing.Point(154, 661);
+            this.button3.Location = new System.Drawing.Point(189, 644);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(136, 54);
             this.button3.TabIndex = 4;
@@ -100,7 +100,7 @@
             "SOĞUK BAŞLANGIÇ ",
             "SOĞUK BAŞLANGIÇ",
             "SOĞUK BAŞLANGIÇ "});
-            this.checkedListBox1.Location = new System.Drawing.Point(187, 145);
+            this.checkedListBox1.Location = new System.Drawing.Point(184, 142);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(170, 364);
             this.checkedListBox1.TabIndex = 17;
@@ -127,7 +127,7 @@
             "ARA SICAK",
             "ARA SICAK",
             ""});
-            this.checkedListBox2.Location = new System.Drawing.Point(540, 142);
+            this.checkedListBox2.Location = new System.Drawing.Point(540, 141);
             this.checkedListBox2.Name = "checkedListBox2";
             this.checkedListBox2.Size = new System.Drawing.Size(170, 364);
             this.checkedListBox2.TabIndex = 18;
@@ -147,7 +147,7 @@
             "DOMATES Ç. ",
             "TAVUK Ç.  ",
             "BROKOLİ Ç.   "});
-            this.checkedListBox3.Location = new System.Drawing.Point(12, 142);
+            this.checkedListBox3.Location = new System.Drawing.Point(12, 141);
             this.checkedListBox3.Name = "checkedListBox3";
             this.checkedListBox3.Size = new System.Drawing.Size(170, 364);
             this.checkedListBox3.TabIndex = 19;
@@ -197,7 +197,7 @@
             "ANA YEMEK",
             "ANA YEMEK",
             "ANA YEMEK"});
-            this.checkedListBox5.Location = new System.Drawing.Point(362, 141);
+            this.checkedListBox5.Location = new System.Drawing.Point(360, 142);
             this.checkedListBox5.Name = "checkedListBox5";
             this.checkedListBox5.Size = new System.Drawing.Size(174, 364);
             this.checkedListBox5.TabIndex = 21;
@@ -217,7 +217,7 @@
             "İÇECEK",
             "İÇECEK",
             "İÇECEK"});
-            this.checkedListBox6.Location = new System.Drawing.Point(717, 145);
+            this.checkedListBox6.Location = new System.Drawing.Point(716, 141);
             this.checkedListBox6.Name = "checkedListBox6";
             this.checkedListBox6.Size = new System.Drawing.Size(170, 364);
             this.checkedListBox6.TabIndex = 22;
@@ -235,14 +235,21 @@
             "İRLANDA MENÜSÜ",
             "BREZİLYA MENÜSÜ",
             "FRANSA MUTFAĞI"});
-            this.checkedListBox7.Location = new System.Drawing.Point(1066, 142);
+            this.checkedListBox7.Location = new System.Drawing.Point(1068, 141);
             this.checkedListBox7.Name = "checkedListBox7";
             this.checkedListBox7.Size = new System.Drawing.Size(170, 364);
             this.checkedListBox7.TabIndex = 23;
+            this.checkedListBox7.SelectedIndexChanged += new System.EventHandler(this.checkedListBox7_SelectedIndexChanged);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.checkedListBox3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.checkedListBox4);
+            this.panel1.Controls.Add(this.checkedListBox2);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
@@ -351,18 +358,13 @@
             this.label1.Size = new System.Drawing.Size(95, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Çorbalar";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // siparis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1427, 710);
-            this.Controls.Add(this.checkedListBox4);
-            this.Controls.Add(this.checkedListBox3);
-            this.Controls.Add(this.checkedListBox2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "siparis";

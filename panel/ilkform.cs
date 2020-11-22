@@ -431,5 +431,10 @@ namespace panel
             }
 
         }
+
+        private void ilkform_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

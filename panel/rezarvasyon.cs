@@ -16,5 +16,15 @@ namespace panel
         {
             InitializeComponent();
         }
+
+        private void lblMasa1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton37_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

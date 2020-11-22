@@ -16,5 +16,10 @@ namespace panel
         {
             InitializeComponent();
         }
+
+        private void ÖDEMETÜRÜ_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

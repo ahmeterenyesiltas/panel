@@ -46,6 +46,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.ÖDEMETÜRÜ.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -196,11 +199,11 @@
             this.ÖDEMETÜRÜ.Controls.Add(this.radioButton2);
             this.ÖDEMETÜRÜ.Controls.Add(this.radioButton1);
             this.ÖDEMETÜRÜ.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.ÖDEMETÜRÜ.Location = new System.Drawing.Point(1087, 89);
-            this.ÖDEMETÜRÜ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ÖDEMETÜRÜ.Location = new System.Drawing.Point(12, 468);
+            this.ÖDEMETÜRÜ.Margin = new System.Windows.Forms.Padding(2);
             this.ÖDEMETÜRÜ.Name = "ÖDEMETÜRÜ";
-            this.ÖDEMETÜRÜ.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ÖDEMETÜRÜ.Size = new System.Drawing.Size(180, 94);
+            this.ÖDEMETÜRÜ.Padding = new System.Windows.Forms.Padding(2);
+            this.ÖDEMETÜRÜ.Size = new System.Drawing.Size(170, 169);
             this.ÖDEMETÜRÜ.TabIndex = 27;
             this.ÖDEMETÜRÜ.TabStop = false;
             this.ÖDEMETÜRÜ.Text = "ÖDEME  TÜRÜ";
@@ -209,8 +212,8 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(15, 54);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton2.Location = new System.Drawing.Point(15, 93);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(140, 26);
             this.radioButton2.TabIndex = 1;
@@ -218,12 +221,13 @@
             this.radioButton2.Text = "KREDİ KARTI";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.UseWaitCursor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(15, 24);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton1.Location = new System.Drawing.Point(15, 44);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(81, 26);
             this.radioButton1.TabIndex = 0;
@@ -237,20 +241,21 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(12, 582);
+            this.button1.Location = new System.Drawing.Point(544, 468);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 54);
             this.button1.TabIndex = 28;
             this.button1.Text = "SİPARİŞ GİR";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.UseWaitCursor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button3.Location = new System.Drawing.Point(154, 582);
+            this.button3.Location = new System.Drawing.Point(544, 522);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(136, 54);
             this.button3.TabIndex = 29;
@@ -263,7 +268,7 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.Location = new System.Drawing.Point(296, 582);
+            this.button2.Location = new System.Drawing.Point(544, 582);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(136, 54);
             this.button2.TabIndex = 30;
@@ -283,6 +288,7 @@
             this.label1.Size = new System.Drawing.Size(95, 26);
             this.label1.TabIndex = 31;
             this.label1.Text = "Çorbalar";
+            this.label1.UseWaitCursor = true;
             // 
             // label2
             // 
@@ -296,6 +302,7 @@
             this.label2.Size = new System.Drawing.Size(175, 26);
             this.label2.TabIndex = 32;
             this.label2.Text = "Soğuk Başlangıç";
+            this.label2.UseWaitCursor = true;
             // 
             // label3
             // 
@@ -309,6 +316,7 @@
             this.label3.Size = new System.Drawing.Size(122, 26);
             this.label3.TabIndex = 33;
             this.label3.Text = "Ana yemek";
+            this.label3.UseWaitCursor = true;
             // 
             // label4
             // 
@@ -322,6 +330,7 @@
             this.label4.Size = new System.Drawing.Size(106, 26);
             this.label4.TabIndex = 34;
             this.label4.Text = "Ara Sıcak";
+            this.label4.UseWaitCursor = true;
             // 
             // label5
             // 
@@ -335,6 +344,7 @@
             this.label5.Size = new System.Drawing.Size(75, 26);
             this.label5.TabIndex = 35;
             this.label5.Text = "İçecek";
+            this.label5.UseWaitCursor = true;
             // 
             // label6
             // 
@@ -348,13 +358,53 @@
             this.label6.Size = new System.Drawing.Size(52, 26);
             this.label6.TabIndex = 36;
             this.label6.Text = "Tatlı";
+            this.label6.UseWaitCursor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(187, 467);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(351, 169);
+            this.textBox1.TabIndex = 37;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Red;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label7.Location = new System.Drawing.Point(186, 468);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(122, 26);
+            this.label7.TabIndex = 38;
+            this.label7.Text = "ADRES AL";
+            this.label7.UseWaitCursor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Red;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label8.Location = new System.Drawing.Point(186, 610);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(157, 26);
+            this.label8.TabIndex = 39;
+            this.label8.Text = "TELEFON  NO";
+            this.label8.UseWaitCursor = true;
             // 
             // paket_siparis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1448, 648);
+            this.ClientSize = new System.Drawing.Size(1105, 648);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -371,6 +421,7 @@
             this.Controls.Add(this.checkedListBox5);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.checkedListBox3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "paket_siparis";
             this.Text = "paket_siparis";
             this.UseWaitCursor = true;
@@ -402,5 +453,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
