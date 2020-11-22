@@ -300,6 +300,11 @@ namespace panel
             }
         }
 
+
+
+
+        //Yusuf Campaign
+
         private void stok_takip_Click(object sender, EventArgs e)
         {
             panel3.Visible = true;
@@ -337,12 +342,46 @@ namespace panel
         }
 
 
+        //Enes butonlar
+        private void FoodDeliverybtn_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            paket_siparis pktsiparis = new paket_siparis();
+            pktsiparis.TopLevel = false;
+            panel3.Controls.Add(pktsiparis);
+            pktsiparis.Show();
+            pktsiparis.Dock = DockStyle.Fill;
+            pktsiparis.BringToFront();
+        }
+
+        private void Courierbtn_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            motorcuKURYE motorcu = new motorcuKURYE();
+            motorcu.TopLevel = false;
+            panel3.Controls.Add(motorcu);
+            motorcu.Show();
+            motorcu.Dock = DockStyle.Fill;
+            motorcu.BringToFront();
+        }
+
+        private void Reservationbtn_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            rezarvasyon reservation = new rezarvasyon();
+            reservation.TopLevel = false;
+            panel3.Controls.Add(reservation);
+            reservation.Show();
+            reservation.Dock = DockStyle.Fill;
+            reservation.BringToFront();
+        }
 
 
-        //Yusuf Campaign
 
-
-
+        //Enes butonlar
 
     }
 }

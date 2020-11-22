@@ -990,7 +990,7 @@
         0Z73DBQiZAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="button12.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Courierbtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAADTdJREFUeF7t
         nQlUFEcexjuHubNJ3CRq3r6NOU1EBNGI4IkHAgMDDDDDgChEueRQDMEETRYV1GxMVCRrolFfIjw0xpjT
@@ -1103,7 +1103,7 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="FoodDeliverybtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAD4pJREFUeF7t
         XWlsHEkVDofgByAQN4gfIC4hJCQEP5A4xB/EDyQEguUPQvxALGw8kzg+EjuxE+dYjz0znhmfsWN7umd8
@@ -1333,7 +1333,7 @@
         EhISEhISEhISEhISEhISnYs77vgf9/k26NpYEx4AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Reservationbtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAA+VJREFUeF7t
         nEFIFFEYx5U6VKe6erdr1DGoW1AdqkN2kKBIorxo0kGy3H2GubuCCdZBBNudNQLNEp2BpIgOeeugUBFE
