@@ -103,7 +103,7 @@
             this.btnMasa1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMasa1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMasa1.Location = new System.Drawing.Point(93, 103);
-            this.btnMasa1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasa1.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasa1.Name = "btnMasa1";
             this.btnMasa1.Size = new System.Drawing.Size(162, 125);
             this.btnMasa1.TabIndex = 1;
@@ -116,7 +116,7 @@
             this.btnMasa2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMasa2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMasa2.Location = new System.Drawing.Point(260, 103);
-            this.btnMasa2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasa2.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasa2.Name = "btnMasa2";
             this.btnMasa2.Size = new System.Drawing.Size(162, 125);
             this.btnMasa2.TabIndex = 2;
@@ -129,7 +129,7 @@
             this.btnMasa3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMasa3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMasa3.Location = new System.Drawing.Point(426, 103);
-            this.btnMasa3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasa3.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasa3.Name = "btnMasa3";
             this.btnMasa3.Size = new System.Drawing.Size(162, 125);
             this.btnMasa3.TabIndex = 3;
@@ -142,7 +142,7 @@
             this.btnMasa6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMasa6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMasa6.Location = new System.Drawing.Point(926, 103);
-            this.btnMasa6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasa6.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasa6.Name = "btnMasa6";
             this.btnMasa6.Size = new System.Drawing.Size(162, 125);
             this.btnMasa6.TabIndex = 4;
@@ -155,7 +155,7 @@
             this.btnMasa7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMasa7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMasa7.Location = new System.Drawing.Point(1092, 103);
-            this.btnMasa7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasa7.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasa7.Name = "btnMasa7";
             this.btnMasa7.Size = new System.Drawing.Size(162, 125);
             this.btnMasa7.TabIndex = 5;
@@ -168,7 +168,7 @@
             this.btnMasa8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMasa8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMasa8.Location = new System.Drawing.Point(93, 318);
-            this.btnMasa8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasa8.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasa8.Name = "btnMasa8";
             this.btnMasa8.Size = new System.Drawing.Size(162, 125);
             this.btnMasa8.TabIndex = 6;
@@ -181,7 +181,7 @@
             this.btnMasa5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMasa5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMasa5.Location = new System.Drawing.Point(759, 103);
-            this.btnMasa5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasa5.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasa5.Name = "btnMasa5";
             this.btnMasa5.Size = new System.Drawing.Size(162, 125);
             this.btnMasa5.TabIndex = 7;
@@ -194,7 +194,7 @@
             this.btnMasa4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMasa4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMasa4.Location = new System.Drawing.Point(592, 103);
-            this.btnMasa4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasa4.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasa4.Name = "btnMasa4";
             this.btnMasa4.Size = new System.Drawing.Size(162, 125);
             this.btnMasa4.TabIndex = 8;
@@ -207,7 +207,7 @@
             this.btnMasa9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMasa9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMasa9.Location = new System.Drawing.Point(260, 318);
-            this.btnMasa9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasa9.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasa9.Name = "btnMasa9";
             this.btnMasa9.Size = new System.Drawing.Size(162, 125);
             this.btnMasa9.TabIndex = 9;
@@ -220,7 +220,7 @@
             this.btnMasa10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMasa10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMasa10.Location = new System.Drawing.Point(426, 318);
-            this.btnMasa10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasa10.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasa10.Name = "btnMasa10";
             this.btnMasa10.Size = new System.Drawing.Size(162, 125);
             this.btnMasa10.TabIndex = 10;
@@ -233,7 +233,7 @@
             this.btnMasa11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMasa11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMasa11.Location = new System.Drawing.Point(592, 318);
-            this.btnMasa11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasa11.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasa11.Name = "btnMasa11";
             this.btnMasa11.Size = new System.Drawing.Size(162, 125);
             this.btnMasa11.TabIndex = 11;
@@ -246,7 +246,7 @@
             this.btnMasa13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMasa13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMasa13.Location = new System.Drawing.Point(926, 318);
-            this.btnMasa13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasa13.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasa13.Name = "btnMasa13";
             this.btnMasa13.Size = new System.Drawing.Size(162, 125);
             this.btnMasa13.TabIndex = 12;
@@ -259,7 +259,7 @@
             this.btnMasa14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMasa14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMasa14.Location = new System.Drawing.Point(1092, 318);
-            this.btnMasa14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasa14.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasa14.Name = "btnMasa14";
             this.btnMasa14.Size = new System.Drawing.Size(162, 125);
             this.btnMasa14.TabIndex = 13;
@@ -272,7 +272,7 @@
             this.btnMasa12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMasa12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMasa12.Location = new System.Drawing.Point(759, 318);
-            this.btnMasa12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasa12.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasa12.Name = "btnMasa12";
             this.btnMasa12.Size = new System.Drawing.Size(162, 125);
             this.btnMasa12.TabIndex = 14;
@@ -463,10 +463,10 @@
             // btnMasaBos
             // 
             this.btnMasaBos.BackColor = System.Drawing.Color.Lime;
-            this.btnMasaBos.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnMasaBos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnMasaBos.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnMasaBos.Location = new System.Drawing.Point(854, 531);
-            this.btnMasaBos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasaBos.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasaBos.Name = "btnMasaBos";
             this.btnMasaBos.Size = new System.Drawing.Size(92, 62);
             this.btnMasaBos.TabIndex = 30;
@@ -477,10 +477,10 @@
             // btnMasaDolu
             // 
             this.btnMasaDolu.BackColor = System.Drawing.Color.Red;
-            this.btnMasaDolu.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMasaDolu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnMasaDolu.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnMasaDolu.Location = new System.Drawing.Point(950, 531);
-            this.btnMasaDolu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasaDolu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasaDolu.Name = "btnMasaDolu";
             this.btnMasaDolu.Size = new System.Drawing.Size(92, 63);
             this.btnMasaDolu.TabIndex = 31;
@@ -491,10 +491,10 @@
             // btnMasaRezerve
             // 
             this.btnMasaRezerve.BackColor = System.Drawing.Color.Blue;
-            this.btnMasaRezerve.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMasaRezerve.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnMasaRezerve.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnMasaRezerve.Location = new System.Drawing.Point(1046, 531);
-            this.btnMasaRezerve.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasaRezerve.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasaRezerve.Name = "btnMasaRezerve";
             this.btnMasaRezerve.Size = new System.Drawing.Size(92, 63);
             this.btnMasaRezerve.TabIndex = 32;
@@ -505,10 +505,10 @@
             // btnMasaKapalı
             // 
             this.btnMasaKapalı.BackColor = System.Drawing.Color.Orange;
-            this.btnMasaKapalı.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMasaKapalı.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnMasaKapalı.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnMasaKapalı.Location = new System.Drawing.Point(1142, 531);
-            this.btnMasaKapalı.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasaKapalı.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasaKapalı.Name = "btnMasaKapalı";
             this.btnMasaKapalı.Size = new System.Drawing.Size(97, 63);
             this.btnMasaKapalı.TabIndex = 33;
@@ -521,7 +521,7 @@
             this.checkBoxMasa1.AutoSize = true;
             this.checkBoxMasa1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxMasa1.Location = new System.Drawing.Point(131, 233);
-            this.checkBoxMasa1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxMasa1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxMasa1.Name = "checkBoxMasa1";
             this.checkBoxMasa1.Size = new System.Drawing.Size(86, 23);
             this.checkBoxMasa1.TabIndex = 34;
@@ -533,7 +533,7 @@
             this.checkBoxMasa2.AutoSize = true;
             this.checkBoxMasa2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxMasa2.Location = new System.Drawing.Point(301, 233);
-            this.checkBoxMasa2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxMasa2.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxMasa2.Name = "checkBoxMasa2";
             this.checkBoxMasa2.Size = new System.Drawing.Size(86, 23);
             this.checkBoxMasa2.TabIndex = 35;
@@ -545,7 +545,7 @@
             this.checkBoxMasa3.AutoSize = true;
             this.checkBoxMasa3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxMasa3.Location = new System.Drawing.Point(476, 233);
-            this.checkBoxMasa3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxMasa3.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxMasa3.Name = "checkBoxMasa3";
             this.checkBoxMasa3.Size = new System.Drawing.Size(86, 23);
             this.checkBoxMasa3.TabIndex = 36;
@@ -557,7 +557,7 @@
             this.checkBoxMasa4.AutoSize = true;
             this.checkBoxMasa4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxMasa4.Location = new System.Drawing.Point(636, 233);
-            this.checkBoxMasa4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxMasa4.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxMasa4.Name = "checkBoxMasa4";
             this.checkBoxMasa4.Size = new System.Drawing.Size(86, 23);
             this.checkBoxMasa4.TabIndex = 37;
@@ -569,7 +569,7 @@
             this.checkBoxMasa5.AutoSize = true;
             this.checkBoxMasa5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxMasa5.Location = new System.Drawing.Point(802, 233);
-            this.checkBoxMasa5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxMasa5.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxMasa5.Name = "checkBoxMasa5";
             this.checkBoxMasa5.Size = new System.Drawing.Size(86, 23);
             this.checkBoxMasa5.TabIndex = 38;
@@ -581,7 +581,7 @@
             this.checkBoxMasa6.AutoSize = true;
             this.checkBoxMasa6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxMasa6.Location = new System.Drawing.Point(975, 233);
-            this.checkBoxMasa6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxMasa6.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxMasa6.Name = "checkBoxMasa6";
             this.checkBoxMasa6.Size = new System.Drawing.Size(86, 23);
             this.checkBoxMasa6.TabIndex = 39;
@@ -593,7 +593,7 @@
             this.checkBoxMasa7.AutoSize = true;
             this.checkBoxMasa7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxMasa7.Location = new System.Drawing.Point(1136, 233);
-            this.checkBoxMasa7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxMasa7.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxMasa7.Name = "checkBoxMasa7";
             this.checkBoxMasa7.Size = new System.Drawing.Size(86, 23);
             this.checkBoxMasa7.TabIndex = 40;
@@ -605,7 +605,7 @@
             this.checkBoxMasa8.AutoSize = true;
             this.checkBoxMasa8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxMasa8.Location = new System.Drawing.Point(131, 448);
-            this.checkBoxMasa8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxMasa8.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxMasa8.Name = "checkBoxMasa8";
             this.checkBoxMasa8.Size = new System.Drawing.Size(86, 23);
             this.checkBoxMasa8.TabIndex = 41;
@@ -617,7 +617,7 @@
             this.checkBoxMasa9.AutoSize = true;
             this.checkBoxMasa9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxMasa9.Location = new System.Drawing.Point(301, 448);
-            this.checkBoxMasa9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxMasa9.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxMasa9.Name = "checkBoxMasa9";
             this.checkBoxMasa9.Size = new System.Drawing.Size(86, 23);
             this.checkBoxMasa9.TabIndex = 42;
@@ -629,7 +629,7 @@
             this.checkBoxMasa10.AutoSize = true;
             this.checkBoxMasa10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxMasa10.Location = new System.Drawing.Point(476, 448);
-            this.checkBoxMasa10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxMasa10.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxMasa10.Name = "checkBoxMasa10";
             this.checkBoxMasa10.Size = new System.Drawing.Size(86, 23);
             this.checkBoxMasa10.TabIndex = 43;
@@ -641,7 +641,7 @@
             this.checkBoxMasa11.AutoSize = true;
             this.checkBoxMasa11.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxMasa11.Location = new System.Drawing.Point(636, 448);
-            this.checkBoxMasa11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxMasa11.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxMasa11.Name = "checkBoxMasa11";
             this.checkBoxMasa11.Size = new System.Drawing.Size(86, 23);
             this.checkBoxMasa11.TabIndex = 44;
@@ -653,7 +653,7 @@
             this.checkBoxMasa12.AutoSize = true;
             this.checkBoxMasa12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxMasa12.Location = new System.Drawing.Point(802, 448);
-            this.checkBoxMasa12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxMasa12.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxMasa12.Name = "checkBoxMasa12";
             this.checkBoxMasa12.Size = new System.Drawing.Size(86, 23);
             this.checkBoxMasa12.TabIndex = 45;
@@ -665,7 +665,7 @@
             this.checkBoxMasa13.AutoSize = true;
             this.checkBoxMasa13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxMasa13.Location = new System.Drawing.Point(975, 448);
-            this.checkBoxMasa13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxMasa13.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxMasa13.Name = "checkBoxMasa13";
             this.checkBoxMasa13.Size = new System.Drawing.Size(86, 23);
             this.checkBoxMasa13.TabIndex = 46;
@@ -677,7 +677,7 @@
             this.checkBoxMasa14.AutoSize = true;
             this.checkBoxMasa14.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxMasa14.Location = new System.Drawing.Point(1136, 448);
-            this.checkBoxMasa14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxMasa14.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxMasa14.Name = "checkBoxMasa14";
             this.checkBoxMasa14.Size = new System.Drawing.Size(86, 23);
             this.checkBoxMasa14.TabIndex = 47;
@@ -688,7 +688,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(93, 531);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -698,10 +698,10 @@
             // btnMasaEkle
             // 
             this.btnMasaEkle.BackColor = System.Drawing.Color.Gray;
-            this.btnMasaEkle.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnMasaEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnMasaEkle.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnMasaEkle.Location = new System.Drawing.Point(854, 636);
-            this.btnMasaEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasaEkle.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasaEkle.Name = "btnMasaEkle";
             this.btnMasaEkle.Size = new System.Drawing.Size(92, 62);
             this.btnMasaEkle.TabIndex = 49;
@@ -711,10 +711,10 @@
             // btnMasaSil
             // 
             this.btnMasaSil.BackColor = System.Drawing.Color.Gray;
-            this.btnMasaSil.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnMasaSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnMasaSil.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnMasaSil.Location = new System.Drawing.Point(950, 636);
-            this.btnMasaSil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasaSil.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasaSil.Name = "btnMasaSil";
             this.btnMasaSil.Size = new System.Drawing.Size(92, 62);
             this.btnMasaSil.TabIndex = 50;
@@ -724,10 +724,10 @@
             // btnMasaGüncelle
             // 
             this.btnMasaGüncelle.BackColor = System.Drawing.Color.Gray;
-            this.btnMasaGüncelle.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnMasaGüncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnMasaGüncelle.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnMasaGüncelle.Location = new System.Drawing.Point(1046, 636);
-            this.btnMasaGüncelle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMasaGüncelle.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasaGüncelle.Name = "btnMasaGüncelle";
             this.btnMasaGüncelle.Size = new System.Drawing.Size(92, 62);
             this.btnMasaGüncelle.TabIndex = 51;
@@ -737,10 +737,10 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Gray;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.button1.Location = new System.Drawing.Point(1142, 636);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 62);
             this.button1.TabIndex = 52;
@@ -752,7 +752,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(1280, 813);
+            this.ClientSize = new System.Drawing.Size(1280, 788);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnMasaGüncelle);
             this.Controls.Add(this.btnMasaSil);
@@ -807,7 +807,7 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ilkform";
             this.Text = "ilkform";
             this.Load += new System.EventHandler(this.ilkform_Load);

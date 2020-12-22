@@ -15,6 +15,10 @@ namespace panel
         public ilkform()
         {
             InitializeComponent();
+            int table;
+            Console.WriteLine("masa numarasını giriniz:");
+            table = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("girdiğiniz masa numarası:"+table);
         }
 
         private void btnMasaBos_Click(object sender, EventArgs e)

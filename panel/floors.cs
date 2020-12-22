@@ -15,7 +15,11 @@ namespace panel
         public floors()
         {
             InitializeComponent();
-        }
+            int kat;
+            Console.WriteLine("seçmek istediğiniz masayı giriniz:");
+            kat = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("seçtiğiniz kat:"+kat);
+}
 
         private void button3_Click(object sender, EventArgs e)
         {
