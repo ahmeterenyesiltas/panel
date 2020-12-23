@@ -1,4 +1,5 @@
-﻿using System;
+﻿using panel.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -61,21 +62,22 @@ namespace panel
             }
 
 
-            if (email == "admin" && password == "admin")
+            Employee emp = new Employee();                   //BURDA OLUŞTURDUĞUMUZ NESNEYİ EMPLOYEE CLASSI İÇİNDEKİ LOGİN ÖZELLİĞİNİ KULLANARAK ÇAĞIRDIK
+            var employee = emp.Login(email, password);        //VE BU FONKSİYON Employee tipinde bir değişken döndürüyor ve bu değişken boş değilse LOGİN YAPIYOR
+            
+            if (employee != null)
             {
-                //lblMessage.Text = "Hosgeldiniz "+email;
-                //lblMessage.ForeColor = Color.Green;
-
-                Form1 form1 = new Form1();                //Form objesini oluşturduk burda doğru şifre girince çağırsın diye çok önemli
-                form1.ShowDialog();                             //Form çağırmak için .Show() da kullanabiliriz ama bunu çağırarak birdaha açılmasını engelliyoruz kalıcı olarak göstererek bu baya önemli
-                                                                //Show Dialog açıkken yani Form1 e tıklanmıycak bu fonks sayesinde sadece FormHome tıklanılabilir olucak
-                this.Close();
+                lblMessage.Text = "Welcome";
+                Form1 form = new Form1();
+               
+                form.ShowDialog();
             }
             else
             {
-                lblMessage.Text = "Email or Password is wrong";
+                lblMessage.Text = "Email or Password is incorrect";
                 lblMessage.ForeColor = Color.Red;
             }
+            
 
         }
 

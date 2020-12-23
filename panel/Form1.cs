@@ -192,12 +192,13 @@ namespace panel
         {
             panel3.Visible = true;
             panel3.Controls.Clear();
-            PersonelManager pmanager = new PersonelManager();
+            PersonelManagerLogin pmanager = new PersonelManagerLogin();
             pmanager.TopLevel = false;
             panel3.Controls.Add(pmanager);
             pmanager.Show();
             pmanager.Dock = DockStyle.Fill;
             pmanager.BringToFront();
+
         }
 
         

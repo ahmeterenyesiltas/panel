@@ -36,12 +36,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.lblMessage = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Cancelbtn = new System.Windows.Forms.Button();
             this.cbRemember = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.Cancelbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -79,6 +79,7 @@
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(389, 28);
             this.tbEmail.TabIndex = 2;
+            this.tbEmail.Text = "eren@izu.edu.tr";
             // 
             // label3
             // 
@@ -102,6 +103,7 @@
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(389, 28);
             this.tbPassword.TabIndex = 4;
+            this.tbPassword.Text = "123456";
             this.tbPassword.UseSystemPasswordChar = true;
             // 
             // panel1
@@ -116,6 +118,15 @@
             this.panel1.Size = new System.Drawing.Size(701, 163);
             this.panel1.TabIndex = 7;
             // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Location = new System.Drawing.Point(132, 20);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(46, 17);
+            this.lblMessage.TabIndex = 5;
+            this.lblMessage.Text = "label4";
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.Cancelbtn);
@@ -125,14 +136,24 @@
             this.panel2.Size = new System.Drawing.Size(1009, 100);
             this.panel2.TabIndex = 9;
             // 
-            // lblMessage
+            // Cancelbtn
             // 
-            this.lblMessage.AutoSize = true;
-            this.lblMessage.Location = new System.Drawing.Point(132, 20);
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(46, 17);
-            this.lblMessage.TabIndex = 5;
-            this.lblMessage.Text = "label4";
+            this.Cancelbtn.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Cancelbtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Cancelbtn.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Cancelbtn.FlatAppearance.BorderSize = 0;
+            this.Cancelbtn.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Cancelbtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Cancelbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cancelbtn.ForeColor = System.Drawing.Color.AliceBlue;
+            this.Cancelbtn.Image = ((System.Drawing.Image)(resources.GetObject("Cancelbtn.Image")));
+            this.Cancelbtn.Location = new System.Drawing.Point(866, 0);
+            this.Cancelbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Cancelbtn.Name = "Cancelbtn";
+            this.Cancelbtn.Size = new System.Drawing.Size(143, 100);
+            this.Cancelbtn.TabIndex = 8;
+            this.Cancelbtn.UseVisualStyleBackColor = false;
+            this.Cancelbtn.Click += new System.EventHandler(this.Cancelbtn_Click);
             // 
             // cbRemember
             // 
@@ -181,25 +202,6 @@
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Cancelbtn
-            // 
-            this.Cancelbtn.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Cancelbtn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Cancelbtn.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Cancelbtn.FlatAppearance.BorderSize = 0;
-            this.Cancelbtn.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Cancelbtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Cancelbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cancelbtn.ForeColor = System.Drawing.Color.AliceBlue;
-            this.Cancelbtn.Image = ((System.Drawing.Image)(resources.GetObject("Cancelbtn.Image")));
-            this.Cancelbtn.Location = new System.Drawing.Point(866, 0);
-            this.Cancelbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Cancelbtn.Name = "Cancelbtn";
-            this.Cancelbtn.Size = new System.Drawing.Size(143, 100);
-            this.Cancelbtn.TabIndex = 8;
-            this.Cancelbtn.UseVisualStyleBackColor = false;
-            this.Cancelbtn.Click += new System.EventHandler(this.Cancelbtn_Click);
             // 
             // login
             // 
