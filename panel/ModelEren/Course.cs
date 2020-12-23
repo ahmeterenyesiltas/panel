@@ -15,7 +15,7 @@ namespace panel.Models
         private int courseID;
         private string name;
         private int credit;
-
+         
         public int CourseID { get => courseID; set => courseID = value; }
         
         public string Name { get => name;
@@ -130,12 +130,12 @@ namespace panel.Models
             SqlConnection connection = null;
             try
             {
-                if (CourseExists(c.name))                            //Burda bir üstte tanımladığımız fonksiyonu kullanıp denedik eğer course var ve true dönerse hata gönder
+                if (CourseExists(c.Name))                            //Burda bir üstte tanımladığımız fonksiyonu kullanıp denedik eğer course var ve true dönerse hata gönder
                 {
                     throw new Exception("Course already Exits");
                 }
                 
-                string query = $"INSERT INTO Course(Name,Credit) VALUES('{c.Name}','{c.credit}') ";  //BU BAYA ÖNEMLİ ELLE EKLEME YAPIYORUZ
+                string query = $"INSERT INTO Course(Name,Credit) VALUES('{c.Name}','{c.Credit}' ) ";  //BU BAYA ÖNEMLİ ELLE EKLEME YAPIYORUZ
                                                                                                      //Burda $ işareti ve {} kullanımı işimizi baya kolaylaştırıyor unutma bu yzma yöntemini
                 return dbHelper.ExecuteNonQuery(query);
             }

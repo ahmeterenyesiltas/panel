@@ -1,4 +1,5 @@
-﻿using System;
+﻿using panel.Model;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;                 //BUNLARI EKLEMEYİ UNUTMA DATA VE DATA.SQLCLİENT
@@ -13,32 +14,110 @@ namespace panel.Models
 
         int employeeID;
         float salary;
+        string firstname;
+        string lastname;
+        string email;
+        string gender;
+        string password;
+        int DepartmentID;
 
         public Employee()
         {
             
         }
 
-        public Employee(int employeeID, float salary)
-        {
-            this.employeeID = employeeID;
-            this.salary = salary;
+
+        public int EmployeeID { get => employeeID;
+            set {
+                if (value<0)
+                {
+                    throw new Exception("ID is empty");
+                }
+                employeeID = value;
+            }
         }
 
-        public Employee(string firstName, string lastName, string gender, 
-            string email, string password, string address, int departmentID, int employeeID, float salary)
+
+        public float Salary { get => salary;
+            set {
+                if (value<0)
+                {
+                    throw new Exception("Salary is Empty");
+                }
+
+                salary = value; 
+            }
+        }
+
+
+        public string Firstname { get => firstname;
+            set {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new Exception("Firstname is Empty");
+                }
+                firstname = value; 
             
-        {
-
-            this.EmployeeID = employeeID;
-            this.Salary = salary;
-
+            }
         }
 
-        public int EmployeeID { get => employeeID; set => employeeID = value; }
-        public float Salary { get => salary; set => salary = value; }
+        public string Lastname { get => lastname; set {
 
-                                                                               //EN ÖNEMLİ FONKSİYON SQL E DAİR
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new Exception("Lastname is Empty");
+                }
+
+                lastname = value; 
+            } 
+        
+        }
+
+        public string Email1 { get => email; 
+            set {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new Exception("Email is Empty");
+                }
+                email = value; 
+            } 
+        }
+
+        public string Gender1 { get => gender;
+
+            set {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new Exception("Gender is Empty");
+                }
+                gender = value; 
+            }
+        }
+
+        public string Password1 { get => password; 
+            set {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+
+                }
+
+                password = value; 
+            }
+        }
+
+
+        public int DepartmentID1 { get => DepartmentID;
+            set {
+                if (value < 0)
+                {
+                    throw new Exception("Department ID is empty");
+                }
+
+                DepartmentID = value; 
+            }
+        }
+
+        //EN ÖNEMLİ FONKSİYON SQL E DAİR
         public override Person Login(string email, string password)
         {
             SqlConnection connection = null;     //İLK BAŞTA BURDA BUNU TANIMLAMAMIZ GEREKİYORKİ TÜM HEPSİ GÖRSÜN TRY CATCH FİNALLY
@@ -57,16 +136,19 @@ namespace panel.Models
                     SqlDataAdapter adapter = new SqlDataAdapter(command);
 
                     DataTable dt = new DataTable();    //using System.Data; şart
-                    adapter.Fill(dt); 
+                    adapter.Fill(dt);
 
-                    if (dt.Rows.Count>0)
+                    if (dt.Rows.Count > 0)
                     {
                         Employee emp = new Employee();
-                        emp.employeeID =int.Parse(dt.Rows[0]["EmployeeID"].ToString());
-                        emp.FirstName= dt.Rows[0]["FirstName"].ToString();
+                        emp.employeeID = int.Parse(dt.Rows[0]["EmployeeID"].ToString());
+                        emp.FirstName = dt.Rows[0]["FirstName"].ToString();
                         emp.LastName = dt.Rows[0]["LastName"].ToString();
                         emp.Email = dt.Rows[0]["Email"].ToString();     //BURDA YAPTIĞIMIZ ŞEY BİR NESNE DÖNDÜRÜYORUZ CLASSDAN OLUŞTURUP VE EĞER NESNE BOŞ DEĞİLSE
-                                                                        //TRUE VERİYOR LOGİN YAPIYORUZ FORM LOGİN İÇİNDE
+                        emp.gender = dt.Rows[0]["Gender"].ToString();                                                //TRUE VERİYOR LOGİN YAPIYORUZ FORM LOGİN İÇİNDE
+                        emp.password = dt.Rows[0]["Password"].ToString();
+                        emp.DepartmentID = int.Parse(dt.Rows[0]["DepartmentID"].ToString());
+
                         return emp;
                     }            
                 }
@@ -129,6 +211,93 @@ namespace panel.Models
                 connection.Close();
             }
 
+
+        }
+
+
+        public DataTable GetEmployeeByID(int id)        //Bunda Loginden farklı olarak tüm table ı okumak almak istiyoruz burası önemli
+        {                                        //Data grid view da göstermek istediğimiz için galiba DataTable türünde oldu o kısmı anlamadım
+                                                 //10 aralık dersinin sonunda yapıyor bunu oldukça önemli görünüyor
+
+            try
+            {
+                string query = $"select * from Employee where EmployeeID={id}";     //Burda id ye göre değer aldık burası çok önemliiiiiiiiiiiii
+                return dbHelper.ExecuteQuery(query);
+
+               
+            }
+
+
+            catch (Exception Ex)
+            {
+
+                throw new Exception(Ex.Message);
+            }
+
+        }
+
+
+        public DataTable GetEmployeeByName(string name)        //Bunda Loginden farklı olarak tüm table ı okumak almak istiyoruz burası önemli
+        {                                        //Data grid view da göstermek istediğimiz için galiba DataTable türünde oldu o kısmı anlamadım
+                                                 //10 aralık dersinin sonunda yapıyor bunu oldukça önemli görünüyor   
+
+            SqlConnection connection = null;
+            try
+            {
+                string query = $"Select * from Employee where Name LIKE '%{name}%' ";
+                return dbHelper.ExecuteQuery(query);
+
+            }
+            catch (Exception Ex)
+            {
+
+                throw new Exception(Ex.Message);
+            }
+
+        }
+
+        private static bool EmployeeExists(string name)
+        {
+
+
+            SqlConnection connection = null;
+            try
+            {
+                string query = $"Select * from Employee where Name = '{name}' "; //bu direkt equals (=) isim direkt buna eşit olmalı yani
+                return dbHelper.ExecuteQuery(query).Rows.Count >= 1; //eğer böyle bir course varsa yani aynı addan bir course daha eklemek istemeyiz o yüzden true döndürcez ve varsa hata verdiricez 
+                                                                     //oldukca önemli ve elzem birşey bu
+            }
+            catch (Exception Ex)
+            {
+
+                throw new Exception(Ex.Message);
+            }
+
+        }
+
+        public int EmployeeAdd(Employee e)
+        {
+
+            SqlConnection connection = null;
+            try
+            {
+                if (EmployeeExists(e.Name))                            //Burda bir üstte tanımladığımız fonksiyonu kullanıp denedik eğer course var ve true dönerse hata gönder
+                {
+                    throw new Exception("Course already Exits");
+                }
+
+                string query = $"INSERT INTO Employee(FirstName,LastName,Email,Password,Salary,Gender,DepartmentID) VALUES('{e.FirstName}','{e.Lastname}'," +
+                    $"'{e.Email}'),'{e.Email}','{e.Password}','{e.Salary}','{e.Gender}','{e.DepartmentID}' ";  
+  
+                                                                                                     //BU BAYA ÖNEMLİ ELLE EKLEME YAPIYORUZ
+                                                                                                     //Burda $ işareti ve {} kullanımı işimizi baya kolaylaştırıyor unutma bu yzma yöntemini
+                return dbHelper.ExecuteNonQuery(query);
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
 
         }
 

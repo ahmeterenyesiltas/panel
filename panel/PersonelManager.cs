@@ -142,17 +142,7 @@ namespace panel
 
         private void button9_Click(object sender, EventArgs e)
         {
-            try
-            {
-                lblTitle.Text = "Department Details";
-                Course course = new Course();              
-                dgvData.DataSource = course.GetAllCourse();   
-            }
-            catch (Exception ex)
-            {
-
-                throw new Exception(ex.Message);
-            }
+            
         }
 
         private void editToolStripMenuItem1_Click(object sender, EventArgs e) //sağ click atınca çıkan şey

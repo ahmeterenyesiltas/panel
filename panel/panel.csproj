@@ -71,6 +71,18 @@
     <Compile Include="floors.Designer.cs">
       <DependentUpon>floors.cs</DependentUpon>
     </Compile>
+    <Compile Include="formCourseAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formCourseAdd.designer.cs">
+      <DependentUpon>formCourseAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formCourseEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formCourseEdit.designer.cs">
+      <DependentUpon>formCourseEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="PersonelManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +184,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formCourseAdd.resx">
+      <DependentUpon>formCourseAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formCourseEdit.resx">
+      <DependentUpon>formCourseEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PersonelManager.resx">
       <DependentUpon>PersonelManager.cs</DependentUpon>

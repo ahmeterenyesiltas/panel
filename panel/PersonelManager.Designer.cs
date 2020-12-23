@@ -94,14 +94,14 @@ namespace panel
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(198, 666);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(234, 666);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(966, 49);
+            this.panel2.Size = new System.Drawing.Size(930, 49);
             this.panel2.TabIndex = 2;
             // 
             // label2
@@ -110,7 +110,7 @@ namespace panel
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label2.Location = new System.Drawing.Point(819, 25);
+            this.label2.Location = new System.Drawing.Point(783, 25);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 17);
@@ -123,7 +123,7 @@ namespace panel
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label1.Location = new System.Drawing.Point(736, 2);
+            this.label1.Location = new System.Drawing.Point(700, 2);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(226, 17);
@@ -346,7 +346,7 @@ namespace panel
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1161, 63);
             this.panel1.TabIndex = 0;
@@ -357,7 +357,7 @@ namespace panel
             this.panel5.Controls.Add(this.lblWelcome);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel5.Location = new System.Drawing.Point(890, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(150, 63);
             this.panel5.TabIndex = 6;
@@ -368,7 +368,7 @@ namespace panel
             this.panel4.Controls.Add(this.Cancelbtn);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(1040, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(121, 63);
             this.panel4.TabIndex = 5;
@@ -381,7 +381,7 @@ namespace panel
             this.Cancelbtn.ForeColor = System.Drawing.Color.AliceBlue;
             this.Cancelbtn.Image = ((System.Drawing.Image)(resources.GetObject("Cancelbtn.Image")));
             this.Cancelbtn.Location = new System.Drawing.Point(24, 4);
-            this.Cancelbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cancelbtn.Margin = new System.Windows.Forms.Padding(2);
             this.Cancelbtn.Name = "Cancelbtn";
             this.Cancelbtn.Size = new System.Drawing.Size(86, 51);
             this.Cancelbtn.TabIndex = 4;
@@ -390,27 +390,27 @@ namespace panel
             // 
             // PanelLeftMenu
             // 
-            this.PanelLeftMenu.BackColor = System.Drawing.Color.MidnightBlue;
+            this.PanelLeftMenu.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.PanelLeftMenu.Controls.Add(this.button1);
             this.PanelLeftMenu.Controls.Add(this.label3);
             this.PanelLeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelLeftMenu.Location = new System.Drawing.Point(3, 66);
-            this.PanelLeftMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PanelLeftMenu.Margin = new System.Windows.Forms.Padding(2);
             this.PanelLeftMenu.Name = "PanelLeftMenu";
-            this.PanelLeftMenu.Size = new System.Drawing.Size(195, 649);
+            this.PanelLeftMenu.Size = new System.Drawing.Size(231, 649);
             this.PanelLeftMenu.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.button1.BackColor = System.Drawing.Color.AliceBlue;
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.Color.AliceBlue;
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Location = new System.Drawing.Point(0, 88);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 41);
+            this.button1.Size = new System.Drawing.Size(231, 41);
             this.button1.TabIndex = 0;
             this.button1.Text = "Home";
             this.button1.UseVisualStyleBackColor = false;
@@ -425,7 +425,7 @@ namespace panel
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.label3.Size = new System.Drawing.Size(195, 88);
+            this.label3.Size = new System.Drawing.Size(231, 88);
             this.label3.TabIndex = 1;
             this.label3.Text = "Personel Management System";
             // 
@@ -437,10 +437,10 @@ namespace panel
             this.PanelMainHome.Controls.Add(this.flowLayoutPanel1);
             this.PanelMainHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelMainHome.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PanelMainHome.Location = new System.Drawing.Point(198, 66);
-            this.PanelMainHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PanelMainHome.Location = new System.Drawing.Point(234, 66);
+            this.PanelMainHome.Margin = new System.Windows.Forms.Padding(2);
             this.PanelMainHome.Name = "PanelMainHome";
-            this.PanelMainHome.Size = new System.Drawing.Size(966, 600);
+            this.PanelMainHome.Size = new System.Drawing.Size(930, 600);
             this.PanelMainHome.TabIndex = 3;
             // 
             // panelDGV
@@ -450,9 +450,9 @@ namespace panel
             this.panelDGV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDGV.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.panelDGV.Location = new System.Drawing.Point(0, 251);
-            this.panelDGV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelDGV.Margin = new System.Windows.Forms.Padding(2);
             this.panelDGV.Name = "panelDGV";
-            this.panelDGV.Size = new System.Drawing.Size(966, 349);
+            this.panelDGV.Size = new System.Drawing.Size(930, 349);
             this.panelDGV.TabIndex = 2;
             // 
             // dgvData
@@ -463,26 +463,26 @@ namespace panel
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvData.Location = new System.Drawing.Point(0, 0);
-            this.dgvData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvData.Margin = new System.Windows.Forms.Padding(2);
             this.dgvData.Name = "dgvData";
             this.dgvData.ReadOnly = true;
             this.dgvData.RowHeadersWidth = 51;
             this.dgvData.RowTemplate.Height = 24;
-            this.dgvData.Size = new System.Drawing.Size(966, 349);
+            this.dgvData.Size = new System.Drawing.Size(930, 349);
             this.dgvData.TabIndex = 0;
             this.dgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellContentClick);
             this.dgvData.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvData_CellMouseDown);
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Gray;
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel3.Controls.Add(this.lblTitle);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.ForeColor = System.Drawing.Color.MidnightBlue;
             this.panel3.Location = new System.Drawing.Point(0, 210);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(966, 41);
+            this.panel3.Size = new System.Drawing.Size(930, 41);
             this.panel3.TabIndex = 1;
             // 
             // lblTitle
@@ -505,9 +505,9 @@ namespace panel
             this.flowLayoutPanel1.Controls.Add(this.button10);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(966, 210);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(930, 210);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // button7
@@ -594,10 +594,10 @@ namespace panel
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(199, 105);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(1150, 668);
             this.Name = "PersonelManager";
-            this.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Padding = new System.Windows.Forms.Padding(3);
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "formEmployeeHome";
             this.Load += new System.EventHandler(this.formEmployeeHome_Load);

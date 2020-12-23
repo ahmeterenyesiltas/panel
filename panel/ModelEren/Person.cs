@@ -17,7 +17,7 @@ namespace panel.Models
 
 
 
-        private int departmentID;
+        private int departmentIdd;
 
         public string Name
         {
@@ -32,7 +32,7 @@ namespace panel.Models
         public string Email { get => email; set => email = value; }
         public string Password { get => password; set => password = value; }
 
-        public int DepartmentID { get => departmentID; set => departmentID = value; }
+        public int DepartmentIDD { get => departmentIdd; set => departmentIdd = value; }
         
 
 
@@ -78,7 +78,7 @@ namespace panel.Models
             this.Email = email;
             this.Password = password;
 
-            this.DepartmentID = departmentID;
+            this.DepartmentIDD = departmentID;
         }
 
 
