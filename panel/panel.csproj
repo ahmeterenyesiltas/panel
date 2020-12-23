@@ -71,12 +71,6 @@
     <Compile Include="floors.Designer.cs">
       <DependentUpon>floors.cs</DependentUpon>
     </Compile>
-    <Compile Include="PersonelManagerLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PersonelManagerLogin.designer.cs">
-      <DependentUpon>PersonelManagerLogin.cs</DependentUpon>
-    </Compile>
     <Compile Include="PersonelManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,9 +172,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PersonelManagerLogin.resx">
-      <DependentUpon>PersonelManagerLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PersonelManager.resx">
       <DependentUpon>PersonelManager.cs</DependentUpon>

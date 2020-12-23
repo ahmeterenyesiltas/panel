@@ -26,6 +26,16 @@ namespace panel
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                UpdateBackGround(button1.Name);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
             panel3.Visible = true;
             panel3.Controls.Clear();
             ilkform test2 = new ilkform();
@@ -38,7 +48,9 @@ namespace panel
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
             timer1.Start();
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -47,7 +59,18 @@ namespace panel
             {
                 panel3.Visible = false;
             }
-            
+
+            try
+            {
+                UpdateBackGround(button3.Name);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
@@ -67,6 +90,17 @@ namespace panel
 
         private void button13_Click(object sender, EventArgs e)
         {
+
+            try
+            {
+                UpdateBackGround(button13.Name);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
             panel3.Visible = true;
             panel3.Controls.Clear();
             MediaPlayer test2 = new MediaPlayer();
@@ -91,6 +125,17 @@ namespace panel
 
         private void OrderLeftbtn_Click(object sender, EventArgs e)
         {
+            try
+            {
+                UpdateBackGround(OrderLeftbtn.Name);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+
             panel3.Visible = true;
             panel3.Controls.Clear();
             siparis siparis = new siparis();
@@ -103,14 +148,29 @@ namespace panel
 
         private void leftfloor1btn_Click(object sender, EventArgs e)
         {
-            panel3.Visible = true;
-            panel3.Controls.Clear();
-            floors test2 = new floors();
-            test2.TopLevel = false;
-            panel3.Controls.Add(test2);
-            test2.Show();
-            test2.Dock = DockStyle.Fill;
-            test2.BringToFront();
+
+            try
+            {
+                UpdateBackGround(leftfloor1btn.Name);
+
+                panel3.Visible = true;
+                panel3.Controls.Clear();
+                floors test2 = new floors();
+                test2.TopLevel = false;
+                panel3.Controls.Add(test2);
+                test2.Show();
+                test2.Dock = DockStyle.Fill;
+                test2.BringToFront();
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+            
         }
         
 
@@ -166,6 +226,16 @@ namespace panel
 
         private void btnMenuLeft_Click(object sender, EventArgs e)
         {
+            try
+            {
+                UpdateBackGround(btnMenuLeft.Name);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
             panel3.Visible = true;
             panel3.Controls.Clear();
             YemekMenu menu = new YemekMenu();
@@ -178,6 +248,16 @@ namespace panel
 
         private void btnInfoLeft_Click(object sender, EventArgs e)
         {
+            try
+            {
+                UpdateBackGround(btnInfoLeft.Name);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
             panel3.Visible = true;
             panel3.Controls.Clear();
             info infsayfa = new info();
@@ -192,7 +272,7 @@ namespace panel
         {
             panel3.Visible = true;
             panel3.Controls.Clear();
-            PersonelManagerLogin pmanager = new PersonelManagerLogin();
+            PersonelManager pmanager = new PersonelManager();
             pmanager.TopLevel = false;
             panel3.Controls.Add(pmanager);
             pmanager.Show();
@@ -208,10 +288,22 @@ namespace panel
         private void button25_Click_1(object sender, EventArgs e)
         {
             timer2.Start();
+            
         }
 
         private void button24_Click_1(object sender, EventArgs e)
         {
+
+            try
+            {
+                UpdateBackGround(button24.Name);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
             panel3.Visible = true;
             panel3.Controls.Clear();
             AddCar addCar = new AddCar();
@@ -262,7 +354,18 @@ namespace panel
 
         private void button9_Click(object sender, EventArgs e)
         {
+            try
+            {
+                UpdateBackGround(button9.Name);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
             timer3.Start();
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -302,45 +405,10 @@ namespace panel
         }
 
 
-
-
         //Yusuf Campaign
 
-        private void stok_takip_Click(object sender, EventArgs e)
-        {
-            panel3.Visible = true;
-            panel3.Controls.Clear();
-            stok_takip stok_takip = new stok_takip();
-            stok_takip.TopLevel = false;
-            panel3.Controls.Add(stok_takip);
-            stok_takip.Show();
-            stok_takip.Dock = DockStyle.Fill;
-            stok_takip.BringToFront();
-        }
 
-        private void btnKamera_Click(object sender, EventArgs e)
-        {
-            panel3.Visible = true;
-            panel3.Controls.Clear();
-            kamera kamera = new kamera();
-            kamera.TopLevel = false;
-            panel3.Controls.Add(kamera);
-            kamera.Show();
-            kamera.Dock = DockStyle.Fill;
-            kamera.BringToFront();
-        }
-
-        private void musteri_yonetim_Click(object sender, EventArgs e)
-        {
-            panel3.Visible = true;
-            panel3.Controls.Clear();
-            müsteri_takip musteri_takip = new müsteri_takip();
-            musteri_takip.TopLevel = false;
-            panel3.Controls.Add(musteri_takip);
-            musteri_takip.Show();
-            musteri_takip.Dock = DockStyle.Fill;
-            musteri_takip.BringToFront();
-        }
+       
 
 
         //Enes butonlar
@@ -384,5 +452,103 @@ namespace panel
 
         //Enes butonlar
 
+        
+        private void button7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                UpdateBackGround(button7.Name);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            stok_takip addCar = new stok_takip();
+            addCar.TopLevel = false;
+            panel3.Controls.Add(addCar);
+            addCar.Show();
+            addCar.Dock = DockStyle.Fill;
+            addCar.BringToFront();
+        }
+
+
+        //Burda buton renkleri kontrol etmek için elle bir fonksiyon yazıyoruz
+        private void UpdateBackGround(string name)      //button renklerini kontrol altında tutmak için 10 aralık dersinde yaptı oldukça önemli 
+        {                                              //Ve altta buton adı kontrol edeceğimiz için name gönderdik birtane içine
+            try
+            {
+                foreach (var control in panel1.Controls) //hobaaa bu baya iyi foreach içinde soldaki paneldeki değişkenler eğer button ise diye kontrol ettik
+                {
+                    if (control is Button)        //burda yaptığımız şey foreach ile sol paneldeki değişkenleri tek tek dönüyoruz ve eğer değişken buton ise çalışıyor
+                                                  //sonrasında ise eğer bu butonun adı bizim içine yolladığımız butonun adıysa onun rengini değiştiriyoruz
+                                                  //ve diğer addaki butonların rengini eski haline getiriyoruz
+                    {
+                        var btn = (Button)control;
+                        if (btn.Name == name)
+                        {
+                            btn.BackColor = Color.RoyalBlue;
+                        }
+                        else
+                        {
+                            btn.BackColor = Color.BurlyWood;
+                        }
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                UpdateBackGround(button10.Name);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            kamera kamera = new kamera();
+            kamera.TopLevel = false;
+            panel3.Controls.Add(kamera);
+            kamera.Show();
+            kamera.Dock = DockStyle.Fill;
+            kamera.BringToFront();
+        }
+
+        private void button12_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                UpdateBackGround(button12.Name);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            müsteri_takip musteri_takip = new müsteri_takip();
+            musteri_takip.TopLevel = false;
+            panel3.Controls.Add(musteri_takip);
+            musteri_takip.Show();
+            musteri_takip.Dock = DockStyle.Fill;
+            musteri_takip.BringToFront();
+        }
     }
 }
