@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data.SqlClient;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,10 +15,6 @@ namespace panel
         public ilkform()
         {
             InitializeComponent();
-            int table;
-            Console.WriteLine("masa numarasını giriniz:");
-            table = Convert.ToInt16(Console.ReadLine());
-            Console.WriteLine("girdiğiniz masa numarası:"+table);
         }
 
         private void btnMasaBos_Click(object sender, EventArgs e)
@@ -440,12 +435,6 @@ namespace panel
         private void ilkform_Load(object sender, EventArgs e)
         {
 
-        }
-        public void ifoveri()
-        {
-            string conString = "Server=EKOSR;Database=odev;Trusted_Connection=True;";
-            SqlConnection connection = new SqlConnection(conString);
-            connection.Open();
         }
     }
 }
