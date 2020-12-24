@@ -77,7 +77,6 @@
             // 
             this.kampanya.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.kampanya.ForeColor = System.Drawing.Color.Red;
-            this.kampanya.Image = global::panel.Properties.Resources.kampanya;
             this.kampanya.ImageKey = "(yok)";
             this.kampanya.Location = new System.Drawing.Point(437, 12);
             this.kampanya.Name = "kampanya";
@@ -86,6 +85,7 @@
             this.kampanya.Text = "Kampanyalar";
             this.kampanya.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.kampanya.UseVisualStyleBackColor = true;
+           // this.kampanya.Enter += new System.EventHandler(this.cell);
             // 
             // yemeksepeti
             // 
@@ -112,6 +112,8 @@
             this.adres.Text = "Neredeyiz?";
             this.adres.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.adres.UseVisualStyleBackColor = true;
+            this.adres.Click += new System.EventHandler(this.adres_Click);
+            this.adres.Enter += new System.EventHandler(this.adres_Click);
             // 
             // info
             // 
