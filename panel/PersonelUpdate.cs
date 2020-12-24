@@ -111,11 +111,11 @@ namespace panel
                     throw new Exception("Salary Cannot be less than 0");
                 }
 
-                string Gender = tbGender.Text.Trim();
+                string Gender = label9.Text.Trim();
 
                 if (string.IsNullOrWhiteSpace(Gender))
                 {
-                    tbGender.Focus();
+                    label9.Focus();
                     throw new Exception("Gender Cannot be empty");
                 }
 
@@ -161,6 +161,14 @@ namespace panel
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            tbFirstName.Text = "";
+            tbLastName.Text = "";
+            tbEmail.Text = "";
+            tbPassword.Text = "";
+            tbSalary.Text = "";
+            tbGender.Text = "";
+            tbDepartmentID.Text = "";
+
 
         }
     }
