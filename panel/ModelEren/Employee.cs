@@ -326,6 +326,32 @@ namespace panel.Models
 
         }
 
+        public int EmployeeUpdate(Employee e)
+        {
+
+            SqlConnection connection = null;
+            try
+            {
+
+                /*ÇOKKKKKK ÖNEMLİ BURDA DİKKAT ET İÇERLERE HEP e.firstName YAZDIM e.name vb. değil çünkü bunlar private
+                 biz ise aşşağıya metodları yani büyük olanları get set ile yaptıklarımızı yazıyoruz bu yüzden baya önemli */
+
+                string query = $"UPDATE Employee SET FirstName = '{e.Firstname}', LastName ='{e.Lastname}', Email= '{e.Email1}',Password = '{e.Password1}', Salary ='{e.Salary}',Gender= '{e.Gender1}', DepartmentID= {e.DepartmentID1} WHERE EmployeeID= {e.employeeID}";
+               
+                //BU BAYA ÖNEMLİ ELLE UPDATE YAPIYORUZ
+                //Burda $ işareti ve {} kullanımı işimizi baya kolaylaştırıyor unutma bu yzma yöntemini
+                return dbHelper.ExecuteNonQuery(query);
+            }
+            catch (Exception Ex)
+            {
+
+                throw new Exception(Ex.Message);
+            }
+
+        }
+
+
+
 
     }
 }

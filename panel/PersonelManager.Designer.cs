@@ -75,8 +75,8 @@ namespace panel
             this.lblTitle = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.button7 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.AddBtn = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -98,10 +98,10 @@ namespace panel
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(312, 820);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(234, 666);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1240, 60);
+            this.panel2.Size = new System.Drawing.Size(930, 49);
             this.panel2.TabIndex = 2;
             // 
             // label2
@@ -110,9 +110,10 @@ namespace panel
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label2.Location = new System.Drawing.Point(1044, 31);
+            this.label2.Location = new System.Drawing.Point(783, 25);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 20);
+            this.label2.Size = new System.Drawing.Size(125, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "eren@izu.edu.tr";
             // 
@@ -122,9 +123,10 @@ namespace panel
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label1.Location = new System.Drawing.Point(933, 2);
+            this.label1.Location = new System.Drawing.Point(700, 2);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(263, 20);
+            this.label1.Size = new System.Drawing.Size(226, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Personel Management System";
             // 
@@ -136,26 +138,26 @@ namespace panel
             this.deleteToolStripMenuItem2,
             this.addToolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(123, 76);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(108, 70);
             // 
             // editToolStripMenuItem1
             // 
             this.editToolStripMenuItem1.Name = "editToolStripMenuItem1";
-            this.editToolStripMenuItem1.Size = new System.Drawing.Size(122, 24);
+            this.editToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
             this.editToolStripMenuItem1.Text = "Edit";
             this.editToolStripMenuItem1.Click += new System.EventHandler(this.editToolStripMenuItem1_Click);
             // 
             // deleteToolStripMenuItem2
             // 
             this.deleteToolStripMenuItem2.Name = "deleteToolStripMenuItem2";
-            this.deleteToolStripMenuItem2.Size = new System.Drawing.Size(122, 24);
+            this.deleteToolStripMenuItem2.Size = new System.Drawing.Size(107, 22);
             this.deleteToolStripMenuItem2.Text = "Delete";
             this.deleteToolStripMenuItem2.Click += new System.EventHandler(this.deleteToolStripMenuItem2_Click);
             // 
             // addToolStripMenuItem1
             // 
             this.addToolStripMenuItem1.Name = "addToolStripMenuItem1";
-            this.addToolStripMenuItem1.Size = new System.Drawing.Size(122, 24);
+            this.addToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
             this.addToolStripMenuItem1.Text = "Add";
             this.addToolStripMenuItem1.Click += new System.EventHandler(this.addToolStripMenuItem1_Click);
             // 
@@ -168,10 +170,10 @@ namespace panel
             this.employeeToolStripMenuItem,
             this.studentToolStripMenuItem,
             this.departmentToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(9, 9);
+            this.menuStrip1.Location = new System.Drawing.Point(7, 7);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(319, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(256, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -180,13 +182,13 @@ namespace panel
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(116, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -198,25 +200,25 @@ namespace panel
             this.deleteEmployeeToolStripMenuItem,
             this.manageToolStripMenuItem});
             this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
-            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
+            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.employeeToolStripMenuItem.Text = "Employee";
             // 
             // listToolStripMenuItem
             // 
             this.listToolStripMenuItem.Name = "listToolStripMenuItem";
-            this.listToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
+            this.listToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.listToolStripMenuItem.Text = "List";
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.searchToolStripMenuItem.Text = "Search";
             // 
             // deleteEmployeeToolStripMenuItem
             // 
             this.deleteEmployeeToolStripMenuItem.Name = "deleteEmployeeToolStripMenuItem";
-            this.deleteEmployeeToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
+            this.deleteEmployeeToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.deleteEmployeeToolStripMenuItem.Text = "Delete Employee";
             // 
             // manageToolStripMenuItem
@@ -226,25 +228,25 @@ namespace panel
             this.deleteToolStripMenuItem,
             this.showToolStripMenuItem});
             this.manageToolStripMenuItem.Name = "manageToolStripMenuItem";
-            this.manageToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
+            this.manageToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.manageToolStripMenuItem.Text = "Manage";
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // showToolStripMenuItem
             // 
             this.showToolStripMenuItem.Name = "showToolStripMenuItem";
-            this.showToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
+            this.showToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.showToolStripMenuItem.Text = "Show";
             // 
             // studentToolStripMenuItem
@@ -253,19 +255,19 @@ namespace panel
             this.listToolStripMenuItem1,
             this.manageToolStripMenuItem1});
             this.studentToolStripMenuItem.Name = "studentToolStripMenuItem";
-            this.studentToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
+            this.studentToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.studentToolStripMenuItem.Text = "Student";
             // 
             // listToolStripMenuItem1
             // 
             this.listToolStripMenuItem1.Name = "listToolStripMenuItem1";
-            this.listToolStripMenuItem1.Size = new System.Drawing.Size(146, 26);
+            this.listToolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
             this.listToolStripMenuItem1.Text = "List";
             // 
             // manageToolStripMenuItem1
             // 
             this.manageToolStripMenuItem1.Name = "manageToolStripMenuItem1";
-            this.manageToolStripMenuItem1.Size = new System.Drawing.Size(146, 26);
+            this.manageToolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
             this.manageToolStripMenuItem1.Text = "Manage";
             // 
             // departmentToolStripMenuItem
@@ -279,48 +281,48 @@ namespace panel
             this.searchToolStripMenuItem1,
             this.toolStripMenuItem3});
             this.departmentToolStripMenuItem.Name = "departmentToolStripMenuItem";
-            this.departmentToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
+            this.departmentToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.departmentToolStripMenuItem.Text = "Department";
             // 
             // listToolStripMenuItem2
             // 
             this.listToolStripMenuItem2.Name = "listToolStripMenuItem2";
-            this.listToolStripMenuItem2.Size = new System.Drawing.Size(141, 26);
+            this.listToolStripMenuItem2.Size = new System.Drawing.Size(112, 22);
             this.listToolStripMenuItem2.Text = "List";
             // 
             // deleteToolStripMenuItem1
             // 
             this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
-            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(141, 26);
+            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
             this.deleteToolStripMenuItem1.Text = "Delete";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(138, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(109, 6);
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.updateToolStripMenuItem.Text = "Update";
             // 
             // addToolStripMenuItem
             // 
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.addToolStripMenuItem.Text = "Add";
             // 
             // searchToolStripMenuItem1
             // 
             this.searchToolStripMenuItem1.Name = "searchToolStripMenuItem1";
-            this.searchToolStripMenuItem1.Size = new System.Drawing.Size(141, 26);
+            this.searchToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
             this.searchToolStripMenuItem1.Text = "Search";
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(138, 6);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(109, 6);
             // 
             // lblWelcome
             // 
@@ -328,9 +330,10 @@ namespace panel
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Century Gothic", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblWelcome.ForeColor = System.Drawing.Color.AliceBlue;
-            this.lblWelcome.Location = new System.Drawing.Point(55, 25);
+            this.lblWelcome.Location = new System.Drawing.Point(41, 20);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(69, 23);
+            this.lblWelcome.Size = new System.Drawing.Size(54, 18);
             this.lblWelcome.TabIndex = 1;
             this.lblWelcome.Text = "label1";
             // 
@@ -342,10 +345,10 @@ namespace panel
             this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.panel1.Location = new System.Drawing.Point(4, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1548, 78);
+            this.panel1.Size = new System.Drawing.Size(1161, 63);
             this.panel1.TabIndex = 0;
             // 
             // panel5
@@ -353,10 +356,10 @@ namespace panel
             this.panel5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel5.Controls.Add(this.lblWelcome);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(1187, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Location = new System.Drawing.Point(890, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 78);
+            this.panel5.Size = new System.Drawing.Size(150, 63);
             this.panel5.TabIndex = 6;
             // 
             // panel4
@@ -364,10 +367,10 @@ namespace panel
             this.panel4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel4.Controls.Add(this.Cancelbtn);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(1387, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Location = new System.Drawing.Point(1040, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(161, 78);
+            this.panel4.Size = new System.Drawing.Size(121, 63);
             this.panel4.TabIndex = 5;
             // 
             // Cancelbtn
@@ -377,10 +380,10 @@ namespace panel
             this.Cancelbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cancelbtn.ForeColor = System.Drawing.Color.AliceBlue;
             this.Cancelbtn.Image = ((System.Drawing.Image)(resources.GetObject("Cancelbtn.Image")));
-            this.Cancelbtn.Location = new System.Drawing.Point(32, 5);
-            this.Cancelbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Cancelbtn.Location = new System.Drawing.Point(24, 4);
+            this.Cancelbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Cancelbtn.Name = "Cancelbtn";
-            this.Cancelbtn.Size = new System.Drawing.Size(115, 63);
+            this.Cancelbtn.Size = new System.Drawing.Size(86, 51);
             this.Cancelbtn.TabIndex = 4;
             this.Cancelbtn.UseVisualStyleBackColor = false;
             this.Cancelbtn.Click += new System.EventHandler(this.Cancelbtn_Click);
@@ -391,10 +394,10 @@ namespace panel
             this.PanelLeftMenu.Controls.Add(this.button1);
             this.PanelLeftMenu.Controls.Add(this.label3);
             this.PanelLeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelLeftMenu.Location = new System.Drawing.Point(4, 82);
-            this.PanelLeftMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PanelLeftMenu.Location = new System.Drawing.Point(3, 66);
+            this.PanelLeftMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PanelLeftMenu.Name = "PanelLeftMenu";
-            this.PanelLeftMenu.Size = new System.Drawing.Size(308, 798);
+            this.PanelLeftMenu.Size = new System.Drawing.Size(231, 649);
             this.PanelLeftMenu.TabIndex = 1;
             // 
             // button1
@@ -404,10 +407,10 @@ namespace panel
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(0, 108);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(0, 88);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(308, 50);
+            this.button1.Size = new System.Drawing.Size(231, 41);
             this.button1.TabIndex = 0;
             this.button1.Text = "Home";
             this.button1.UseVisualStyleBackColor = false;
@@ -419,9 +422,10 @@ namespace panel
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.AliceBlue;
             this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(29, 0, 0, 0);
-            this.label3.Size = new System.Drawing.Size(308, 108);
+            this.label3.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.label3.Size = new System.Drawing.Size(231, 88);
             this.label3.TabIndex = 1;
             this.label3.Text = "Personel Management System";
             // 
@@ -433,10 +437,10 @@ namespace panel
             this.PanelMainHome.Controls.Add(this.flowLayoutPanel1);
             this.PanelMainHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelMainHome.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PanelMainHome.Location = new System.Drawing.Point(312, 82);
-            this.PanelMainHome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PanelMainHome.Location = new System.Drawing.Point(234, 66);
+            this.PanelMainHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PanelMainHome.Name = "PanelMainHome";
-            this.PanelMainHome.Size = new System.Drawing.Size(1240, 738);
+            this.PanelMainHome.Size = new System.Drawing.Size(930, 600);
             this.PanelMainHome.TabIndex = 3;
             // 
             // panelDGV
@@ -445,10 +449,10 @@ namespace panel
             this.panelDGV.Controls.Add(this.dgvData);
             this.panelDGV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDGV.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.panelDGV.Location = new System.Drawing.Point(0, 308);
-            this.panelDGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelDGV.Location = new System.Drawing.Point(0, 251);
+            this.panelDGV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelDGV.Name = "panelDGV";
-            this.panelDGV.Size = new System.Drawing.Size(1240, 430);
+            this.panelDGV.Size = new System.Drawing.Size(930, 349);
             this.panelDGV.TabIndex = 2;
             // 
             // dgvData
@@ -459,12 +463,12 @@ namespace panel
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvData.Location = new System.Drawing.Point(0, 0);
-            this.dgvData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvData.Name = "dgvData";
             this.dgvData.ReadOnly = true;
             this.dgvData.RowHeadersWidth = 51;
             this.dgvData.RowTemplate.Height = 24;
-            this.dgvData.Size = new System.Drawing.Size(1240, 430);
+            this.dgvData.Size = new System.Drawing.Size(930, 349);
             this.dgvData.TabIndex = 0;
             this.dgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellContentClick);
             this.dgvData.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvData_CellMouseDown);
@@ -475,10 +479,10 @@ namespace panel
             this.panel3.Controls.Add(this.lblTitle);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.panel3.Location = new System.Drawing.Point(0, 258);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Location = new System.Drawing.Point(0, 210);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1240, 50);
+            this.panel3.Size = new System.Drawing.Size(930, 41);
             this.panel3.TabIndex = 1;
             // 
             // lblTitle
@@ -486,9 +490,10 @@ namespace panel
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(532, 14);
+            this.lblTitle.Location = new System.Drawing.Point(399, 11);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(70, 23);
+            this.lblTitle.Size = new System.Drawing.Size(58, 19);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "label4";
             // 
@@ -500,9 +505,9 @@ namespace panel
             this.flowLayoutPanel1.Controls.Add(this.button10);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1240, 258);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(930, 210);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // button7
@@ -511,11 +516,11 @@ namespace panel
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.ForeColor = System.Drawing.Color.DarkBlue;
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(29, 30);
-            this.button7.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
+            this.button7.Location = new System.Drawing.Point(22, 24);
+            this.button7.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
             this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            this.button7.Size = new System.Drawing.Size(227, 199);
+            this.button7.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.button7.Size = new System.Drawing.Size(170, 162);
             this.button7.TabIndex = 0;
             this.button7.Text = "Show";
             this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -523,35 +528,17 @@ namespace panel
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button9
-            // 
-            this.button9.FlatAppearance.BorderSize = 13;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.ForeColor = System.Drawing.Color.DarkBlue;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(599, 30);
-            this.button9.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
-            this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            this.button9.Size = new System.Drawing.Size(227, 199);
-            this.button9.TabIndex = 2;
-            this.button9.Text = "Delete";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
             // AddBtn
             // 
             this.AddBtn.FlatAppearance.BorderSize = 13;
             this.AddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddBtn.ForeColor = System.Drawing.Color.DarkBlue;
             this.AddBtn.Image = ((System.Drawing.Image)(resources.GetObject("AddBtn.Image")));
-            this.AddBtn.Location = new System.Drawing.Point(314, 30);
-            this.AddBtn.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
+            this.AddBtn.Location = new System.Drawing.Point(236, 24);
+            this.AddBtn.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
             this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            this.AddBtn.Size = new System.Drawing.Size(227, 199);
+            this.AddBtn.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.AddBtn.Size = new System.Drawing.Size(170, 162);
             this.AddBtn.TabIndex = 15;
             this.AddBtn.Text = "Add ";
             this.AddBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -559,28 +546,47 @@ namespace panel
             this.AddBtn.UseVisualStyleBackColor = true;
             this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
+            // button9
+            // 
+            this.button9.FlatAppearance.BorderSize = 13;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.ForeColor = System.Drawing.Color.DarkBlue;
+            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
+            this.button9.Location = new System.Drawing.Point(450, 24);
+            this.button9.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
+            this.button9.Name = "button9";
+            this.button9.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.button9.Size = new System.Drawing.Size(170, 162);
+            this.button9.TabIndex = 2;
+            this.button9.Text = "Delete";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // button10
             // 
             this.button10.FlatAppearance.BorderSize = 13;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.ForeColor = System.Drawing.Color.DarkBlue;
             this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.Location = new System.Drawing.Point(884, 30);
-            this.button10.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
+            this.button10.Location = new System.Drawing.Point(664, 24);
+            this.button10.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
             this.button10.Name = "button10";
-            this.button10.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            this.button10.Size = new System.Drawing.Size(227, 199);
+            this.button10.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.button10.Size = new System.Drawing.Size(170, 162);
             this.button10.TabIndex = 14;
             this.button10.Text = "Update";
             this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // PersonelManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1556, 884);
+            this.ClientSize = new System.Drawing.Size(1167, 718);
             this.Controls.Add(this.PanelMainHome);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.PanelLeftMenu);
@@ -589,10 +595,10 @@ namespace panel
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(199, 105);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MinimumSize = new System.Drawing.Size(1533, 822);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimumSize = new System.Drawing.Size(1150, 668);
             this.Name = "PersonelManager";
-            this.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "formEmployeeHome";
             this.Load += new System.EventHandler(this.formEmployeeHome_Load);

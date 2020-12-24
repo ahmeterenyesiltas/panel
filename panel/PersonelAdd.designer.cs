@@ -57,9 +57,9 @@ namespace panel
             this.lblMessage.AutoSize = true;
             this.lblMessage.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblMessage.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblMessage.Location = new System.Drawing.Point(182, 105);
+            this.lblMessage.Location = new System.Drawing.Point(306, 106);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(109, 20);
+            this.lblMessage.Size = new System.Drawing.Size(93, 17);
             this.lblMessage.TabIndex = 16;
             this.lblMessage.Text = "Add Personel";
             // 
@@ -69,9 +69,9 @@ namespace panel
             this.label3.Font = new System.Drawing.Font("Century", 28.2F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.MediumBlue;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(173, 37);
+            this.label3.Location = new System.Drawing.Point(297, 38);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(332, 57);
+            this.label3.Size = new System.Drawing.Size(266, 44);
             this.label3.TabIndex = 14;
             this.label3.Text = "Add Personel";
             // 
@@ -79,19 +79,21 @@ namespace panel
             // 
             this.label1.AutoSize = true;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(62, 134);
+            this.label1.Location = new System.Drawing.Point(186, 135);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 20);
+            this.label1.Size = new System.Drawing.Size(80, 17);
             this.label1.TabIndex = 12;
             this.label1.Text = "First Name:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tbFirstName
             // 
-            this.tbFirstName.Location = new System.Drawing.Point(165, 134);
+            this.tbFirstName.Location = new System.Drawing.Point(289, 135);
             this.tbFirstName.MaxLength = 40;
             this.tbFirstName.Name = "tbFirstName";
-            this.tbFirstName.Size = new System.Drawing.Size(285, 27);
+            this.tbFirstName.Size = new System.Drawing.Size(285, 23);
             this.tbFirstName.TabIndex = 0;
+            this.tbFirstName.TextChanged += new System.EventHandler(this.tbFirstName_TextChanged);
             // 
             // button2
             // 
@@ -100,7 +102,7 @@ namespace panel
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button2.Location = new System.Drawing.Point(279, 386);
+            this.button2.Location = new System.Drawing.Point(403, 387);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(108, 46);
             this.button2.TabIndex = 3;
@@ -118,7 +120,7 @@ namespace panel
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(165, 386);
+            this.button1.Location = new System.Drawing.Point(289, 387);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(108, 46);
             this.button1.TabIndex = 2;
@@ -129,114 +131,127 @@ namespace panel
             // 
             // tbLastName
             // 
-            this.tbLastName.Location = new System.Drawing.Point(165, 168);
+            this.tbLastName.Location = new System.Drawing.Point(289, 169);
             this.tbLastName.MaxLength = 40;
             this.tbLastName.Name = "tbLastName";
-            this.tbLastName.Size = new System.Drawing.Size(285, 27);
+            this.tbLastName.Size = new System.Drawing.Size(285, 23);
             this.tbLastName.TabIndex = 17;
+            this.tbLastName.TextChanged += new System.EventHandler(this.tbLastName_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(63, 168);
+            this.label4.Location = new System.Drawing.Point(187, 169);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 20);
+            this.label4.Size = new System.Drawing.Size(80, 17);
             this.label4.TabIndex = 18;
             this.label4.Text = "Last Name:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(101, 205);
+            this.label5.Location = new System.Drawing.Point(225, 206);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 20);
+            this.label5.Size = new System.Drawing.Size(46, 17);
             this.label5.TabIndex = 19;
             this.label5.Text = "Email:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // tbEmail
             // 
-            this.tbEmail.Location = new System.Drawing.Point(165, 202);
+            this.tbEmail.Location = new System.Drawing.Point(289, 203);
             this.tbEmail.MaxLength = 40;
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(285, 27);
+            this.tbEmail.Size = new System.Drawing.Size(285, 23);
             this.tbEmail.TabIndex = 20;
+            this.tbEmail.TextChanged += new System.EventHandler(this.tbEmail_TextChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(71, 236);
+            this.label6.Location = new System.Drawing.Point(195, 237);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 20);
+            this.label6.Size = new System.Drawing.Size(73, 17);
             this.label6.TabIndex = 21;
             this.label6.Text = "Password:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // tbPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(165, 236);
+            this.tbPassword.Location = new System.Drawing.Point(289, 237);
             this.tbPassword.MaxLength = 40;
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(285, 27);
+            this.tbPassword.Size = new System.Drawing.Size(285, 23);
             this.tbPassword.TabIndex = 22;
+            this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(96, 269);
+            this.label7.Location = new System.Drawing.Point(220, 270);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 20);
+            this.label7.Size = new System.Drawing.Size(52, 17);
             this.label7.TabIndex = 23;
             this.label7.Text = "Salary:";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // tbSalary
             // 
-            this.tbSalary.Location = new System.Drawing.Point(165, 269);
+            this.tbSalary.Location = new System.Drawing.Point(289, 270);
             this.tbSalary.MaxLength = 40;
             this.tbSalary.Name = "tbSalary";
-            this.tbSalary.Size = new System.Drawing.Size(285, 27);
+            this.tbSalary.Size = new System.Drawing.Size(285, 23);
             this.tbSalary.TabIndex = 24;
+            this.tbSalary.TextChanged += new System.EventHandler(this.tbSalary_TextChanged);
             // 
             // tbGender
             // 
             this.tbGender.AutoSize = true;
             this.tbGender.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tbGender.Location = new System.Drawing.Point(88, 307);
+            this.tbGender.Location = new System.Drawing.Point(212, 308);
             this.tbGender.Name = "tbGender";
-            this.tbGender.Size = new System.Drawing.Size(69, 20);
+            this.tbGender.Size = new System.Drawing.Size(60, 17);
             this.tbGender.TabIndex = 25;
             this.tbGender.Text = "Gender:";
+            this.tbGender.Click += new System.EventHandler(this.tbGender_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(165, 304);
+            this.textBox1.Location = new System.Drawing.Point(289, 305);
             this.textBox1.MaxLength = 40;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(285, 27);
+            this.textBox1.Size = new System.Drawing.Size(285, 23);
             this.textBox1.TabIndex = 26;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tbDepartmentID
             // 
-            this.tbDepartmentID.Location = new System.Drawing.Point(165, 338);
+            this.tbDepartmentID.Location = new System.Drawing.Point(289, 339);
             this.tbDepartmentID.MaxLength = 40;
             this.tbDepartmentID.Name = "tbDepartmentID";
-            this.tbDepartmentID.Size = new System.Drawing.Size(285, 27);
+            this.tbDepartmentID.Size = new System.Drawing.Size(285, 23);
             this.tbDepartmentID.TabIndex = 27;
+            this.tbDepartmentID.TextChanged += new System.EventHandler(this.tbDepartmentID_TextChanged);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(40, 341);
+            this.label8.Location = new System.Drawing.Point(164, 342);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(119, 20);
+            this.label8.Size = new System.Drawing.Size(99, 17);
             this.label8.TabIndex = 28;
             this.label8.Text = "DepartmentID:";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.tbFirstName);
@@ -255,19 +270,26 @@ namespace panel
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.tbEmail);
-            this.panel1.Location = new System.Drawing.Point(122, 22);
+            this.panel1.Location = new System.Drawing.Point(66, 21);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(635, 482);
+            this.panel1.Size = new System.Drawing.Size(869, 488);
             this.panel1.TabIndex = 29;
             // 
             // PersonelAdd
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1019, 533);
+            this.BackColor = System.Drawing.SystemColors.ControlText;
+            this.ClientSize = new System.Drawing.Size(1019, 531);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1035, 570);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1035, 570);
             this.Name = "PersonelAdd";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Personel Add";
             this.Load += new System.EventHandler(this.PersonelAdd_Load);
             this.panel1.ResumeLayout(false);

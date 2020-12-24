@@ -133,26 +133,28 @@ namespace panel
         }
 
 
-        private void button9_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
 
         private void editToolStripMenuItem1_Click(object sender, EventArgs e) //sağ click atınca çıkan şey
         {
             try
             {
-                Course c = new Course();
-                var dt=c.GetCourseByID(ID);
-              
-                if (dt.Rows.Count>0)
+                Employee emp = new Employee();
+                var dt = emp.GetEmployeeByID(ID);
+
+                if (dt.Rows.Count > 0)
                 {
-                    c.CourseID = int.Parse(dt.Rows[0]["CourseID"].ToString()); //direkt istersek c.CourseID=ID de diyebiliriz bunun için
-                    c.Name = dt.Rows[0]["Name"].ToString();
-                    c.Credit = int.Parse(dt.Rows[0]["Credit"].ToString());
-                    
-                    //formCourseEdit form = new formCourseEdit(c);
-                    //form.ShowDialog();
+                    emp.EmployeeID = int.Parse(dt.Rows[0]["EmployeeID"].ToString()); //direkt istersek c.CourseID=ID de diyebiliriz bunun için
+                    emp.FirstName = dt.Rows[0]["FirstName"].ToString();
+                    emp.Lastname = dt.Rows[0]["Lastname"].ToString();
+                    emp.Email1 = dt.Rows[0]["Email"].ToString();
+                    emp.Password1 = dt.Rows[0]["Password"].ToString();
+                    emp.Salary = float.Parse(dt.Rows[0]["Salary"].ToString());
+                    emp.Gender1 = dt.Rows[0]["Gender"].ToString();
+                    emp.DepartmentID1 = int.Parse(dt.Rows[0]["DepartmentID"].ToString());
+
+                    PersonelUpdate form = new PersonelUpdate(emp);
+                    form.ShowDialog();
 
 
                 }
@@ -256,5 +258,83 @@ namespace panel
                 MessageBox.Show(ex.Message);
             }
         }
+
+
+        private void button9_Click(object sender, EventArgs e) //ADD Button
+        {
+            
+                try
+                {
+                    PersonelDelete pDelete = new PersonelDelete();   //Person Delete panelini açtım bu sayede
+                    pDelete.ShowDialog();
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+                }
+            
+        }
+
+        private void button10_Click(object sender, EventArgs e)  //Update Button
+        {
+            try
+            {
+                Employee emp = new Employee();
+                var dt = emp.GetEmployeeByID(ID);
+
+                if (dt.Rows.Count > 0)
+                {
+                    emp.EmployeeID = int.Parse(dt.Rows[0]["EmployeeID"].ToString()); //direkt istersek c.CourseID=ID de diyebiliriz bunun için
+                    emp.FirstName = dt.Rows[0]["FirstName"].ToString();
+                    emp.Lastname = dt.Rows[0]["Lastname"].ToString();
+                    emp.Email1 = dt.Rows[0]["Email"].ToString();
+                    emp.Password1 = dt.Rows[0]["Password"].ToString();
+                    emp.Salary = float.Parse(dt.Rows[0]["Salary"].ToString());
+                    emp.Gender1 = dt.Rows[0]["Gender"].ToString();
+                    emp.DepartmentID1 = int.Parse(dt.Rows[0]["DepartmentID"].ToString());
+
+                    PersonelUpdate form = new PersonelUpdate(emp);
+                    form.ShowDialog();
+
+
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+
+        private void dgvData_CellMouseDown1(object sender, DataGridViewCellMouseEventArgs e) //mouse a sağ click attığında çıkan şey için
+        {                                                    //11.12.2020      11 aralık dersi birşey anlamadım pek fazla bundan
+            try
+            {
+                if (e.ColumnIndex != -1 && e.RowIndex != -1)
+                {
+                    if (e.Button == MouseButtons.Right)
+                    {
+                        dgvData.Rows[e.RowIndex].Selected = true;                       //buda sağ click attığımız satırı seçili hale getiricek
+                        ID = int.Parse(dgvData.Rows[e.RowIndex].Cells[0].Value.ToString());
+
+                        var relativepos = dgvData.PointToClient(Cursor.Position);       //sağ clickde seçeneklerin nerde çıkıcağını seçtik cursorda çıktı tam olarak mouseda yani
+                        contextMenuStrip1.Show(dgvData, relativepos);
+                    }
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
     }
 }

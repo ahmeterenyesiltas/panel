@@ -14,6 +14,8 @@ namespace panel
 {
     public partial class PersonelAdd : Form
     {
+
+
        
         private void PersonelAdd_Load(object sender, EventArgs e)
         {
@@ -122,6 +124,74 @@ namespace panel
             }
         }
 
-       
+        private void tbFirstName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbDepartmentID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbGender_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbSalary_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbLastName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

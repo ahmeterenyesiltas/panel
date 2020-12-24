@@ -550,5 +550,10 @@ namespace panel
             musteri_takip.Dock = DockStyle.Fill;
             musteri_takip.BringToFront();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

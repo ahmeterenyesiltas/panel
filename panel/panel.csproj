@@ -77,11 +77,17 @@
     <Compile Include="PersonelAdd.designer.cs">
       <DependentUpon>PersonelAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="formCourseEdit.cs">
+    <Compile Include="PersonelUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formCourseEdit.designer.cs">
-      <DependentUpon>formCourseEdit.cs</DependentUpon>
+    <Compile Include="PersonelUpdate.designer.cs">
+      <DependentUpon>PersonelUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelDelete.Designer.cs">
+      <DependentUpon>PersonelDelete.cs</DependentUpon>
     </Compile>
     <Compile Include="PersonelManager.cs">
       <SubType>Form</SubType>
@@ -188,8 +194,11 @@
     <EmbeddedResource Include="PersonelAdd.resx">
       <DependentUpon>PersonelAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formCourseEdit.resx">
-      <DependentUpon>formCourseEdit.cs</DependentUpon>
+    <EmbeddedResource Include="PersonelUpdate.resx">
+      <DependentUpon>PersonelUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelDelete.resx">
+      <DependentUpon>PersonelDelete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PersonelManager.resx">
       <DependentUpon>PersonelManager.cs</DependentUpon>
