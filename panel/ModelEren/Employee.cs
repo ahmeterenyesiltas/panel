@@ -12,14 +12,16 @@ namespace panel.Models
     public class Employee : Person
     {
 
-        int employeeID;
-        float salary;
-        string firstname;
-        string lastname;
-        string email;
-        string gender;
-        string password;
-        int DepartmentID;
+         int employeeID;
+         float salary;
+         string firstname;
+         string lastname;
+         string email;
+         string gender;
+         string password;
+         int DepartmentID;
+
+        
 
         public Employee()
         {
@@ -117,6 +119,8 @@ namespace panel.Models
             }
         }
 
+        
+
         //EN ÖNEMLİ FONKSİYON SQL E DAİR
         public override Person Login(string email, string password)
         {
@@ -145,6 +149,7 @@ namespace panel.Models
                         emp.FirstName = dt.Rows[0]["FirstName"].ToString();
                         emp.LastName = dt.Rows[0]["LastName"].ToString();
                         emp.Email = dt.Rows[0]["Email"].ToString();     //BURDA YAPTIĞIMIZ ŞEY BİR NESNE DÖNDÜRÜYORUZ CLASSDAN OLUŞTURUP VE EĞER NESNE BOŞ DEĞİLSE
+                        emp.salary = float.Parse(dt.Rows[0]["Salary"].ToString());
                         emp.gender = dt.Rows[0]["Gender"].ToString();                                                //TRUE VERİYOR LOGİN YAPIYORUZ FORM LOGİN İÇİNDE
                         emp.password = dt.Rows[0]["Password"].ToString();
                         emp.DepartmentID = int.Parse(dt.Rows[0]["DepartmentID"].ToString());
@@ -244,7 +249,7 @@ namespace panel.Models
             SqlConnection connection = null;
             try
             {
-                string query = $"Select * from Employee where Name LIKE '%{name}%' ";
+                string query = $"Select * from Employee where FirstName LIKE '%{name}%' ";
                 return dbHelper.ExecuteQuery(query);
 
             }
@@ -263,7 +268,7 @@ namespace panel.Models
             SqlConnection connection = null;
             try
             {
-                string query = $"Select * from Employee where Name = '{name}' "; //bu direkt equals (=) isim direkt buna eşit olmalı yani
+                string query = $"Select * from Employee where FirstName+LastName= '{name}' "; //bu direkt equals (=) isim direkt buna eşit olmalı yani
                 return dbHelper.ExecuteQuery(query).Rows.Count >= 1; //eğer böyle bir course varsa yani aynı addan bir course daha eklemek istemeyiz o yüzden true döndürcez ve varsa hata verdiricez 
                                                                      //oldukca önemli ve elzem birşey bu
             }
@@ -281,22 +286,42 @@ namespace panel.Models
             SqlConnection connection = null;
             try
             {
-                if (EmployeeExists(e.Name))                            //Burda bir üstte tanımladığımız fonksiyonu kullanıp denedik eğer course var ve true dönerse hata gönder
+                if (EmployeeExists(e.Firstname+e.lastname))                            //Burda bir üstte tanımladığımız fonksiyonu kullanıp denedik eğer course var ve true dönerse hata gönder
                 {
-                    throw new Exception("Course already Exits");
+                    throw new Exception("Employee already Exits");
                 }
-
-                string query = $"INSERT INTO Employee(FirstName,LastName,Email,Password,Salary,Gender,DepartmentID) VALUES('{e.FirstName}','{e.Lastname}'," +
-                    $"'{e.Email}'),'{e.Email}','{e.Password}','{e.Salary}','{e.Gender}','{e.DepartmentID}' ";  
-  
-                                                                                                     //BU BAYA ÖNEMLİ ELLE EKLEME YAPIYORUZ
-                                                                                                     //Burda $ işareti ve {} kullanımı işimizi baya kolaylaştırıyor unutma bu yzma yöntemini
+               
+                else 
+                { 
+                string query = $"INSERT INTO Employee(FirstName,LastName,Email,Password,Salary,Gender,DepartmentID) VALUES('{e.Firstname}','{e.Lastname}'," +
+                    $"'{e.Email1}','{e.Password1}','{e.Salary}','{e.Gender1}','{e.DepartmentID1}')";  
+                                                                                         //BU BAYA ÖNEMLİ ELLE EKLEME YAPIYORUZ
+                                                                                            //Burda $ işareti ve {} kullanımı işimizi baya kolaylaştırıyor unutma bu yzma yöntemini
                 return dbHelper.ExecuteNonQuery(query);
+                }
             }
             catch (Exception ex)
             {
 
                 throw new Exception(ex.Message);
+            }
+
+        }
+
+        public int EmployeeDelete(int eID)   //silmek için sadece ID yeterli Delete Course where ID=5 yapabiliriz silmek için örneğin
+        {
+
+            SqlConnection connection = null;
+            try
+            {
+                string query = $"Delete Employee WHERE EmployeeID={eID} ";  //BU BAYA ÖNEMLİ ELLE DELETE YAPIYORUZ
+                                                                        //Burda $ işareti ve {} kullanımı işimizi baya kolaylaştırıyor unutma bu yzma yöntemini
+                return dbHelper.ExecuteNonQuery(query);
+            }
+            catch (Exception Ex)
+            {
+
+                throw new Exception(Ex.Message);
             }
 
         }

@@ -132,13 +132,6 @@ namespace panel
             }
         }
 
-        
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            
-
-        }
 
         private void button9_Click(object sender, EventArgs e)
         {
@@ -184,16 +177,16 @@ namespace panel
                 var result=MessageBox.Show("Are you sure to delete ?", "System Message", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
-                    Course c = new Course();
-                    var r=c.CourseDelete(ID);
+                    Employee eDel = new Employee();
+                    var r= eDel.EmployeeDelete(ID);
                     if (r > 0)
                     {
-                        MessageBox.Show("Course Deleted.");
-                        dgvData.DataSource = c.GetAllCourse(); //silindikten sonraki halini görmek için direkt olarak
+                        MessageBox.Show("Employee Deleted.");
+                        dgvData.DataSource = eDel.GetAllEmployee(); //silindikten sonraki halini görmek için direkt olarak
                     }
                     else
                     {
-                        MessageBox.Show("Course NOT Deleted.");
+                        MessageBox.Show("Employee NOT Deleted.");
                     }
                 }
 
@@ -248,6 +241,20 @@ namespace panel
         private void Cancelbtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void AddBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                PersonelAdd pAdd = new PersonelAdd();   //course ekle panelini açtım bu sayede
+                pAdd.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
