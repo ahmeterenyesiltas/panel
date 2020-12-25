@@ -16,7 +16,7 @@ namespace panel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new müsteri_takip());
+            Application.Run(new ilkform());
         }
     }
 }

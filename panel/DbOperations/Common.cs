@@ -62,8 +62,76 @@ namespace panel.DbOperations
             }
         }
 
-
-
+        /// <summary>
+        /// Adresi döndüren metod.
+        /// </summary>
+        /// <returns>DataTable nesnesi döndürür</returns>
+        public DataTable AdresiGoruntule()
+        {
+            try
+            {
+                //Bağlantı Kapalı ise Açılır
+                if (SqlConnection.State == ConnectionState.Closed) SqlConnection.Open();
+                string SqlBase = "SELECT * FROM ADRES";
+                SqlDataAdapter SqlDa = new SqlDataAdapter(SqlBase, SqlConnection);
+                DataTable dt = new DataTable();
+                SqlDa.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    SqlDa.Dispose();
+                    return dt;
+                }
+                else
+                {
+                    SqlDa.Dispose();
+                    return new DataTable();
+                }
+            }
+            catch (Exception exc)
+            {
+                AddLogError("AdresiGoruntule", "Adres Görüntüleme Hatası", "Hata Detayı : " + exc.Message);
+                throw;
+            }
+            finally
+            {
+                //Bağlantı Açık ise Kapanır
+                if (SqlConnection.State == ConnectionState.Open) SqlConnection.Close();
+            }
+        }
+        public DataTable MasalariGoruntule()
+        {
+            try
+            {
+                //Bağlantı Kapalı ise Açılır
+                if (SqlConnection.State == ConnectionState.Closed) SqlConnection.Open();
+                string SqlBase = "SELECT * FROM MASALAR";
+                SqlDataAdapter SqlDa = new SqlDataAdapter(SqlBase, SqlConnection);
+                DataTable dt = new DataTable();
+                SqlDa.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    SqlDa.Dispose();
+                    return dt;
+                }
+                else
+                {
+                    SqlDa.Dispose();
+                    return new DataTable();
+                }
+            }
+            catch (Exception exc)
+            {
+                AddLogError("MasalariGoruntule", "Masalari Görüntüleme Hatası", "Hata Detayı : " + exc.Message);
+                throw;
+            }
+            finally
+            {
+                //Bağlantı Açık ise Kapanır
+                if (SqlConnection.State == ConnectionState.Open) SqlConnection.Close();
+            }
+        }
 
     }
 }
+
+    

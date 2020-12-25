@@ -1,4 +1,5 @@
 ﻿using System;
+using panel.DbOperations;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.ComponentModel;
@@ -13,16 +14,12 @@ namespace panel
 {
     public partial class ilkform : Form
     {
+        Common common = new Common();
         public ilkform()
         {
             InitializeComponent();
         }
-        public void verial() {
-            string conString = "Server=EKOSR;Database=gorselodev;Trusted_Connection=True;";
-            SqlConnection connection = new SqlConnection(conString);
-            connection.Open();
-}
-     
+       
         private void btnMasaBos_Click(object sender, EventArgs e)
         {
             if (checkBoxMasa1.Checked)
@@ -441,6 +438,92 @@ namespace panel
         private void ilkform_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnMasa1_Click(object sender, EventArgs e)
+        {
+            var MASALARDatatable = common.MasalariGoruntule();
+
+            string message = MASALARDatatable.Rows[0].Field<string>("masa1");
+
+        }
+
+        private void btnMasa2_Click(object sender, EventArgs e)
+        {
+            var MASALARDatatable = common.MasalariGoruntule();
+
+            string message = MASALARDatatable.Rows[1].Field<string>("masa2");
+        }
+
+        private void btnMasa3_Click(object sender, EventArgs e)
+        {
+            var MASALARDatatable = common.MasalariGoruntule();
+
+            string message = MASALARDatatable.Rows[2].Field<string>("masa3");
+        }
+
+        private void btnMasa4_Click(object sender, EventArgs e)
+        {
+            var MASALARDatatable = common.MasalariGoruntule();
+
+            string message = MASALARDatatable.Rows[3].Field<string>("masa4");
+        }
+
+        private void btnMasa5_Click(object sender, EventArgs e)
+        {
+            var MASALARDatatable = common.MasalariGoruntule();
+
+            string message = MASALARDatatable.Rows[4].Field<string>("masa5");
+        }
+
+        private void btnMasa6_Click(object sender, EventArgs e)
+        {
+            var MASALARDatatable = common.MasalariGoruntule();
+
+            string message = MASALARDatatable.Rows[5].Field<string>("masa6");
+        }
+
+        private void btnMasa8_Click(object sender, EventArgs e)
+        {
+            var MASALARDatatable = common.MasalariGoruntule();
+
+            string message = MASALARDatatable.Rows[6].Field<string>("masa7");
+        }
+
+        private void btnMasa9_Click(object sender, EventArgs e)
+        {
+            var MASALARDatatable = common.MasalariGoruntule();
+
+            string message = MASALARDatatable.Rows[7].Field<string>("masa8");
+        }
+
+        private void btnMasa10_Click(object sender, EventArgs e)
+        {
+            var MASALARDatatable = common.MasalariGoruntule();
+
+            string message = MASALARDatatable.Rows[8].Field<string>("masa9");
+        }
+
+        private void btnMasa11_Click(object sender, EventArgs e)
+        {
+            var MASALARDatatable = common.MasalariGoruntule();
+
+            string message = MASALARDatatable.Rows[9].Field<string>("masa10");
+
+        }
+
+        private void btnMasa12_Click(object sender, EventArgs e)
+        {
+            var MASALARDatatable = common.MasalariGoruntule();
+
+            string message = MASALARDatatable.Rows[10].Field<string>("masa11");
+        }
+
+        private void btnMasa13_Click(object sender, EventArgs e)
+        {
+            var MASALARDatatable = common.MasalariGoruntule();
+
+            string message = MASALARDatatable.Rows[11].Field<string>("masa12            ");
         }
     }
 }

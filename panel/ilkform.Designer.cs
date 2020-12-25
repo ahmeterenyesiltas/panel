@@ -108,6 +108,7 @@
             this.btnMasa1.Size = new System.Drawing.Size(162, 125);
             this.btnMasa1.TabIndex = 1;
             this.btnMasa1.UseVisualStyleBackColor = false;
+            this.btnMasa1.Click += new System.EventHandler(this.btnMasa1_Click);
             // 
             // btnMasa2
             // 
@@ -121,6 +122,7 @@
             this.btnMasa2.Size = new System.Drawing.Size(162, 125);
             this.btnMasa2.TabIndex = 2;
             this.btnMasa2.UseVisualStyleBackColor = false;
+            this.btnMasa2.Click += new System.EventHandler(this.btnMasa2_Click);
             // 
             // btnMasa3
             // 
@@ -134,6 +136,7 @@
             this.btnMasa3.Size = new System.Drawing.Size(162, 125);
             this.btnMasa3.TabIndex = 3;
             this.btnMasa3.UseVisualStyleBackColor = false;
+            this.btnMasa3.Click += new System.EventHandler(this.btnMasa3_Click);
             // 
             // btnMasa6
             // 
@@ -147,6 +150,7 @@
             this.btnMasa6.Size = new System.Drawing.Size(162, 125);
             this.btnMasa6.TabIndex = 4;
             this.btnMasa6.UseVisualStyleBackColor = false;
+            this.btnMasa6.Click += new System.EventHandler(this.btnMasa6_Click);
             // 
             // btnMasa7
             // 
@@ -173,6 +177,7 @@
             this.btnMasa8.Size = new System.Drawing.Size(162, 125);
             this.btnMasa8.TabIndex = 6;
             this.btnMasa8.UseVisualStyleBackColor = false;
+            this.btnMasa8.Click += new System.EventHandler(this.btnMasa8_Click);
             // 
             // btnMasa5
             // 
@@ -180,12 +185,13 @@
             this.btnMasa5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMasa5.BackgroundImage")));
             this.btnMasa5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMasa5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnMasa5.Location = new System.Drawing.Point(759, 103);
+            this.btnMasa5.Location = new System.Drawing.Point(758, 103);
             this.btnMasa5.Margin = new System.Windows.Forms.Padding(2);
             this.btnMasa5.Name = "btnMasa5";
             this.btnMasa5.Size = new System.Drawing.Size(162, 125);
             this.btnMasa5.TabIndex = 7;
             this.btnMasa5.UseVisualStyleBackColor = false;
+            this.btnMasa5.Click += new System.EventHandler(this.btnMasa5_Click);
             // 
             // btnMasa4
             // 
@@ -199,6 +205,7 @@
             this.btnMasa4.Size = new System.Drawing.Size(162, 125);
             this.btnMasa4.TabIndex = 8;
             this.btnMasa4.UseVisualStyleBackColor = false;
+            this.btnMasa4.Click += new System.EventHandler(this.btnMasa4_Click);
             // 
             // btnMasa9
             // 
@@ -212,6 +219,7 @@
             this.btnMasa9.Size = new System.Drawing.Size(162, 125);
             this.btnMasa9.TabIndex = 9;
             this.btnMasa9.UseVisualStyleBackColor = false;
+            this.btnMasa9.Click += new System.EventHandler(this.btnMasa9_Click);
             // 
             // btnMasa10
             // 
@@ -225,6 +233,7 @@
             this.btnMasa10.Size = new System.Drawing.Size(162, 125);
             this.btnMasa10.TabIndex = 10;
             this.btnMasa10.UseVisualStyleBackColor = false;
+            this.btnMasa10.Click += new System.EventHandler(this.btnMasa10_Click);
             // 
             // btnMasa11
             // 
@@ -238,6 +247,7 @@
             this.btnMasa11.Size = new System.Drawing.Size(162, 125);
             this.btnMasa11.TabIndex = 11;
             this.btnMasa11.UseVisualStyleBackColor = false;
+            this.btnMasa11.Click += new System.EventHandler(this.btnMasa11_Click);
             // 
             // btnMasa13
             // 
@@ -251,6 +261,7 @@
             this.btnMasa13.Size = new System.Drawing.Size(162, 125);
             this.btnMasa13.TabIndex = 12;
             this.btnMasa13.UseVisualStyleBackColor = false;
+            this.btnMasa13.Click += new System.EventHandler(this.btnMasa13_Click);
             // 
             // btnMasa14
             // 
@@ -277,6 +288,7 @@
             this.btnMasa12.Size = new System.Drawing.Size(162, 125);
             this.btnMasa12.TabIndex = 14;
             this.btnMasa12.UseVisualStyleBackColor = false;
+            this.btnMasa12.Click += new System.EventHandler(this.btnMasa12_Click);
             // 
             // lblMasa1
             // 

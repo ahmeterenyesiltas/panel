@@ -1,4 +1,6 @@
-﻿namespace panel
+﻿using System;
+
+namespace panel
 {
     partial class info
     {
@@ -85,7 +87,6 @@
             this.kampanya.Text = "Kampanyalar";
             this.kampanya.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.kampanya.UseVisualStyleBackColor = true;
-           // this.kampanya.Enter += new System.EventHandler(this.cell);
             // 
             // yemeksepeti
             // 
@@ -132,6 +133,8 @@
             this.PerformLayout();
 
         }
+
+
 
         #endregion
 
