@@ -98,13 +98,13 @@ namespace panel.DbOperations
                 if (SqlConnection.State == ConnectionState.Open) SqlConnection.Close();
             }
         }
-        public DataTable MasalariGoruntule()
+        public DataTable MasalariGoruntule(int masaNo)
         {
             try
             {
                 //Bağlantı Kapalı ise Açılır
                 if (SqlConnection.State == ConnectionState.Closed) SqlConnection.Open();
-                string SqlBase = "SELECT * FROM MASALAR";
+                string SqlBase = $"SELECT * FROM MASALAR WHERE MASA_NO = {masaNo}";
                 SqlDataAdapter SqlDa = new SqlDataAdapter(SqlBase, SqlConnection);
                 DataTable dt = new DataTable();
                 SqlDa.Fill(dt);

@@ -442,88 +442,111 @@ namespace panel
 
         private void btnMasa1_Click(object sender, EventArgs e)
         {
-            var MASALARDatatable = common.MasalariGoruntule();
+            var MASALARDatatable = common.MasalariGoruntule(1);
 
-            string message = MASALARDatatable.Rows[0].Field<string>("masa1");
+            var row = MASALARDatatable.Rows[0].ItemArray;
 
+            MessageBox.Show($"Masa Adı: {row[1]}\nMasa Kat: {row[2]}\nMasa Kapasite: {row[3]}", "masa1");
         }
 
         private void btnMasa2_Click(object sender, EventArgs e)
         {
-            var MASALARDatatable = common.MasalariGoruntule();
+            var MASALARDatatable = common.MasalariGoruntule(2);
 
-            string message = MASALARDatatable.Rows[1].Field<string>("masa2");
+            var row = MASALARDatatable.Rows[0].ItemArray;
+
+            MessageBox.Show($"Masa Adı: { row[1]}\nMasa Kat: { row[2]}\nMasa Kapasite: { row[3]}", "masa2" );
         }
 
         private void btnMasa3_Click(object sender, EventArgs e)
         {
-            var MASALARDatatable = common.MasalariGoruntule();
+            var MASALARDatatable = common.MasalariGoruntule(3);
 
-            string message = MASALARDatatable.Rows[2].Field<string>("masa3");
+            var row = MASALARDatatable.Rows[0].ItemArray;
+
+            MessageBox.Show($"Masa Adı: { row[1]}\nMasa Kat: { row[2]}\nMasa Kapasite: { row[3]}", "masa3");
         }
 
         private void btnMasa4_Click(object sender, EventArgs e)
         {
-            var MASALARDatatable = common.MasalariGoruntule();
+            var MASALARDatatable = common.MasalariGoruntule(4);
 
-            string message = MASALARDatatable.Rows[3].Field<string>("masa4");
+            var row = MASALARDatatable.Rows[0].ItemArray;
+
+            MessageBox.Show($"Masa Adı: { row[1]}\nMasa Kat: { row[2]}\nMasa Kapasite: { row[3]}", "masa4");
         }
 
         private void btnMasa5_Click(object sender, EventArgs e)
         {
-            var MASALARDatatable = common.MasalariGoruntule();
+            var MASALARDatatable = common.MasalariGoruntule(5);
 
-            string message = MASALARDatatable.Rows[4].Field<string>("masa5");
+            var row = MASALARDatatable.Rows[0].ItemArray;
+
+            MessageBox.Show($"Masa Adı: { row[1]}\nMasa Kat: { row[2]}\nMasa Kapasite: { row[3]}", "masa5");
         }
 
         private void btnMasa6_Click(object sender, EventArgs e)
         {
-            var MASALARDatatable = common.MasalariGoruntule();
+            var MASALARDatatable = common.MasalariGoruntule(6);
 
-            string message = MASALARDatatable.Rows[5].Field<string>("masa6");
+            var row = MASALARDatatable.Rows[0].ItemArray;
+
+            MessageBox.Show($"Masa Adı: { row[1]}\nMasa Kat: { row[2]}\nMasa Kapasite: { row[3]}", "masa6");
         }
 
         private void btnMasa8_Click(object sender, EventArgs e)
         {
-            var MASALARDatatable = common.MasalariGoruntule();
+            var MASALARDatatable = common.MasalariGoruntule(7);
 
-            string message = MASALARDatatable.Rows[6].Field<string>("masa7");
+            var row = MASALARDatatable.Rows[0].ItemArray;
+
+            MessageBox.Show($"Masa Adı: { row[1]}\nMasa Kat: { row[2]}\nMasa Kapasite: { row[3]}", "masa7");
         }
 
         private void btnMasa9_Click(object sender, EventArgs e)
         {
-            var MASALARDatatable = common.MasalariGoruntule();
+            var MASALARDatatable = common.MasalariGoruntule(8);
 
-            string message = MASALARDatatable.Rows[7].Field<string>("masa8");
+            var row = MASALARDatatable.Rows[0].ItemArray;
+
+            MessageBox.Show($"Masa Adı: { row[1]}\nMasa Kat: { row[2]}\nMasa Kapasite: { row[3]}", "masa8");
         }
 
         private void btnMasa10_Click(object sender, EventArgs e)
         {
-            var MASALARDatatable = common.MasalariGoruntule();
+            var MASALARDatatable = common.MasalariGoruntule(9);
 
-            string message = MASALARDatatable.Rows[8].Field<string>("masa9");
+            var row = MASALARDatatable.Rows[0].ItemArray;
+
+            MessageBox.Show($"Masa Adı: { row[1]}\nMasa Kat: { row[2]}\nMasa Kapasite: { row[3]}", "masa9");
         }
 
         private void btnMasa11_Click(object sender, EventArgs e)
         {
-            var MASALARDatatable = common.MasalariGoruntule();
+            var MASALARDatatable = common.MasalariGoruntule(10);
 
-            string message = MASALARDatatable.Rows[9].Field<string>("masa10");
+            var row = MASALARDatatable.Rows[0].ItemArray;
+
+            MessageBox.Show($"Masa Adı: { row[1]}\nMasa Kat: { row[2]}\nMasa Kapasite: { row[3]}", "masa10");
 
         }
 
         private void btnMasa12_Click(object sender, EventArgs e)
         {
-            var MASALARDatatable = common.MasalariGoruntule();
+            var MASALARDatatable = common.MasalariGoruntule(11);
 
-            string message = MASALARDatatable.Rows[10].Field<string>("masa11");
+            var row = MASALARDatatable.Rows[0].ItemArray;
+
+            MessageBox.Show($"Masa Adı: { row[1]}\nMasa Kat: { row[2]}\nMasa Kapasite: { row[3]}", "masa11");
         }
 
         private void btnMasa13_Click(object sender, EventArgs e)
         {
-            var MASALARDatatable = common.MasalariGoruntule();
+            var MASALARDatatable = common.MasalariGoruntule(12);
 
-            string message = MASALARDatatable.Rows[11].Field<string>("masa12            ");
+            var row = MASALARDatatable.Rows[0].ItemArray;
+
+            MessageBox.Show($"Masa Adı: { row[1]}\nMasa Kat: { row[2]}\nMasa Kapasite: { row[3]}", "masa12");
         }
     }
 }

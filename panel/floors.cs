@@ -16,10 +16,20 @@ namespace panel
         {
             InitializeComponent();
         }
-      
-        private void button3_Click(object sender, EventArgs e)
+      public void verial()
         {
+            string kat;
+            Console.WriteLine("kat seçiniz:");
+            kat = Console.ReadLine();
 
+            Console.WriteLine("girdiğiniz kat:"+kat);
+            Console.ReadKey();
         }
+        //private void button3_Click(object sender, EventArgs e)
+        //{
+           
+        //}
+
+        
     }
 }
