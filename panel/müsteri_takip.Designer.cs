@@ -157,7 +157,7 @@
             this.musteriLbl1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.musteriLbl1.Location = new System.Drawing.Point(746, 29);
             this.musteriLbl1.Name = "musteriLbl1";
-            this.musteriLbl1.Size = new System.Drawing.Size(351, 39);
+            this.musteriLbl1.Size = new System.Drawing.Size(337, 38);
             this.musteriLbl1.TabIndex = 2;
             this.musteriLbl1.Text = "MÜŞTERİ YÖNETİM";
             this.musteriLbl1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -197,14 +197,17 @@
             this.btnMusteri4.TabIndex = 6;
             this.btnMusteri4.Text = "GORUNTULE";
             this.btnMusteri4.UseVisualStyleBackColor = true;
+            this.btnMusteri4.Click += new System.EventHandler(this.btnMusteri4_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(836, 253);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(943, 446);
             this.dataGridView1.TabIndex = 7;
             // 
