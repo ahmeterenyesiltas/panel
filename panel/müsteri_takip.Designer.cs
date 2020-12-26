@@ -170,6 +170,7 @@
             this.btnMusteri1.TabIndex = 3;
             this.btnMusteri1.Text = "EKLE";
             this.btnMusteri1.UseVisualStyleBackColor = true;
+            this.btnMusteri1.Click += new System.EventHandler(this.btnMusteri1_Click);
             // 
             // btnMusteri2
             // 

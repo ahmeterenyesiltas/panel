@@ -63,6 +63,45 @@ namespace panel.DbOperations
         }
 
         /// <summary>
+        /// Müşterileri listeleyen metod.
+        /// </summary>
+        /// <returns>DataTable nesnesi döndürür</returns>
+        public DataTable MusterileriEkle()
+        {
+            try
+            {
+                //Bağlantı Kapalı ise Açılır
+                if (SqlConnection.State == ConnectionState.Closed) SqlConnection.Open();
+                string SqlBase = "INSERT INTO MUSTERILER(AD_SOYAD, TELEFON, E_MAIL, ADRES, CINSIYET) VALUES (@AD_SOYAD, @TELEFON, @E_MAIL, ADRES, CINSIYET)";
+                SqlDataAdapter SqlDa = new SqlDataAdapter(SqlBase, SqlConnection);
+                DataTable dt = new DataTable();
+                SqlDa.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    SqlDa.Dispose();
+                    return dt;
+                }
+                else
+                {
+                    SqlDa.Dispose();
+                    return new DataTable();
+                }
+            }
+            catch (Exception exc)
+            {
+                AddLogError("MusterileriEkle", "Müşterileri Ekleme Hatası", "Hata Detayı : " + exc.Message);
+                throw;
+            }
+            finally
+            {
+                //Bağlantı Açık ise Kapanır
+                if (SqlConnection.State == ConnectionState.Open) SqlConnection.Close();
+            }
+        }
+
+
+
+        /// <summary>
         /// Adresi döndüren metod.
         /// </summary>
         /// <returns>DataTable nesnesi döndürür</returns>
