@@ -16,5 +16,17 @@ namespace panel
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            YemekMenuTatlilarcs tatlilar = new YemekMenuTatlilarcs();
+            tatlilar.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FoodShow foodShow = new FoodShow();
+            foodShow.ShowDialog();
+        }
     }
 }

@@ -60,10 +60,16 @@
       <DependentUpon>AddCar.cs</DependentUpon>
     </Compile>
     <Compile Include="DbOperations\Common.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FoodShow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="FoodShow.Designer.cs">
+      <DependentUpon>FoodShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formEren\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEren\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="floors.cs">
@@ -72,28 +78,28 @@
     <Compile Include="floors.Designer.cs">
       <DependentUpon>floors.cs</DependentUpon>
     </Compile>
-    <Compile Include="PersonelAdd.cs">
+    <Compile Include="formEren\PersonelAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PersonelAdd.designer.cs">
+    <Compile Include="formEren\PersonelAdd.designer.cs">
       <DependentUpon>PersonelAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="PersonelUpdate.cs">
+    <Compile Include="formEren\PersonelUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PersonelUpdate.designer.cs">
+    <Compile Include="formEren\PersonelUpdate.designer.cs">
       <DependentUpon>PersonelUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="PersonelDelete.cs">
+    <Compile Include="formEren\PersonelDelete.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PersonelDelete.Designer.cs">
+    <Compile Include="formEren\PersonelDelete.Designer.cs">
       <DependentUpon>PersonelDelete.cs</DependentUpon>
     </Compile>
-    <Compile Include="PersonelManager.cs">
+    <Compile Include="formEren\PersonelManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PersonelManager.designer.cs">
+    <Compile Include="formEren\PersonelManager.designer.cs">
       <DependentUpon>PersonelManager.cs</DependentUpon>
     </Compile>
     <Compile Include="kamera.cs">
@@ -108,10 +114,10 @@
     <Compile Include="info.Designer.cs">
       <DependentUpon>info.cs</DependentUpon>
     </Compile>
-    <Compile Include="login.cs">
+    <Compile Include="formEren\login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="login.Designer.cs">
+    <Compile Include="formEren\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
     <Compile Include="MediaPlayer.cs">
@@ -136,6 +142,8 @@
     <Compile Include="ModelEren\dbHelper.cs" />
     <Compile Include="ModelEren\Department.cs" />
     <Compile Include="ModelEren\Employee.cs" />
+    <Compile Include="ModelEren\Food.cs" />
+    <Compile Include="ModelEren\FoodDesserts.cs" />
     <Compile Include="ModelEren\Person.cs" />
     <Compile Include="ModelEren\Register.cs" />
     <Compile Include="ModelEren\Student.cs" />
@@ -177,11 +185,17 @@
     <Compile Include="stok_takip.Designer.cs">
       <DependentUpon>stok_takip.cs</DependentUpon>
     </Compile>
-    <Compile Include="YemekMenu.cs">
+    <Compile Include="formEren\YemekMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="YemekMenu.Designer.cs">
+    <Compile Include="formEren\YemekMenu.Designer.cs">
       <DependentUpon>YemekMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YemekMenuTatlilarcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YemekMenuTatlilarcs.Designer.cs">
+      <DependentUpon>YemekMenuTatlilarcs.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AddCar.resx">
       <DependentUpon>AddCar.cs</DependentUpon>
@@ -189,19 +203,22 @@
     <EmbeddedResource Include="floors.resx">
       <DependentUpon>floors.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="FoodShow.resx">
+      <DependentUpon>FoodShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formEren\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PersonelAdd.resx">
+    <EmbeddedResource Include="formEren\PersonelAdd.resx">
       <DependentUpon>PersonelAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PersonelUpdate.resx">
+    <EmbeddedResource Include="formEren\PersonelUpdate.resx">
       <DependentUpon>PersonelUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PersonelDelete.resx">
+    <EmbeddedResource Include="formEren\PersonelDelete.resx">
       <DependentUpon>PersonelDelete.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PersonelManager.resx">
+    <EmbeddedResource Include="formEren\PersonelManager.resx">
       <DependentUpon>PersonelManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ikinciform.resx">
@@ -216,7 +233,7 @@
     <EmbeddedResource Include="kamera.resx">
       <DependentUpon>kamera.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="login.resx">
+    <EmbeddedResource Include="formEren\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MediaPlayer.resx">
@@ -250,8 +267,11 @@
     <EmbeddedResource Include="stok_takip.resx">
       <DependentUpon>stok_takip.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="YemekMenu.resx">
+    <EmbeddedResource Include="formEren\YemekMenu.resx">
       <DependentUpon>YemekMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YemekMenuTatlilarcs.resx">
+      <DependentUpon>YemekMenuTatlilarcs.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
