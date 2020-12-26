@@ -29,6 +29,7 @@ namespace panel
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FoodShow));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -36,12 +37,12 @@ namespace panel
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.dgvData = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.PanelDataGV = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.PanelDataGV.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -114,20 +115,24 @@ namespace panel
             this.dgvData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvData.Name = "dgvData";
             this.dgvData.ReadOnly = true;
-            this.dgvData.RowHeadersWidth = 51;
+            this.dgvData.RowHeadersWidth = 100;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dgvData.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvData.RowTemplate.Height = 24;
             this.dgvData.Size = new System.Drawing.Size(1305, 540);
             this.dgvData.TabIndex = 1;
             // 
-            // panel2
+            // PanelDataGV
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel2.Controls.Add(this.dgvData);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(128, 281);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1305, 540);
-            this.panel2.TabIndex = 3;
+            this.PanelDataGV.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.PanelDataGV.Controls.Add(this.dgvData);
+            this.PanelDataGV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelDataGV.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PanelDataGV.ForeColor = System.Drawing.Color.Firebrick;
+            this.PanelDataGV.Location = new System.Drawing.Point(128, 281);
+            this.PanelDataGV.Name = "PanelDataGV";
+            this.PanelDataGV.Size = new System.Drawing.Size(1305, 540);
+            this.PanelDataGV.TabIndex = 3;
             // 
             // button2
             // 
@@ -135,7 +140,7 @@ namespace panel
             this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.FlatAppearance.BorderSize = 13;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold);
+            this.button2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.Location = new System.Drawing.Point(729, 12);
             this.button2.Name = "button2";
@@ -151,7 +156,7 @@ namespace panel
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1433, 821);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.PanelDataGV);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
@@ -166,7 +171,7 @@ namespace panel
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
-            this.panel2.ResumeLayout(false);
+            this.PanelDataGV.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -179,7 +184,7 @@ namespace panel
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.DataGridView dgvData;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel PanelDataGV;
         private System.Windows.Forms.Button button2;
     }
 }

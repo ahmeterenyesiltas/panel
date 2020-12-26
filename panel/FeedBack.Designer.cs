@@ -1,0 +1,444 @@
+﻿
+namespace panel
+{
+    partial class FeedBack
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FeedBack));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.Radiobtn1 = new System.Windows.Forms.RadioButton();
+            this.StarBtn1 = new System.Windows.Forms.Button();
+            this.StarBtn2 = new System.Windows.Forms.Button();
+            this.StarBtn3 = new System.Windows.Forms.Button();
+            this.StarBtn4 = new System.Windows.Forms.Button();
+            this.StarBtn5 = new System.Windows.Forms.Button();
+            this.Radiobtn2 = new System.Windows.Forms.RadioButton();
+            this.Radiobtn3 = new System.Windows.Forms.RadioButton();
+            this.Radiobtn4 = new System.Windows.Forms.RadioButton();
+            this.Radiobtn5 = new System.Windows.Forms.RadioButton();
+            this.RateBtn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblPoint = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.panel6.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Turquoise;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1701, 104);
+            this.panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cooper Black", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(601, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(501, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Customer Reviews and FeedBacks";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Gold;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 104);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(61, 875);
+            this.panel3.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Gold;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(1640, 104);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(61, 875);
+            this.panel4.TabIndex = 3;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Gold;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(61, 939);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1579, 40);
+            this.panel2.TabIndex = 4;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Aqua;
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Controls.Add(this.textBox2);
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.textBox1);
+            this.panel5.Controls.Add(this.label2);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Font = new System.Drawing.Font("Bodoni MT", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel5.Location = new System.Drawing.Point(61, 104);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1579, 835);
+            this.panel5.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(114, 72);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(169, 25);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Customer Name";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(306, 69);
+            this.textBox1.MaxLength = 30;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(255, 32);
+            this.textBox1.TabIndex = 1;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(306, 120);
+            this.textBox2.MaxLength = 300;
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(728, 191);
+            this.textBox2.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Modern No. 20", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(86, 123);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(197, 25);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Customer Review :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Modern No. 20", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(23, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(297, 25);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Customer Point(Out Of 10) :";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.numericUpDown1.Location = new System.Drawing.Point(336, 16);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 34);
+            this.numericUpDown1.TabIndex = 5;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Modern No. 20", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(7, 155);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(353, 25);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Restaurant Quality(Out of 5 star)";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.MintCream;
+            this.panel6.Controls.Add(this.lblPoint);
+            this.panel6.Controls.Add(this.button1);
+            this.panel6.Controls.Add(this.RateBtn);
+            this.panel6.Controls.Add(this.numericUpDown1);
+            this.panel6.Controls.Add(this.Radiobtn5);
+            this.panel6.Controls.Add(this.label4);
+            this.panel6.Controls.Add(this.Radiobtn4);
+            this.panel6.Controls.Add(this.Radiobtn3);
+            this.panel6.Controls.Add(this.Radiobtn2);
+            this.panel6.Controls.Add(this.StarBtn5);
+            this.panel6.Controls.Add(this.StarBtn4);
+            this.panel6.Controls.Add(this.StarBtn3);
+            this.panel6.Controls.Add(this.StarBtn2);
+            this.panel6.Controls.Add(this.StarBtn1);
+            this.panel6.Controls.Add(this.Radiobtn1);
+            this.panel6.Controls.Add(this.label5);
+            this.panel6.Location = new System.Drawing.Point(91, 353);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1140, 377);
+            this.panel6.TabIndex = 7;
+            // 
+            // Radiobtn1
+            // 
+            this.Radiobtn1.AutoSize = true;
+            this.Radiobtn1.BackColor = System.Drawing.Color.Yellow;
+            this.Radiobtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Radiobtn1.Location = new System.Drawing.Point(398, 267);
+            this.Radiobtn1.Name = "Radiobtn1";
+            this.Radiobtn1.Size = new System.Drawing.Size(84, 28);
+            this.Radiobtn1.TabIndex = 21;
+            this.Radiobtn1.TabStop = true;
+            this.Radiobtn1.Text = "1 Star";
+            this.Radiobtn1.UseVisualStyleBackColor = false;
+            // 
+            // StarBtn1
+            // 
+            this.StarBtn1.BackColor = System.Drawing.Color.Aqua;
+            this.StarBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StarBtn1.Image = ((System.Drawing.Image)(resources.GetObject("StarBtn1.Image")));
+            this.StarBtn1.Location = new System.Drawing.Point(398, 133);
+            this.StarBtn1.Name = "StarBtn1";
+            this.StarBtn1.Size = new System.Drawing.Size(125, 110);
+            this.StarBtn1.TabIndex = 26;
+            this.StarBtn1.UseVisualStyleBackColor = false;
+            // 
+            // StarBtn2
+            // 
+            this.StarBtn2.BackColor = System.Drawing.Color.Aqua;
+            this.StarBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StarBtn2.Image = ((System.Drawing.Image)(resources.GetObject("StarBtn2.Image")));
+            this.StarBtn2.Location = new System.Drawing.Point(529, 133);
+            this.StarBtn2.Name = "StarBtn2";
+            this.StarBtn2.Size = new System.Drawing.Size(125, 110);
+            this.StarBtn2.TabIndex = 27;
+            this.StarBtn2.UseVisualStyleBackColor = false;
+            // 
+            // StarBtn3
+            // 
+            this.StarBtn3.BackColor = System.Drawing.Color.Aqua;
+            this.StarBtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StarBtn3.Image = ((System.Drawing.Image)(resources.GetObject("StarBtn3.Image")));
+            this.StarBtn3.Location = new System.Drawing.Point(660, 133);
+            this.StarBtn3.Name = "StarBtn3";
+            this.StarBtn3.Size = new System.Drawing.Size(125, 110);
+            this.StarBtn3.TabIndex = 28;
+            this.StarBtn3.UseVisualStyleBackColor = false;
+            // 
+            // StarBtn4
+            // 
+            this.StarBtn4.BackColor = System.Drawing.Color.Aqua;
+            this.StarBtn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StarBtn4.Image = ((System.Drawing.Image)(resources.GetObject("StarBtn4.Image")));
+            this.StarBtn4.Location = new System.Drawing.Point(791, 133);
+            this.StarBtn4.Name = "StarBtn4";
+            this.StarBtn4.Size = new System.Drawing.Size(125, 110);
+            this.StarBtn4.TabIndex = 29;
+            this.StarBtn4.UseVisualStyleBackColor = false;
+            // 
+            // StarBtn5
+            // 
+            this.StarBtn5.BackColor = System.Drawing.Color.Aqua;
+            this.StarBtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StarBtn5.Image = ((System.Drawing.Image)(resources.GetObject("StarBtn5.Image")));
+            this.StarBtn5.Location = new System.Drawing.Point(922, 133);
+            this.StarBtn5.Name = "StarBtn5";
+            this.StarBtn5.Size = new System.Drawing.Size(125, 110);
+            this.StarBtn5.TabIndex = 30;
+            this.StarBtn5.UseVisualStyleBackColor = false;
+            // 
+            // Radiobtn2
+            // 
+            this.Radiobtn2.AutoSize = true;
+            this.Radiobtn2.BackColor = System.Drawing.Color.Yellow;
+            this.Radiobtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Radiobtn2.Location = new System.Drawing.Point(529, 267);
+            this.Radiobtn2.Name = "Radiobtn2";
+            this.Radiobtn2.Size = new System.Drawing.Size(84, 28);
+            this.Radiobtn2.TabIndex = 31;
+            this.Radiobtn2.TabStop = true;
+            this.Radiobtn2.Text = "2 Star";
+            this.Radiobtn2.UseVisualStyleBackColor = false;
+            // 
+            // Radiobtn3
+            // 
+            this.Radiobtn3.AutoSize = true;
+            this.Radiobtn3.BackColor = System.Drawing.Color.Yellow;
+            this.Radiobtn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Radiobtn3.Location = new System.Drawing.Point(660, 267);
+            this.Radiobtn3.Name = "Radiobtn3";
+            this.Radiobtn3.Size = new System.Drawing.Size(84, 28);
+            this.Radiobtn3.TabIndex = 32;
+            this.Radiobtn3.TabStop = true;
+            this.Radiobtn3.Text = "3 Star";
+            this.Radiobtn3.UseVisualStyleBackColor = false;
+            // 
+            // Radiobtn4
+            // 
+            this.Radiobtn4.AutoSize = true;
+            this.Radiobtn4.BackColor = System.Drawing.Color.Yellow;
+            this.Radiobtn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Radiobtn4.Location = new System.Drawing.Point(791, 267);
+            this.Radiobtn4.Name = "Radiobtn4";
+            this.Radiobtn4.Size = new System.Drawing.Size(84, 28);
+            this.Radiobtn4.TabIndex = 33;
+            this.Radiobtn4.TabStop = true;
+            this.Radiobtn4.Text = "4 Star";
+            this.Radiobtn4.UseVisualStyleBackColor = false;
+            // 
+            // Radiobtn5
+            // 
+            this.Radiobtn5.AutoSize = true;
+            this.Radiobtn5.BackColor = System.Drawing.Color.Yellow;
+            this.Radiobtn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Radiobtn5.Location = new System.Drawing.Point(922, 267);
+            this.Radiobtn5.Name = "Radiobtn5";
+            this.Radiobtn5.Size = new System.Drawing.Size(84, 28);
+            this.Radiobtn5.TabIndex = 34;
+            this.Radiobtn5.TabStop = true;
+            this.Radiobtn5.Text = "5 Star";
+            this.Radiobtn5.UseVisualStyleBackColor = false;
+            // 
+            // RateBtn
+            // 
+            this.RateBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.RateBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RateBtn.Location = new System.Drawing.Point(956, 312);
+            this.RateBtn.Name = "RateBtn";
+            this.RateBtn.Size = new System.Drawing.Size(184, 65);
+            this.RateBtn.TabIndex = 35;
+            this.RateBtn.Text = "Rate Restaurant";
+            this.RateBtn.UseVisualStyleBackColor = false;
+            this.RateBtn.Click += new System.EventHandler(this.RateBtn_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(483, 10);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(148, 48);
+            this.button1.TabIndex = 36;
+            this.button1.Text = "Give Point";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lblPoint
+            // 
+            this.lblPoint.AutoSize = true;
+            this.lblPoint.Location = new System.Drawing.Point(668, 23);
+            this.lblPoint.Name = "lblPoint";
+            this.lblPoint.Size = new System.Drawing.Size(0, 27);
+            this.lblPoint.TabIndex = 37;
+            // 
+            // FeedBack
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1701, 979);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FeedBack";
+            this.Text = " ";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.RadioButton Radiobtn1;
+        private System.Windows.Forms.RadioButton Radiobtn5;
+        private System.Windows.Forms.RadioButton Radiobtn4;
+        private System.Windows.Forms.RadioButton Radiobtn3;
+        private System.Windows.Forms.RadioButton Radiobtn2;
+        private System.Windows.Forms.Button StarBtn5;
+        private System.Windows.Forms.Button StarBtn4;
+        private System.Windows.Forms.Button StarBtn3;
+        private System.Windows.Forms.Button StarBtn2;
+        private System.Windows.Forms.Button StarBtn1;
+        private System.Windows.Forms.Button RateBtn;
+        private System.Windows.Forms.Label lblPoint;
+        private System.Windows.Forms.Button button1;
+    }
+}

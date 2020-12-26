@@ -60,6 +60,12 @@
       <DependentUpon>AddCar.cs</DependentUpon>
     </Compile>
     <Compile Include="DbOperations\Common.cs" />
+    <Compile Include="FeedBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedBack.Designer.cs">
+      <DependentUpon>FeedBack.cs</DependentUpon>
+    </Compile>
     <Compile Include="FoodShow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </Compile>
     <EmbeddedResource Include="AddCar.resx">
       <DependentUpon>AddCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedBack.resx">
+      <DependentUpon>FeedBack.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="floors.resx">
       <DependentUpon>floors.cs</DependentUpon>

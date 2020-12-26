@@ -114,7 +114,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(199, 884);
+            this.panel1.Size = new System.Drawing.Size(199, 1084);
             this.panel1.TabIndex = 0;
             // 
             // button12
@@ -516,7 +516,7 @@
             this.panel2.Location = new System.Drawing.Point(199, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1357, 105);
+            this.panel2.Size = new System.Drawing.Size(1701, 105);
             this.panel2.TabIndex = 1;
             // 
             // label4
@@ -535,7 +535,7 @@
             // 
             this.panel4.Controls.Add(this.Cancelbtn);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(1157, 0);
+            this.panel4.Location = new System.Drawing.Point(1501, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 105);
@@ -568,7 +568,7 @@
             this.panel3.Location = new System.Drawing.Point(199, 105);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1357, 779);
+            this.panel3.Size = new System.Drawing.Size(1701, 979);
             this.panel3.TabIndex = 3;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -720,6 +720,7 @@
             this.button19.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button19.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // button18
             // 
@@ -985,7 +986,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(1556, 884);
+            this.ClientSize = new System.Drawing.Size(1900, 1084);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.button23);
             this.Controls.Add(this.button22);
@@ -1012,7 +1013,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Main Form";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panelFloorDrop.ResumeLayout(false);

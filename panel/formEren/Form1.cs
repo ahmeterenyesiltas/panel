@@ -17,6 +17,12 @@ namespace panel
         {
             InitializeComponent();
         }
+        
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
@@ -551,8 +557,20 @@ namespace panel
             musteri_takip.BringToFront();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+       
+
+        private void button19_Click(object sender, EventArgs e)      //FeedBack Button menu içi
         {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            FeedBack feedBack = new FeedBack();
+            feedBack.TopLevel = false;
+            panel3.Controls.Add(feedBack);
+            feedBack.Show();
+            feedBack.Dock = DockStyle.Fill;
+            feedBack.BringToFront();
+
+
 
         }
     }
