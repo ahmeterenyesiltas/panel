@@ -34,7 +34,8 @@ namespace panel.DbOperations
             try
             {
                 //Bağlantı Kapalı ise Açılır
-                if (SqlConnection.State == ConnectionState.Closed) SqlConnection.Open();
+                if (SqlConnection.State == ConnectionState.Closed) 
+                    SqlConnection.Open();
                 string SqlBase = "SELECT * FROM MUSTERILER";
                 SqlDataAdapter SqlDa = new SqlDataAdapter(SqlBase, SqlConnection);
                 DataTable dt = new DataTable();

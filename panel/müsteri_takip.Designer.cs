@@ -45,6 +45,7 @@
             this.btnMusteri3 = new System.Windows.Forms.Button();
             this.btnMusteri4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btn_kaydet = new System.Windows.Forms.Button();
             this.musteri_gp1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -180,6 +181,7 @@
             this.btnMusteri2.TabIndex = 4;
             this.btnMusteri2.Text = "SİL";
             this.btnMusteri2.UseVisualStyleBackColor = true;
+            this.btnMusteri2.Click += new System.EventHandler(this.btnMusteri2_Click);
             // 
             // btnMusteri3
             // 
@@ -189,6 +191,7 @@
             this.btnMusteri3.TabIndex = 5;
             this.btnMusteri3.Text = "GUNCELLE";
             this.btnMusteri3.UseVisualStyleBackColor = true;
+            this.btnMusteri3.Click += new System.EventHandler(this.btnMusteri3_Click);
             // 
             // btnMusteri4
             // 
@@ -202,7 +205,9 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(836, 253);
             this.dataGridView1.Name = "dataGridView1";
@@ -212,11 +217,21 @@
             this.dataGridView1.Size = new System.Drawing.Size(943, 446);
             this.dataGridView1.TabIndex = 7;
             // 
+            // btn_kaydet
+            // 
+            this.btn_kaydet.Location = new System.Drawing.Point(584, 476);
+            this.btn_kaydet.Name = "btn_kaydet";
+            this.btn_kaydet.Size = new System.Drawing.Size(148, 61);
+            this.btn_kaydet.TabIndex = 8;
+            this.btn_kaydet.Text = "KAYDET";
+            this.btn_kaydet.UseVisualStyleBackColor = true;
+            this.btn_kaydet.Click += new System.EventHandler(this.btn_kaydet_Click);
+            // 
             // müsteri_takip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BackColor = System.Drawing.Color.DarkKhaki;
             this.ClientSize = new System.Drawing.Size(1942, 732);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnMusteri4);
@@ -225,6 +240,7 @@
             this.Controls.Add(this.btnMusteri1);
             this.Controls.Add(this.musteriLbl1);
             this.Controls.Add(this.musteri_gp1);
+            this.Controls.Add(this.btn_kaydet);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "müsteri_takip";
             this.Text = "müsteri_takip";
@@ -255,5 +271,6 @@
         private System.Windows.Forms.Button btnMusteri3;
         private System.Windows.Forms.Button btnMusteri4;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btn_kaydet;
     }
 }
