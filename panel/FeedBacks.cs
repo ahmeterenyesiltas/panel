@@ -1,4 +1,5 @@
-﻿using System;
+﻿using panel.Model;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -14,7 +15,7 @@ namespace panel
         string customerReview;
         float customerPoint;
         float restaurantQuality;
-
+        int customerID;
         
 
 
@@ -73,6 +74,9 @@ namespace panel
             }
         }
 
+        public int CustomerID { get => customerID; set => customerID = value; }
+
+
         public DataTable GetAllFeedBack()        //Bunda Loginden farklı olarak tüm table ı okumak almak istiyoruz burası önemli
         {                                        //Data grid view da göstermek istediğimiz için galiba DataTable türünde oldu o kısmı anlamadım
                                                  //10 aralık dersinin sonunda yapıyor bunu oldukça önemli görünüyor
@@ -108,6 +112,28 @@ namespace panel
                 connection.Close();
             }
 
+
+        }
+
+
+        public DataTable GetCustomerByID(int id)        //Bunda Loginden farklı olarak tüm table ı okumak almak istiyoruz burası önemli
+        {                                        //Data grid view da göstermek istediğimiz için galiba DataTable türünde oldu o kısmı anlamadım
+                                                 //10 aralık dersinin sonunda yapıyor bunu oldukça önemli görünüyor
+
+            try
+            {
+                string query = $"select * from Feedback where CustomerID={id}";     //Burda id ye göre değer aldık burası çok önemliiiiiiiiiiiii
+                return dbHelper.ExecuteQuery(query);
+
+
+            }
+
+
+            catch (Exception Ex)
+            {
+
+                throw new Exception(Ex.Message);
+            }
 
         }
 
