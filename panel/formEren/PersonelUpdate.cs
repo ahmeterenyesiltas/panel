@@ -111,7 +111,7 @@ namespace panel
                     throw new Exception("Salary Cannot be less than 0");
                 }
 
-                string Gender = label9.Text.Trim();
+                string Gender = comboBoxGender.Text.Trim();
 
                 if (string.IsNullOrWhiteSpace(Gender))
                 {
@@ -166,7 +166,7 @@ namespace panel
             tbEmail.Text = "";
             tbPassword.Text = "";
             tbSalary.Text = "";
-            tbGender.Text = "";
+            comboBoxGender.Text = "";
             tbDepartmentID.Text = "";
 
 

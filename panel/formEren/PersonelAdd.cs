@@ -46,7 +46,7 @@ namespace panel
                 string Email = tbEmail.Text.Trim();
                 string Password = tbPassword.Text.Trim();
                 float Salary = float.Parse(tbSalary.Text.ToString());
-                string Gender = tbGender.Text.Trim();
+                string Gender = comboBoxGender.Text.Trim();
                 int DepartmentID = int.Parse(tbDepartmentID.Text.ToString());
                 
                 //int credit = (int)nudCredit.Value;    //aynı şekilde burdada credit için aynı işlemi yapıp altta atıyoruz add butonuna basılınca
@@ -79,12 +79,12 @@ namespace panel
                 }
                 if (string.IsNullOrWhiteSpace(Gender))
                 {
-                    tbGender.Focus();
+                    comboBoxGender.Focus();
                     throw new Exception("Gender is empty");
                 }
                 if (DepartmentID<1000 && DepartmentID>1004)
                 {
-                    tbFirstName.Focus();
+                    tbDepartmentID.Focus();
                     throw new Exception("Department Id must be between 1000 and 1004");
                 }
 

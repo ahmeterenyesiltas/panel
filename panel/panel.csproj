@@ -60,16 +60,22 @@
       <DependentUpon>AddCar.cs</DependentUpon>
     </Compile>
     <Compile Include="DbOperations\Common.cs" />
-    <Compile Include="FeedBack.cs">
+    <Compile Include="FeedBackSQL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FeedBack.Designer.cs">
+    <Compile Include="FeedBackSQL.Designer.cs">
+      <DependentUpon>FeedBackSQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formEren\FeedBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEren\FeedBack.Designer.cs">
       <DependentUpon>FeedBack.cs</DependentUpon>
     </Compile>
-    <Compile Include="FoodShow.cs">
+    <Compile Include="formEren\FoodShow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FoodShow.Designer.cs">
+    <Compile Include="formEren\FoodShow.Designer.cs">
       <DependentUpon>FoodShow.cs</DependentUpon>
     </Compile>
     <Compile Include="formEren\Form1.cs">
@@ -197,22 +203,25 @@
     <Compile Include="formEren\YemekMenu.Designer.cs">
       <DependentUpon>YemekMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="YemekMenuTatlilarcs.cs">
+    <Compile Include="formEren\YemekMenuTatlilarcs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="YemekMenuTatlilarcs.Designer.cs">
+    <Compile Include="formEren\YemekMenuTatlilarcs.Designer.cs">
       <DependentUpon>YemekMenuTatlilarcs.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AddCar.resx">
       <DependentUpon>AddCar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FeedBack.resx">
+    <EmbeddedResource Include="FeedBackSQL.resx">
+      <DependentUpon>FeedBackSQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formEren\FeedBack.resx">
       <DependentUpon>FeedBack.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="floors.resx">
       <DependentUpon>floors.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FoodShow.resx">
+    <EmbeddedResource Include="formEren\FoodShow.resx">
       <DependentUpon>FoodShow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formEren\Form1.resx">
@@ -279,7 +288,7 @@
     <EmbeddedResource Include="formEren\YemekMenu.resx">
       <DependentUpon>YemekMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="YemekMenuTatlilarcs.resx">
+    <EmbeddedResource Include="formEren\YemekMenuTatlilarcs.resx">
       <DependentUpon>YemekMenuTatlilarcs.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

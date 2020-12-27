@@ -37,7 +37,6 @@ namespace panel
             this.label8 = new System.Windows.Forms.Label();
             this.tbFirstName = new System.Windows.Forms.TextBox();
             this.tbDepartmentID = new System.Windows.Forms.TextBox();
-            this.tbGender = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tbSalary = new System.Windows.Forms.TextBox();
@@ -51,6 +50,7 @@ namespace panel
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboBoxGender = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -113,29 +113,20 @@ namespace panel
             // tbFirstName
             // 
             this.tbFirstName.Location = new System.Drawing.Point(208, 148);
-            this.tbFirstName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbFirstName.Margin = new System.Windows.Forms.Padding(4);
             this.tbFirstName.MaxLength = 40;
             this.tbFirstName.Name = "tbFirstName";
             this.tbFirstName.Size = new System.Drawing.Size(379, 22);
-            this.tbFirstName.TabIndex = 29;
+            this.tbFirstName.TabIndex = 1;
             // 
             // tbDepartmentID
             // 
             this.tbDepartmentID.Location = new System.Drawing.Point(208, 399);
-            this.tbDepartmentID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbDepartmentID.Margin = new System.Windows.Forms.Padding(4);
             this.tbDepartmentID.MaxLength = 40;
             this.tbDepartmentID.Name = "tbDepartmentID";
             this.tbDepartmentID.Size = new System.Drawing.Size(379, 22);
-            this.tbDepartmentID.TabIndex = 43;
-            // 
-            // tbGender
-            // 
-            this.tbGender.Location = new System.Drawing.Point(208, 357);
-            this.tbGender.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tbGender.MaxLength = 40;
-            this.tbGender.Name = "tbGender";
-            this.tbGender.Size = new System.Drawing.Size(379, 22);
-            this.tbGender.TabIndex = 42;
+            this.tbDepartmentID.TabIndex = 7;
             // 
             // label1
             // 
@@ -164,11 +155,11 @@ namespace panel
             // tbSalary
             // 
             this.tbSalary.Location = new System.Drawing.Point(208, 314);
-            this.tbSalary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbSalary.Margin = new System.Windows.Forms.Padding(4);
             this.tbSalary.MaxLength = 40;
             this.tbSalary.Name = "tbSalary";
             this.tbSalary.Size = new System.Drawing.Size(379, 22);
-            this.tbSalary.TabIndex = 40;
+            this.tbSalary.TabIndex = 5;
             // 
             // label7
             // 
@@ -185,20 +176,20 @@ namespace panel
             // tbLastName
             // 
             this.tbLastName.Location = new System.Drawing.Point(208, 190);
-            this.tbLastName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbLastName.Margin = new System.Windows.Forms.Padding(4);
             this.tbLastName.MaxLength = 40;
             this.tbLastName.Name = "tbLastName";
             this.tbLastName.Size = new System.Drawing.Size(379, 22);
-            this.tbLastName.TabIndex = 33;
+            this.tbLastName.TabIndex = 2;
             // 
             // tbPassword
             // 
             this.tbPassword.Location = new System.Drawing.Point(208, 273);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(4);
             this.tbPassword.MaxLength = 40;
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(379, 22);
-            this.tbPassword.TabIndex = 38;
+            this.tbPassword.TabIndex = 4;
             // 
             // label2
             // 
@@ -239,15 +230,16 @@ namespace panel
             // tbEmail
             // 
             this.tbEmail.Location = new System.Drawing.Point(208, 231);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(4);
             this.tbEmail.MaxLength = 40;
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(379, 22);
-            this.tbEmail.TabIndex = 36;
+            this.tbEmail.TabIndex = 3;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.comboBoxGender);
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label3);
@@ -258,7 +250,6 @@ namespace panel
             this.panel1.Controls.Add(this.tbDepartmentID);
             this.panel1.Controls.Add(this.tbCourseID);
             this.panel1.Controls.Add(this.tbEmail);
-            this.panel1.Controls.Add(this.tbGender);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label6);
@@ -269,7 +260,7 @@ namespace panel
             this.panel1.Controls.Add(this.tbLastName);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Location = new System.Drawing.Point(321, 38);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(784, 539);
             this.panel1.TabIndex = 45;
@@ -308,6 +299,18 @@ namespace panel
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // comboBoxGender
+            // 
+            this.comboBoxGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxGender.FormattingEnabled = true;
+            this.comboBoxGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.comboBoxGender.Location = new System.Drawing.Point(208, 353);
+            this.comboBoxGender.Name = "comboBoxGender";
+            this.comboBoxGender.Size = new System.Drawing.Size(379, 24);
+            this.comboBoxGender.TabIndex = 6;
+            // 
             // PersonelUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -335,7 +338,6 @@ namespace panel
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox tbFirstName;
         private System.Windows.Forms.TextBox tbDepartmentID;
-        private System.Windows.Forms.TextBox tbGender;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tbSalary;
@@ -349,5 +351,6 @@ namespace panel
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.ComboBox comboBoxGender;
     }
 }
