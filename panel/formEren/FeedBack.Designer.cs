@@ -59,10 +59,12 @@ namespace panel
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -116,6 +118,7 @@ namespace panel
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Aqua;
+            this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Controls.Add(this.button3);
             this.panel5.Controls.Add(this.button2);
             this.panel5.Controls.Add(this.panel6);
@@ -418,6 +421,17 @@ namespace panel
             this.label2.TabIndex = 0;
             this.label2.Text = "Customer Name";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1107, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(372, 306);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
+            // 
             // FeedBack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -440,6 +454,7 @@ namespace panel
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -475,5 +490,6 @@ namespace panel
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

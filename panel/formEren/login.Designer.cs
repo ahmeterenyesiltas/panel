@@ -42,8 +42,12 @@
             this.cbRemember = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -60,7 +64,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Font = new System.Drawing.Font("Arial Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(41, 40);
@@ -84,7 +88,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Font = new System.Drawing.Font("Arial Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.Red;
             this.label3.Location = new System.Drawing.Point(41, 92);
@@ -123,22 +127,22 @@
             this.lblMessage.AutoSize = true;
             this.lblMessage.Location = new System.Drawing.Point(132, 20);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(46, 17);
+            this.lblMessage.Size = new System.Drawing.Size(0, 17);
             this.lblMessage.TabIndex = 5;
-            this.lblMessage.Text = "label4";
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Controls.Add(this.Cancelbtn);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1009, 100);
+            this.panel2.Size = new System.Drawing.Size(1018, 100);
             this.panel2.TabIndex = 9;
             // 
             // Cancelbtn
             // 
-            this.Cancelbtn.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Cancelbtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Cancelbtn.Dock = System.Windows.Forms.DockStyle.Right;
             this.Cancelbtn.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
             this.Cancelbtn.FlatAppearance.BorderSize = 0;
@@ -147,7 +151,7 @@
             this.Cancelbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cancelbtn.ForeColor = System.Drawing.Color.AliceBlue;
             this.Cancelbtn.Image = ((System.Drawing.Image)(resources.GetObject("Cancelbtn.Image")));
-            this.Cancelbtn.Location = new System.Drawing.Point(866, 0);
+            this.Cancelbtn.Location = new System.Drawing.Point(875, 0);
             this.Cancelbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Cancelbtn.Name = "Cancelbtn";
             this.Cancelbtn.Size = new System.Drawing.Size(143, 100);
@@ -160,7 +164,7 @@
             this.cbRemember.AutoSize = true;
             this.cbRemember.Font = new System.Drawing.Font("Arial Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cbRemember.ForeColor = System.Drawing.Color.Chartreuse;
-            this.cbRemember.Location = new System.Drawing.Point(177, 351);
+            this.cbRemember.Location = new System.Drawing.Point(300, 351);
             this.cbRemember.Name = "cbRemember";
             this.cbRemember.Size = new System.Drawing.Size(201, 37);
             this.cbRemember.TabIndex = 10;
@@ -176,7 +180,7 @@
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(357, 394);
+            this.button2.Location = new System.Drawing.Point(409, 394);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(174, 69);
             this.button2.TabIndex = 6;
@@ -194,7 +198,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(177, 394);
+            this.button1.Location = new System.Drawing.Point(229, 394);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(174, 69);
             this.button1.TabIndex = 5;
@@ -203,12 +207,33 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 60);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(248, 245);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(761, 100);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(257, 433);
+            this.panel3.TabIndex = 12;
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ClientSize = new System.Drawing.Size(1009, 533);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(1018, 533);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.cbRemember);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -224,6 +249,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,5 +271,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.CheckBox cbRemember;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel3;
     }
 }

@@ -64,13 +64,22 @@ namespace panel
 
             Employee emp = new Employee();                   //BURDA OLUŞTURDUĞUMUZ NESNEYİ EMPLOYEE CLASSI İÇİNDEKİ LOGİN ÖZELLİĞİNİ KULLANARAK ÇAĞIRDIK
             var employee = emp.Login(email, password);        //VE BU FONKSİYON Employee tipinde bir değişken döndürüyor ve bu değişken boş değilse LOGİN YAPIYOR
+         
             
             if (employee != null)
             {
                 lblMessage.Text = "Welcome";
                 Form1 form = new Form1();
-               
+
                 form.ShowDialog();
+
+                if (!cbRemember.Checked)              //remember checked ise login ekranı kapanmıyor eğer değil ise kapanıyor
+                {
+                    this.Close();
+
+                }
+
+
             }
             else
             {
