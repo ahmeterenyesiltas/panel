@@ -119,7 +119,7 @@
             this.panel1.Controls.Add(this.tbEmail);
             this.panel1.Location = new System.Drawing.Point(54, 173);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(701, 163);
+            this.panel1.Size = new System.Drawing.Size(658, 163);
             this.panel1.TabIndex = 7;
             // 
             // lblMessage
@@ -144,10 +144,10 @@
             // 
             this.Cancelbtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Cancelbtn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Cancelbtn.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Cancelbtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Cancelbtn.FlatAppearance.BorderSize = 0;
-            this.Cancelbtn.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Cancelbtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Cancelbtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.Cancelbtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.Cancelbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cancelbtn.ForeColor = System.Drawing.Color.AliceBlue;
             this.Cancelbtn.Image = ((System.Drawing.Image)(resources.GetObject("Cancelbtn.Image")));
@@ -210,7 +210,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 60);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 56);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(248, 245);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -222,9 +222,9 @@
             this.panel3.BackColor = System.Drawing.Color.Black;
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(761, 100);
+            this.panel3.Location = new System.Drawing.Point(718, 100);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(257, 433);
+            this.panel3.Size = new System.Drawing.Size(300, 433);
             this.panel3.TabIndex = 12;
             // 
             // login

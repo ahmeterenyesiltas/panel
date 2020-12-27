@@ -60,10 +60,11 @@
       <DependentUpon>AddCar.cs</DependentUpon>
     </Compile>
     <Compile Include="DbOperations\Common.cs" />
-    <Compile Include="FeedBackSQL.cs">
+    <Compile Include="FeedBacks.cs" />
+    <Compile Include="formEren\FeedBackSQL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FeedBackSQL.Designer.cs">
+    <Compile Include="formEren\FeedBackSQL.Designer.cs">
       <DependentUpon>FeedBackSQL.cs</DependentUpon>
     </Compile>
     <Compile Include="formEren\FeedBack.cs">
@@ -212,7 +213,7 @@
     <EmbeddedResource Include="AddCar.resx">
       <DependentUpon>AddCar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FeedBackSQL.resx">
+    <EmbeddedResource Include="formEren\FeedBackSQL.resx">
       <DependentUpon>FeedBackSQL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formEren\FeedBack.resx">

@@ -1,0 +1,117 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace panel
+{
+    class FeedBacks
+    {
+        string customerName;
+        string customerReview;
+        float customerPoint;
+        float restaurantQuality;
+
+        
+
+
+        public string CustomerName
+        {
+            get => customerName;
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new Exception("Name cannot Be empty");
+                }
+                customerName = value;
+            }
+        }
+        public string CustomerReview
+        {
+            get => customerReview;
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new Exception("Customer Review Cannot be empty");
+                }
+
+                customerReview = value;
+            }
+        }
+
+        public float CustomerPoint
+        {
+            get => customerPoint;
+            set
+            {
+                if (value < 0)
+                {
+                    throw new Exception("Point cannot be less than 1");
+                }
+
+                customerPoint = value;
+
+            }
+        }
+
+
+        public float RestaurantQuality
+        {
+            get => restaurantQuality;
+            set
+            {
+                if (value < 0)
+                {
+                    throw new Exception("Restaurant quality cannot be less than 0");
+                }
+                restaurantQuality = value;
+            }
+        }
+
+        public DataTable GetAllFeedBack()        //Bunda Loginden farklı olarak tüm table ı okumak almak istiyoruz burası önemli
+        {                                        //Data grid view da göstermek istediğimiz için galiba DataTable türünde oldu o kısmı anlamadım
+                                                 //10 aralık dersinin sonunda yapıyor bunu oldukça önemli görünüyor
+            SqlConnection connection = null;
+            try
+            {
+
+
+                string conString = "Server = DESKTOP-HCPGI0N; Database = SMSBIM; Trusted_Connection = True";
+                connection = new SqlConnection(conString);
+                connection.Open();
+                if (connection.State == System.Data.ConnectionState.Open)
+                {
+                    string query = "select * from Feedback";     //Burda direkt yazdırdık tüm employeeleri
+                    SqlCommand command = new SqlCommand(query, connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    return dt;
+
+                }
+                return null;
+            }
+            catch (Exception Ex)
+            {
+
+                throw new Exception(Ex.Message);
+            }
+
+            finally               //BAĞLANTIYI AÇTIĞIMIZ GİBİ KAPATMAMIZDA LAZIM FİNALLYDE KAPATIYORUZ BUNU 
+            {
+                connection.Close();
+            }
+
+
+        }
+
+
+
+    }
+}

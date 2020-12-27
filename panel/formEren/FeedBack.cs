@@ -19,6 +19,11 @@ namespace panel
 
         private void RateBtn_Click(object sender, EventArgs e)
         {
+            RatebtnStarColor();
+        }
+
+       private void RatebtnStarColor()
+        {
             if (Radiobtn1.Checked)
             {
                 StarBtn1.BackColor = Color.Green;
@@ -26,7 +31,7 @@ namespace panel
                 StarBtn3.BackColor = Color.Red;
                 StarBtn4.BackColor = Color.Red;
                 StarBtn5.BackColor = Color.Red;
-                
+
             }
             if (Radiobtn2.Checked)
             {
@@ -64,7 +69,11 @@ namespace panel
                 StarBtn5.BackColor = Color.Green;
 
             }
-        }
+
+        }        //Burda yazdığım kodu direkt üste yapıştırdım bu metodu istersem başka yerlerdede kullanabilirim
+                                             //şimdilik kodlarını gizledim anlatımda aç 
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {

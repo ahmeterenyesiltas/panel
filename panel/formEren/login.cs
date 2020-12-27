@@ -68,6 +68,8 @@ namespace panel
             
             if (employee != null)
             {
+                
+
                 lblMessage.Text = "Welcome";
                 Form1 form = new Form1();
 
