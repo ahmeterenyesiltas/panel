@@ -25,11 +25,32 @@ namespace panel
             Console.WriteLine("girdiğiniz kat:"+kat);
             Console.ReadKey();
         }
+
+        private void catikati_Click(object sender, EventArgs e)
+        {
+            string message = "Burası çatı katıdır.";
+            string title = "Katlar";
+            MessageBox.Show(message, title);
+        }
+
+        private void giriskat_Click(object sender, EventArgs e)
+        {
+            string message = "Burası giriş katıdır.";
+            string title = "Katlar";
+            MessageBox.Show(message, title);
+        }
+
+        private void altkat_Click(object sender, EventArgs e)
+        {
+            string message = "Burası alt kattır.";
+            string title = "Katlar";
+            MessageBox.Show(message, title);
+        }
         //private void button3_Click(object sender, EventArgs e)
         //{
-           
+
         //}
 
-        
+
     }
 }

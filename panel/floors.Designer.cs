@@ -45,7 +45,7 @@
             this.catikati.Text = "Çatı Katı";
             this.catikati.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.catikati.UseVisualStyleBackColor = true;
-          //  this.catikati.Click += new System.EventHandler(this.catikati_Click);
+            this.catikati.Click += new System.EventHandler(this.catikati_Click);
             // 
             // giriskat
             // 
@@ -59,7 +59,7 @@
             this.giriskat.Text = "Giriş Katı";
             this.giriskat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.giriskat.UseVisualStyleBackColor = true;
-//            this.giriskat.Click += new System.EventHandler(this.giriskat_Click);
+            this.giriskat.Click += new System.EventHandler(this.giriskat_Click);
             // 
             // altkat
             // 
@@ -73,7 +73,7 @@
             this.altkat.Text = "Alt Kat";
             this.altkat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.altkat.UseVisualStyleBackColor = true;
-//            this.altkat.Click += new System.EventHandler(this.button3_Click);
+            this.altkat.Click += new System.EventHandler(this.altkat_Click);
             // 
             // floors
             // 

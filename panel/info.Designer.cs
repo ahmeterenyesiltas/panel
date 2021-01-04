@@ -48,6 +48,7 @@ namespace panel
             this.websitemiz.TabIndex = 0;
             this.websitemiz.TabStop = true;
             this.websitemiz.Text = "web sitemize ulaşmak için tıklayınız";
+            this.websitemiz.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.websitemiz_LinkClicked);
             // 
             // bilgilendirme
             // 
@@ -61,6 +62,7 @@ namespace panel
             this.bilgilendirme.Text = "Bilgilendirme";
             this.bilgilendirme.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.bilgilendirme.UseVisualStyleBackColor = true;
+            this.bilgilendirme.Click += new System.EventHandler(this.bilgilendirme_Click);
             // 
             // hakkimizda
             // 
@@ -74,6 +76,7 @@ namespace panel
             this.hakkimizda.Text = "Hakkımızda";
             this.hakkimizda.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.hakkimizda.UseVisualStyleBackColor = true;
+            this.hakkimizda.Click += new System.EventHandler(this.hakkimizda_Click);
             // 
             // kampanya
             // 
@@ -87,6 +90,7 @@ namespace panel
             this.kampanya.Text = "Kampanyalar";
             this.kampanya.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.kampanya.UseVisualStyleBackColor = true;
+            this.kampanya.Click += new System.EventHandler(this.kampanya_Click);
             // 
             // yemeksepeti
             // 
@@ -100,6 +104,7 @@ namespace panel
             this.yemeksepeti.Text = "Tek Tık Sipariş";
             this.yemeksepeti.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.yemeksepeti.UseVisualStyleBackColor = true;
+            this.yemeksepeti.Click += new System.EventHandler(this.yemeksepeti_Click);
             // 
             // adres
             // 
