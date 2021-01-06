@@ -73,6 +73,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.stok_gp1.SuspendLayout();
             this.stok_gp2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -106,6 +108,8 @@
             // stokLbl7
             // 
             this.stokLbl7.AutoSize = true;
+            this.stokLbl7.BackColor = System.Drawing.Color.Gray;
+            this.stokLbl7.ForeColor = System.Drawing.Color.White;
             this.stokLbl7.Location = new System.Drawing.Point(27, 461);
             this.stokLbl7.Name = "stokLbl7";
             this.stokLbl7.Size = new System.Drawing.Size(110, 25);
@@ -115,6 +119,7 @@
             // stokLbl6
             // 
             this.stokLbl6.AutoSize = true;
+            this.stokLbl6.BackColor = System.Drawing.Color.Gray;
             this.stokLbl6.Location = new System.Drawing.Point(27, 383);
             this.stokLbl6.Name = "stokLbl6";
             this.stokLbl6.Size = new System.Drawing.Size(107, 25);
@@ -124,6 +129,7 @@
             // stokLbl5
             // 
             this.stokLbl5.AutoSize = true;
+            this.stokLbl5.BackColor = System.Drawing.Color.Gray;
             this.stokLbl5.Location = new System.Drawing.Point(27, 300);
             this.stokLbl5.Name = "stokLbl5";
             this.stokLbl5.Size = new System.Drawing.Size(109, 25);
@@ -133,15 +139,17 @@
             // stokLbl4
             // 
             this.stokLbl4.AutoSize = true;
-            this.stokLbl4.Location = new System.Drawing.Point(6, 223);
+            this.stokLbl4.BackColor = System.Drawing.Color.Gray;
+            this.stokLbl4.Location = new System.Drawing.Point(27, 220);
             this.stokLbl4.Name = "stokLbl4";
-            this.stokLbl4.Size = new System.Drawing.Size(138, 25);
+            this.stokLbl4.Size = new System.Drawing.Size(94, 25);
             this.stokLbl4.TabIndex = 8;
-            this.stokLbl4.Text = "Stok Markası";
+            this.stokLbl4.Text = "Stok Adı";
             // 
             // stokLbl3
             // 
             this.stokLbl3.AutoSize = true;
+            this.stokLbl3.BackColor = System.Drawing.Color.Gray;
             this.stokLbl3.Location = new System.Drawing.Point(27, 143);
             this.stokLbl3.Name = "stokLbl3";
             this.stokLbl3.Size = new System.Drawing.Size(107, 25);
@@ -151,6 +159,7 @@
             // stokLbl2
             // 
             this.stokLbl2.AutoSize = true;
+            this.stokLbl2.BackColor = System.Drawing.Color.Gray;
             this.stokLbl2.Location = new System.Drawing.Point(27, 66);
             this.stokLbl2.Name = "stokLbl2";
             this.stokLbl2.Size = new System.Drawing.Size(113, 25);
@@ -231,14 +240,15 @@
             // 
             // btnStokAra
             // 
-            this.btnStokAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnStokAra.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnStokAra.BackColor = System.Drawing.Color.Gray;
+            this.btnStokAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnStokAra.ForeColor = System.Drawing.Color.White;
             this.btnStokAra.Location = new System.Drawing.Point(28, 106);
             this.btnStokAra.Name = "btnStokAra";
             this.btnStokAra.Size = new System.Drawing.Size(150, 62);
             this.btnStokAra.TabIndex = 0;
             this.btnStokAra.Text = "STOK ARA";
-            this.btnStokAra.UseVisualStyleBackColor = true;
+            this.btnStokAra.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
@@ -252,39 +262,54 @@
             // 
             // btnStok1
             // 
+            this.btnStok1.BackColor = System.Drawing.Color.Gray;
+            this.btnStok1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnStok1.ForeColor = System.Drawing.Color.White;
             this.btnStok1.Location = new System.Drawing.Point(120, 690);
             this.btnStok1.Name = "btnStok1";
             this.btnStok1.Size = new System.Drawing.Size(84, 69);
             this.btnStok1.TabIndex = 3;
             this.btnStok1.Text = "EKLE";
-            this.btnStok1.UseVisualStyleBackColor = true;
+            this.btnStok1.UseVisualStyleBackColor = false;
+            this.btnStok1.Click += new System.EventHandler(this.btnStok1_Click);
             // 
             // btnStok2
             // 
+            this.btnStok2.BackColor = System.Drawing.Color.Gray;
+            this.btnStok2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnStok2.ForeColor = System.Drawing.Color.White;
             this.btnStok2.Location = new System.Drawing.Point(210, 690);
             this.btnStok2.Name = "btnStok2";
             this.btnStok2.Size = new System.Drawing.Size(84, 69);
             this.btnStok2.TabIndex = 4;
             this.btnStok2.Text = "SİL";
-            this.btnStok2.UseVisualStyleBackColor = true;
+            this.btnStok2.UseVisualStyleBackColor = false;
+            this.btnStok2.Click += new System.EventHandler(this.btnStok2_Click);
             // 
             // btnStok3
             // 
+            this.btnStok3.BackColor = System.Drawing.Color.Gray;
+            this.btnStok3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnStok3.ForeColor = System.Drawing.Color.White;
             this.btnStok3.Location = new System.Drawing.Point(300, 690);
             this.btnStok3.Name = "btnStok3";
-            this.btnStok3.Size = new System.Drawing.Size(100, 69);
+            this.btnStok3.Size = new System.Drawing.Size(124, 69);
             this.btnStok3.TabIndex = 5;
             this.btnStok3.Text = "GÜNCELLE";
-            this.btnStok3.UseVisualStyleBackColor = true;
+            this.btnStok3.UseVisualStyleBackColor = false;
             // 
             // btnStok4
             // 
-            this.btnStok4.Location = new System.Drawing.Point(406, 690);
+            this.btnStok4.BackColor = System.Drawing.Color.Gray;
+            this.btnStok4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnStok4.ForeColor = System.Drawing.Color.White;
+            this.btnStok4.Location = new System.Drawing.Point(430, 690);
             this.btnStok4.Name = "btnStok4";
-            this.btnStok4.Size = new System.Drawing.Size(123, 69);
+            this.btnStok4.Size = new System.Drawing.Size(134, 69);
             this.btnStok4.TabIndex = 6;
             this.btnStok4.Text = "GÖRÜNTÜLE";
-            this.btnStok4.UseVisualStyleBackColor = true;
+            this.btnStok4.UseVisualStyleBackColor = false;
+            this.btnStok4.Click += new System.EventHandler(this.btnStok4_Click);
             // 
             // stokLbl
             // 
@@ -327,6 +352,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Gray;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label8.Location = new System.Drawing.Point(345, 196);
             this.label8.Name = "label8";
@@ -337,6 +363,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Gray;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label7.Location = new System.Drawing.Point(345, 144);
             this.label7.Name = "label7";
@@ -347,6 +374,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Gray;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.Location = new System.Drawing.Point(345, 96);
             this.label6.Name = "label6";
@@ -357,6 +385,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Gray;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.Location = new System.Drawing.Point(345, 48);
             this.label5.Name = "label5";
@@ -367,6 +396,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Gray;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.Location = new System.Drawing.Point(14, 198);
             this.label4.Name = "label4";
@@ -377,6 +407,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Gray;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(14, 148);
             this.label3.Name = "label3";
@@ -387,6 +418,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Gray;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(14, 98);
             this.label2.Name = "label2";
@@ -397,6 +429,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Gray;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(14, 48);
             this.label1.Name = "label1";
@@ -472,46 +505,82 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Gray;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(1456, 690);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 69);
+            this.button1.Size = new System.Drawing.Size(137, 69);
             this.button1.TabIndex = 12;
             this.button1.Text = "GÖRÜNTÜLE";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Gray;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(1330, 690);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(120, 69);
             this.button2.TabIndex = 11;
             this.button2.Text = "GÜNCELLE";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.Gray;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(1218, 690);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(106, 69);
             this.button3.TabIndex = 10;
             this.button3.Text = "SİL";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.Gray;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(1106, 690);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(106, 69);
             this.button4.TabIndex = 9;
             this.button4.Text = "EKLE";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(1523, 793);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(243, 25);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "AHMET EREN YEŞİLTAŞ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label10.Location = new System.Drawing.Point(1655, 818);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(111, 25);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "030119036";
             // 
             // stok_takip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(1942, 795);
+            this.BackColor = System.Drawing.Color.Silver;
+            this.ClientSize = new System.Drawing.Size(1942, 901);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
@@ -589,5 +658,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }

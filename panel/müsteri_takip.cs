@@ -63,6 +63,8 @@ namespace panel
             StoktextBox3.Text = "";
             StoktextBox4.Text = "";
             StoktextBox5.Text = "";
+
+            musteriGoruntule();
         }
 
         private void btnMusteri2_Click(object sender, EventArgs e)
@@ -70,8 +72,10 @@ namespace panel
             con = new SqlConnection("Server=94.73.144.8;Database=u8846052_DBRMS01;User Id=u8846052_RMS01;Password=TYgv18I1HFbi19X;");
             con.Open();
 
-            SqlCommand cmdSil = new SqlCommand("DELETE MUSTERILER WHERE TELEFON= '" + dataGridView1.CurrentRow.Cells[1].Value.ToString()+"'",con);
+            SqlCommand cmdSil = new SqlCommand("DELETE STOK WHERE STOK_ADET= '" + dataGridView1.CurrentRow.Cells[4].Value.ToString()+"'",con);
             cmdSil.ExecuteNonQuery();
+
+            musteriGoruntule();
 
         }
 
@@ -120,6 +124,8 @@ namespace panel
             StoktextBox3.Text = "";
             StoktextBox4.Text = "";
             StoktextBox5.Text = "";
+
+            musteriGoruntule();
         }
     }
 }

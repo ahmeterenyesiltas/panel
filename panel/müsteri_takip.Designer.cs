@@ -46,6 +46,8 @@
             this.btnMusteri4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_kaydet = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.musteri_gp1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -227,12 +229,36 @@
             this.btn_kaydet.UseVisualStyleBackColor = true;
             this.btn_kaydet.Click += new System.EventHandler(this.btn_kaydet_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label10.Location = new System.Drawing.Point(1652, 758);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(111, 25);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "030119036";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label9.Location = new System.Drawing.Point(1520, 733);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(243, 25);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "AHMET EREN YEŞİLTAŞ";
+            // 
             // müsteri_takip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkKhaki;
-            this.ClientSize = new System.Drawing.Size(1942, 732);
+            this.ClientSize = new System.Drawing.Size(1942, 785);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnMusteri4);
             this.Controls.Add(this.btnMusteri3);
@@ -272,5 +298,7 @@
         private System.Windows.Forms.Button btnMusteri4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btn_kaydet;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
     }
 }

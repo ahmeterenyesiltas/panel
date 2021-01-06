@@ -53,6 +53,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -337,17 +339,43 @@
             this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label10.Location = new System.Drawing.Point(39, 56);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(162, 39);
+            this.label10.Size = new System.Drawing.Size(156, 38);
             this.label10.TabIndex = 30;
             this.label10.Text = "KAMERA";
             this.label10.UseMnemonic = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label11.Location = new System.Drawing.Point(1715, 782);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(111, 25);
+            this.label11.TabIndex = 32;
+            this.label11.Text = "030119036";
+       
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label12.Location = new System.Drawing.Point(1583, 757);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(243, 25);
+            this.label12.TabIndex = 31;
+            this.label12.Text = "AHMET EREN YEŞİLTAŞ";
+           
             // 
             // kamera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(1942, 730);
+            this.ClientSize = new System.Drawing.Size(1942, 806);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label9);
@@ -419,5 +447,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }

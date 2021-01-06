@@ -74,5 +74,7 @@ namespace panel
             pictureBox9.Image = null;
             pictureBox10.Image = null;
         }
+
+   
     }
 }

@@ -171,6 +171,41 @@ namespace panel.DbOperations
             }
         }
 
+        public DataTable stokGoruntule()
+        {
+            try
+            {
+                //Bağlantı Kapalı ise Açılır
+                if (SqlConnection.State == ConnectionState.Closed)
+                    SqlConnection.Open();
+                string SqlBase = "SELECT * FROM STOK";
+                SqlDataAdapter SqlDa = new SqlDataAdapter(SqlBase, SqlConnection);
+                DataTable dt = new DataTable();
+                SqlDa.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    SqlDa.Dispose();
+                    return dt;
+                }
+                else
+                {
+                    SqlDa.Dispose();
+                    return new DataTable();
+                }
+            }
+            catch (Exception exc)
+            {
+                AddLogError("MusterileriGoruntule", "Müşterileri Görüntüleme Hatası", "Hata Detayı : " + exc.Message);
+                throw;
+            }
+            finally
+            {
+                //Bağlantı Açık ise Kapanır
+                if (SqlConnection.State == ConnectionState.Open) SqlConnection.Close();
+            }
+        }
+
+
     }
 }
 
