@@ -75,6 +75,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.stok_gp1.SuspendLayout();
             this.stok_gp2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -249,6 +250,7 @@
             this.btnStokAra.TabIndex = 0;
             this.btnStokAra.Text = "STOK ARA";
             this.btnStokAra.UseVisualStyleBackColor = false;
+            this.btnStokAra.Click += new System.EventHandler(this.btnStokAra_Click);
             // 
             // dataGridView1
             // 
@@ -293,19 +295,20 @@
             this.btnStok3.ForeColor = System.Drawing.Color.White;
             this.btnStok3.Location = new System.Drawing.Point(300, 690);
             this.btnStok3.Name = "btnStok3";
-            this.btnStok3.Size = new System.Drawing.Size(124, 69);
+            this.btnStok3.Size = new System.Drawing.Size(151, 69);
             this.btnStok3.TabIndex = 5;
             this.btnStok3.Text = "GÜNCELLE";
             this.btnStok3.UseVisualStyleBackColor = false;
+            this.btnStok3.Click += new System.EventHandler(this.btnStok3_Click);
             // 
             // btnStok4
             // 
             this.btnStok4.BackColor = System.Drawing.Color.Gray;
             this.btnStok4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnStok4.ForeColor = System.Drawing.Color.White;
-            this.btnStok4.Location = new System.Drawing.Point(430, 690);
+            this.btnStok4.Location = new System.Drawing.Point(457, 690);
             this.btnStok4.Name = "btnStok4";
-            this.btnStok4.Size = new System.Drawing.Size(134, 69);
+            this.btnStok4.Size = new System.Drawing.Size(194, 69);
             this.btnStok4.TabIndex = 6;
             this.btnStok4.Text = "GÖRÜNTÜLE";
             this.btnStok4.UseVisualStyleBackColor = false;
@@ -508,9 +511,9 @@
             this.button1.BackColor = System.Drawing.Color.Gray;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1456, 690);
+            this.button1.Location = new System.Drawing.Point(1481, 690);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 69);
+            this.button1.Size = new System.Drawing.Size(170, 69);
             this.button1.TabIndex = 12;
             this.button1.Text = "GÖRÜNTÜLE";
             this.button1.UseVisualStyleBackColor = false;
@@ -522,7 +525,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(1330, 690);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 69);
+            this.button2.Size = new System.Drawing.Size(145, 69);
             this.button2.TabIndex = 11;
             this.button2.Text = "GÜNCELLE";
             this.button2.UseVisualStyleBackColor = false;
@@ -573,6 +576,19 @@
             this.label10.TabIndex = 17;
             this.label10.Text = "030119036";
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Gray;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(300, 690);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(151, 69);
+            this.button5.TabIndex = 18;
+            this.button5.Text = "KAYDET";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // stok_takip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -589,12 +605,13 @@
             this.Controls.Add(this.stokGP3);
             this.Controls.Add(this.stokLbl);
             this.Controls.Add(this.btnStok4);
-            this.Controls.Add(this.btnStok3);
             this.Controls.Add(this.btnStok2);
             this.Controls.Add(this.btnStok1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.stok_gp2);
             this.Controls.Add(this.stok_gp1);
+            this.Controls.Add(this.btnStok3);
+            this.Controls.Add(this.button5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "stok_takip";
             this.Text = "stok_takip";
@@ -660,5 +677,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button5;
     }
 }

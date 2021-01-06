@@ -158,6 +158,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Gray;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(399, 88);
             this.button1.Name = "button1";
@@ -170,6 +171,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Gray;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button2.Location = new System.Drawing.Point(514, 88);
             this.button2.Name = "button2";
@@ -322,6 +324,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Gray;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button3.Location = new System.Drawing.Point(625, 88);
             this.button3.Name = "button3";
@@ -349,24 +352,22 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label11.Location = new System.Drawing.Point(1715, 782);
+            this.label11.Location = new System.Drawing.Point(1706, 768);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(111, 25);
             this.label11.TabIndex = 32;
             this.label11.Text = "030119036";
-       
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label12.Location = new System.Drawing.Point(1583, 757);
+            this.label12.Location = new System.Drawing.Point(1574, 743);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(243, 25);
             this.label12.TabIndex = 31;
             this.label12.Text = "AHMET EREN YEŞİLTAŞ";
-           
             // 
             // kamera
             // 
