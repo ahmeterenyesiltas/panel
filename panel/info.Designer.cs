@@ -81,8 +81,9 @@ namespace panel
             // kampanya
             // 
             this.kampanya.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kampanya.ForeColor = System.Drawing.Color.Red;
-            this.kampanya.ImageKey = "(yok)";
+            this.kampanya.ForeColor = System.Drawing.Color.Maroon;
+            this.kampanya.Image = global::panel.Properties.Resources.indir1;
+            //this.kampanya.ImageKey = "(yok)";
             this.kampanya.Location = new System.Drawing.Point(437, 12);
             this.kampanya.Name = "kampanya";
             this.kampanya.Size = new System.Drawing.Size(202, 194);
@@ -125,6 +126,7 @@ namespace panel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(1168, 534);
             this.Controls.Add(this.bilgilendirme);
             this.Controls.Add(this.hakkimizda);
@@ -133,7 +135,7 @@ namespace panel
             this.Controls.Add(this.adres);
             this.Controls.Add(this.websitemiz);
             this.Name = "info";
-            this.Text = "Form2";
+            this.Text = "info";
             this.ResumeLayout(false);
             this.PerformLayout();
 

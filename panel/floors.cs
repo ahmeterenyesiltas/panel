@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace panel
 {
     public partial class floors : Form
@@ -28,21 +29,21 @@ namespace panel
 
         private void catikati_Click(object sender, EventArgs e)
         {
-            string message = "Burası çatı katıdır.";
+            string message = "Burası çatı katıdır ve 12 masa bulunmaktadır.";
             string title = "Katlar";
             MessageBox.Show(message, title);
         }
 
         private void giriskat_Click(object sender, EventArgs e)
         {
-            string message = "Burası giriş katıdır.";
+            string message = "Burası giriş katıdır ve 12 masa bulunmaktadır..";
             string title = "Katlar";
             MessageBox.Show(message, title);
         }
 
         private void altkat_Click(object sender, EventArgs e)
         {
-            string message = "Burası alt kattır.";
+            string message = "Burası alt kattır ve 12 masa bulunmaktadır..";
             string title = "Katlar";
             MessageBox.Show(message, title);
         }

@@ -79,12 +79,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(1229, 534);
             this.Controls.Add(this.altkat);
             this.Controls.Add(this.giriskat);
             this.Controls.Add(this.catikati);
             this.Name = "floors";
-            this.Text = "Form2";
+            this.Text = "floors";
             this.ResumeLayout(false);
 
         }

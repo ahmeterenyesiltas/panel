@@ -373,5 +373,8 @@
   <ItemGroup>
     <Folder Include="dbEREN\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
