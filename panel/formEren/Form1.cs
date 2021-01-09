@@ -378,12 +378,12 @@ namespace panel
         {
             panel3.Visible = true;
             panel3.Controls.Clear();
-            AddCampaign addcampaign = new AddCampaign();
-            addcampaign.TopLevel = false;
-            panel3.Controls.Add(addcampaign);
-            addcampaign.Show();
-            addcampaign.Dock = DockStyle.Fill;
-            addcampaign.BringToFront();
+            formACHome achome = new formACHome();
+            achome.TopLevel = false;
+            panel3.Controls.Add(achome);
+            achome.Show();
+            achome.Dock = DockStyle.Fill;
+            achome.BringToFront();
         }
 
         private void timer3_Tick(object sender, EventArgs e)
@@ -584,6 +584,18 @@ namespace panel
             carHome.Show();
             carHome.Dock = DockStyle.Fill;
             carHome.BringToFront();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            formACHome aCHome = new formACHome();
+            aCHome.TopLevel = false;
+            panel3.Controls.Add(aCHome);
+            aCHome.Show();
+            aCHome.Dock = DockStyle.Fill;
+            aCHome.BringToFront();
         }
     }
 }

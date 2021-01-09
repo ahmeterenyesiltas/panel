@@ -761,6 +761,7 @@
             this.button16.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button15
             // 
