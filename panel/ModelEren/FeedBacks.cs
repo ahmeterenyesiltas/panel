@@ -150,7 +150,7 @@ namespace panel
 
                 //else
                 //{
-                    string query = $"INSERT INTO Employee(CustomerName,CustomerReview,CustomerPoint,RestaurantQuality) VALUES('{feedback.CustomerName}','{feedback.CustomerReview}','{feedback.CustomerPoint}','{feedback.RestaurantQuality}')";
+                    string query = $"INSERT INTO Feedback(CustomerName,CustomerReview,CustomerPoint,RestaurantQuality) VALUES('{feedback.CustomerName}','{feedback.CustomerReview}','{feedback.CustomerPoint}','{feedback.RestaurantQuality}')";
                     return dbHelper.ExecuteNonQuery(query);
                 //}
             }

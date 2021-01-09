@@ -36,6 +36,7 @@ namespace panel
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lblMessage = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -60,7 +61,6 @@ namespace panel
             this.label3 = new System.Windows.Forms.Label();
             this.CustomerName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblMessage = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -134,6 +134,15 @@ namespace panel
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1579, 835);
             this.panel5.TabIndex = 5;
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Location = new System.Drawing.Point(1291, 544);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(188, 26);
+            this.lblMessage.TabIndex = 39;
+            this.lblMessage.Text = "Save İnformation";
             // 
             // pictureBox1
             // 
@@ -434,15 +443,6 @@ namespace panel
             this.label2.Size = new System.Drawing.Size(177, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Customer Name";
-            // 
-            // lblMessage
-            // 
-            this.lblMessage.AutoSize = true;
-            this.lblMessage.Location = new System.Drawing.Point(1369, 528);
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(72, 26);
-            this.lblMessage.TabIndex = 39;
-            this.lblMessage.Text = "label6";
             // 
             // FeedBack
             // 
