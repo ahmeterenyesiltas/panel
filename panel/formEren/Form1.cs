@@ -312,12 +312,12 @@ namespace panel
 
             panel3.Visible = true;
             panel3.Controls.Clear();
-            AddCar addCar = new AddCar();
-            addCar.TopLevel = false;
-            panel3.Controls.Add(addCar);
-            addCar.Show();
-            addCar.Dock = DockStyle.Fill;
-            addCar.BringToFront();
+            formCarHome carHome = new formCarHome();
+            carHome.TopLevel = false;
+            panel3.Controls.Add(carHome);
+            carHome.Show();
+            carHome.Dock = DockStyle.Fill;
+            carHome.BringToFront();
         }
 
         private void panelParkDroop_Paint(object sender, PaintEventArgs e)
@@ -572,6 +572,18 @@ namespace panel
 
 
 
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            formCarHome carHome = new formCarHome();
+            carHome.TopLevel = false;
+            panel3.Controls.Add(carHome);
+            carHome.Show();
+            carHome.Dock = DockStyle.Fill;
+            carHome.BringToFront();
         }
     }
 }

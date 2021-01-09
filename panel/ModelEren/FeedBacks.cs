@@ -137,6 +137,30 @@ namespace panel
 
         }
 
+        public int FeedbackAdd(FeedBacks feedback)
+        {
+
+            SqlConnection connection = null;
+            try
+            {
+                //if (EmployeeExists(e.Firstname + e.lastname))                            //Burda bir üstte tanımladığımız fonksiyonu kullanıp denedik eğer course var ve true dönerse hata gönder
+                //{
+                //    throw new Exception("Employee already Exits");
+                //}
+
+                //else
+                //{
+                    string query = $"INSERT INTO Employee(CustomerName,CustomerReview,CustomerPoint,RestaurantQuality) VALUES('{feedback.CustomerName}','{feedback.CustomerReview}','{feedback.CustomerPoint}','{feedback.RestaurantQuality}')";
+                    return dbHelper.ExecuteNonQuery(query);
+                //}
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+
+        }
 
 
     }

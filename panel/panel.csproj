@@ -62,14 +62,53 @@
     <Compile Include="AddCampaign.Designer.cs">
       <DependentUpon>AddCampaign.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddCar.cs">
+    <Compile Include="DbOperations\Common.cs" />
+    <Compile Include="formYusuf\Accounting.cs" />
+    <Compile Include="formYusuf\Announcement.cs" />
+    <Compile Include="formYusuf\Campaign.cs" />
+    <Compile Include="formYusuf\formACHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddCar.Designer.cs">
-      <DependentUpon>AddCar.cs</DependentUpon>
+    <Compile Include="formYusuf\formACHome.designer.cs">
+      <DependentUpon>formACHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="DbOperations\Common.cs" />
-    <Compile Include="FeedBacks.cs" />
+    <Compile Include="formYusuf\formAnnouncementAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formYusuf\formAnnouncementAdd.designer.cs">
+      <DependentUpon>formAnnouncementAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formYusuf\formAnnouncementDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formYusuf\formAnnouncementDelete.designer.cs">
+      <DependentUpon>formAnnouncementDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formYusuf\formAnnouncementUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formYusuf\formAnnouncementUpdate.designer.cs">
+      <DependentUpon>formAnnouncementUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formYusuf\formCampaignAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formYusuf\formCampaignAdd.designer.cs">
+      <DependentUpon>formCampaignAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formYusuf\formCampaignDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formYusuf\formCampaignDelete.designer.cs">
+      <DependentUpon>formCampaignDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formYusuf\formCampaignUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formYusuf\formCampaignUpdate.designer.cs">
+      <DependentUpon>formCampaignUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelEren\FeedBacks.cs" />
     <Compile Include="formEren\FeedBackSQL.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +162,32 @@
     </Compile>
     <Compile Include="formEren\PersonelManager.designer.cs">
       <DependentUpon>PersonelManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formYusuf\Car.cs" />
+    <Compile Include="formYusuf\dbMain.cs" />
+    <Compile Include="formYusuf\formCarAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formYusuf\formCarAdd.designer.cs">
+      <DependentUpon>formCarAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formYusuf\formCarDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formYusuf\formCarDelete.designer.cs">
+      <DependentUpon>formCarDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formYusuf\formCarHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formYusuf\formCarHome.designer.cs">
+      <DependentUpon>formCarHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formYusuf\formCarUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formYusuf\formCarUpdate.designer.cs">
+      <DependentUpon>formCarUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="kamera.cs">
       <SubType>Form</SubType>
@@ -219,9 +284,6 @@
     <Compile Include="formEren\YemekMenuTatlilarcs.Designer.cs">
       <DependentUpon>YemekMenuTatlilarcs.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddCar.resx">
-      <DependentUpon>AddCar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="formEren\FeedBackSQL.resx">
       <DependentUpon>FeedBackSQL.cs</DependentUpon>
     </EmbeddedResource>
@@ -248,6 +310,39 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formEren\PersonelManager.resx">
       <DependentUpon>PersonelManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formYusuf\formACHome.resx">
+      <DependentUpon>formACHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formYusuf\formAnnouncementAdd.resx">
+      <DependentUpon>formAnnouncementAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formYusuf\formAnnouncementDelete.resx">
+      <DependentUpon>formAnnouncementDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formYusuf\formAnnouncementUpdate.resx">
+      <DependentUpon>formAnnouncementUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formYusuf\formCampaignAdd.resx">
+      <DependentUpon>formCampaignAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formYusuf\formCampaignDelete.resx">
+      <DependentUpon>formCampaignDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formYusuf\formCampaignUpdate.resx">
+      <DependentUpon>formCampaignUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formYusuf\formCarAdd.resx">
+      <DependentUpon>formCarAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formYusuf\formCarDelete.resx">
+      <DependentUpon>formCarDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formYusuf\formCarHome.resx">
+      <DependentUpon>formCarHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formYusuf\formCarUpdate.resx">
+      <DependentUpon>formCarUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ikinciform.resx">
       <DependentUpon>ikinciform.cs</DependentUpon>
