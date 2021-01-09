@@ -89,7 +89,6 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            //this.button6.Image = global::panel.Properties.Resources.delete_18px;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.Location = new System.Drawing.Point(0, 265);
             this.button6.Name = "button6";
@@ -108,7 +107,6 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button5.ForeColor = System.Drawing.Color.White;
-//            this.button5.Image = global::panel.Properties.Resources.update_18px;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.Location = new System.Drawing.Point(0, 234);
             this.button5.Name = "button5";
@@ -127,7 +125,6 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button4.ForeColor = System.Drawing.Color.White;
-//            this.button4.Image = global::panel.Properties.Resources.add_18px1;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.Location = new System.Drawing.Point(0, 203);
             this.button4.Name = "button4";
@@ -146,7 +143,6 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.Color.White;
-      //      this.button3.Image = global::panel.Properties.Resources.delete_18px;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(0, 172);
             this.button3.Name = "button3";
@@ -165,7 +161,6 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.Color.White;
-         //   this.button2.Image = global::panel.Properties.Resources.update_18px;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(0, 141);
             this.button2.Name = "button2";
@@ -184,7 +179,6 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.White;
-          //  this.button1.Image = global::panel.Properties.Resources.add_18px1;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(0, 110);
             this.button1.Name = "button1";
@@ -306,7 +300,7 @@
             this.buttonCampaign.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.buttonCampaign.Size = new System.Drawing.Size(200, 150);
             this.buttonCampaign.TabIndex = 0;
-            this.buttonCampaign.Text = "Campaign";
+            this.buttonCampaign.Text = "CampaignX";
             this.buttonCampaign.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonCampaign.UseVisualStyleBackColor = true;
             this.buttonCampaign.Click += new System.EventHandler(this.button7_Click);
