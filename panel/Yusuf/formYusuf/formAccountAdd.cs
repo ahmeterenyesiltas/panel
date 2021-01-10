@@ -33,54 +33,53 @@ namespace panel
 
             //float entryAmount;
 
-            //try
-            //{
-            //    labelMessage.Text = "";
+            try
+            {
+                labelMessage.Text = "";
 
-            //    labelMessage.ForeColor = Color.Black;
+                labelMessage.ForeColor = Color.Black;
 
-            //    string entryName = tBEntryName.Text;
+                string entryName = tBEntryName.Text;
 
-            //    string entryMType = tBEntryMainType.Text;
+                string entryMType = cBEntryMainType.Text;
 
-            //    string entryType = tBEntryType.Text;
+                string entryType = tBEntryType.Text;
 
-            //    float entryAmount = float.Parse(tBEntryAmount.Text);
+                float entryAmount = float.Parse(tBEntryAmount.Text);
 
-            //    if (string.IsNullOrWhiteSpace(entryAmount.ToString()))
-            //    {
-            //        tBEntryName.Focus();
+                if (string.IsNullOrWhiteSpace(entryAmount.ToString()))
+                {
+                    tBEntryName.Focus();
 
-            //        throw new Exception("Entry Amount cannot be EMPTY!");
-            //    }
-            //    //.
-            //    //.
-            //    //.
+                    throw new Exception("Entry Amount cannot be EMPTY!");
+                }
+                //.
+                //.
+                //.
 
-            //    Accounting A1 = new Accounting();
-            //    C1.ParkingNo = parkingNo;
-            //    C1.NumberPlate = numberPlate;
-            //    C1.HourRate = hourRate;
-            //    C1.StartTime = startTime;
-            //    C1.FinishTime = finishTime;
+                Accounting A1 = new Accounting();
+                A1.EntryAmount = entryAmount;
+                A1.EntryName = entryName;
+                A1.EntryMType = entryMType;
+                A1.EntryType = entryMType;
 
-            //    int Result = C1.AddCar(C1);
+                int Result = A1.AddAccount(A1);
 
-            //    if (Result > 0)
-            //    {
-            //        labelMessage.Text = "Car Added!";
+                if (Result > 0)
+                {
+                    labelMessage.Text = "Account Added!";
 
-            //        labelMessage.ForeColor = Color.Green;
-            //    }
+                    labelMessage.ForeColor = Color.Green;
+                }
 
-            //}
-            //catch (Exception Ex)
-            //{
+            }
+            catch (Exception Ex)
+            {
 
-            //    labelMessage.Text = Ex.Message;
+                labelMessage.Text = Ex.Message;
 
-            //    labelMessage.ForeColor = Color.Red;
-            //}
+                labelMessage.ForeColor = Color.Red;
+            }
         }
     }
 }

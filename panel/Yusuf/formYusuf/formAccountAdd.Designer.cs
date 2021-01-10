@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tBEntryMainType = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonClose = new System.Windows.Forms.Button();
             this.labelMessage = new System.Windows.Forms.Label();
@@ -40,21 +39,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tBEntryType = new System.Windows.Forms.TextBox();
             this.tBEntryAmount = new System.Windows.Forms.TextBox();
+            this.cBEntryMainType = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // tBEntryMainType
-            // 
-            this.tBEntryMainType.Location = new System.Drawing.Point(261, 137);
-            this.tBEntryMainType.MaxLength = 40;
-            this.tBEntryMainType.Name = "tBEntryMainType";
-            this.tBEntryMainType.Size = new System.Drawing.Size(346, 20);
-            this.tBEntryMainType.TabIndex = 51;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(168, 140);
+            this.label2.Location = new System.Drawing.Point(157, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 13);
             this.label2.TabIndex = 50;
@@ -68,7 +60,7 @@
             this.buttonClose.Image = global::panel.Properties.Resources.close_window_18px;
             this.buttonClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonClose.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonClose.Location = new System.Drawing.Point(363, 215);
+            this.buttonClose.Location = new System.Drawing.Point(355, 215);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(96, 43);
             this.buttonClose.TabIndex = 44;
@@ -81,7 +73,7 @@
             this.labelMessage.AutoSize = true;
             this.labelMessage.ForeColor = System.Drawing.Color.Black;
             this.labelMessage.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelMessage.Location = new System.Drawing.Point(261, 108);
+            this.labelMessage.Location = new System.Drawing.Point(253, 95);
             this.labelMessage.Name = "labelMessage";
             this.labelMessage.Size = new System.Drawing.Size(0, 13);
             this.labelMessage.TabIndex = 43;
@@ -92,7 +84,7 @@
             this.label0.Font = new System.Drawing.Font("Century", 28.2F, System.Drawing.FontStyle.Bold);
             this.label0.ForeColor = System.Drawing.Color.MediumBlue;
             this.label0.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label0.Location = new System.Drawing.Point(261, 64);
+            this.label0.Location = new System.Drawing.Point(253, 51);
             this.label0.Name = "label0";
             this.label0.Size = new System.Drawing.Size(254, 44);
             this.label0.TabIndex = 42;
@@ -102,7 +94,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(190, 114);
+            this.label1.Location = new System.Drawing.Point(179, 114);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 41;
@@ -117,7 +109,7 @@
             this.buttonAdd.Image = global::panel.Properties.Resources.save_18px;
             this.buttonAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAdd.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonAdd.Location = new System.Drawing.Point(261, 215);
+            this.buttonAdd.Location = new System.Drawing.Point(253, 215);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(96, 43);
             this.buttonAdd.TabIndex = 39;
@@ -127,7 +119,7 @@
             // 
             // tBEntryName
             // 
-            this.tBEntryName.Location = new System.Drawing.Point(261, 111);
+            this.tBEntryName.Location = new System.Drawing.Point(253, 111);
             this.tBEntryName.MaxLength = 40;
             this.tBEntryName.Name = "tBEntryName";
             this.tBEntryName.Size = new System.Drawing.Size(346, 20);
@@ -137,7 +129,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(194, 166);
+            this.label3.Location = new System.Drawing.Point(183, 166);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 13);
             this.label3.TabIndex = 52;
@@ -147,7 +139,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(182, 192);
+            this.label4.Location = new System.Drawing.Point(171, 192);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 13);
             this.label4.TabIndex = 53;
@@ -155,7 +147,7 @@
             // 
             // tBEntryType
             // 
-            this.tBEntryType.Location = new System.Drawing.Point(261, 163);
+            this.tBEntryType.Location = new System.Drawing.Point(253, 163);
             this.tBEntryType.MaxLength = 40;
             this.tBEntryType.Name = "tBEntryType";
             this.tBEntryType.Size = new System.Drawing.Size(346, 20);
@@ -163,22 +155,34 @@
             // 
             // tBEntryAmount
             // 
-            this.tBEntryAmount.Location = new System.Drawing.Point(261, 189);
+            this.tBEntryAmount.Location = new System.Drawing.Point(253, 189);
             this.tBEntryAmount.MaxLength = 40;
             this.tBEntryAmount.Name = "tBEntryAmount";
             this.tBEntryAmount.Size = new System.Drawing.Size(346, 20);
             this.tBEntryAmount.TabIndex = 55;
+            // 
+            // cBEntryMainType
+            // 
+            this.cBEntryMainType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cBEntryMainType.FormattingEnabled = true;
+            this.cBEntryMainType.Items.AddRange(new object[] {
+            "Gelir",
+            "Gider"});
+            this.cBEntryMainType.Location = new System.Drawing.Point(253, 136);
+            this.cBEntryMainType.Name = "cBEntryMainType";
+            this.cBEntryMainType.Size = new System.Drawing.Size(121, 21);
+            this.cBEntryMainType.TabIndex = 56;
             // 
             // formAccountAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 361);
+            this.Controls.Add(this.cBEntryMainType);
             this.Controls.Add(this.tBEntryAmount);
             this.Controls.Add(this.tBEntryType);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.tBEntryMainType);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.labelMessage);
@@ -196,8 +200,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox tBEntryMainType;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Label labelMessage;
@@ -209,5 +211,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tBEntryType;
         private System.Windows.Forms.TextBox tBEntryAmount;
+        private System.Windows.Forms.ComboBox cBEntryMainType;
     }
 }

@@ -23,7 +23,7 @@ namespace panel
         public int EntryID { get => entryID; set => entryID = value; }
         public string EntryName
         {
-            get => EntryName;
+            get => entryName;
 
             set
 
@@ -34,14 +34,14 @@ namespace panel
                     throw new Exception("Entry Name cannot be EMPTY!");
                 }
 
-                EntryName = value;
+                entryName = value;
 
             }
 
         }
         public string EntryMType
         {
-            get => EntryMType;
+            get => entryMType;
 
             set
 
@@ -52,14 +52,14 @@ namespace panel
                     throw new Exception("Entry Main Type cannot be EMPTY!");
                 }
 
-                EntryMType = value;
+                entryMType = value;
 
             }
 
         }
         public string EntryType
         {
-            get => EntryType;
+            get => entryType;
 
             set
 
@@ -70,14 +70,14 @@ namespace panel
                     throw new Exception("Entry Type cannot be EMPTY!");
                 }
 
-                EntryType = value;
+                entryType = value;
 
             }
 
         }
         public float EntryAmount
         {
-            get => EntryAmount;
+            get => entryAmount;
 
             set
 
@@ -88,7 +88,7 @@ namespace panel
                     throw new Exception("Entry Amount cannot be NEGATIVE!");
                 }
 
-                EntryAmount = value;
+                entryAmount = value;
 
             }
         }
