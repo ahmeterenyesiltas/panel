@@ -657,5 +657,34 @@ namespace panel
             form.Dock = DockStyle.Fill;
             form.BringToFront();
         }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            stok_takip form = new stok_takip();
+            form.TopLevel = false;
+            panel3.Controls.Add(form);
+            form.Show();
+            form.Dock = DockStyle.Fill;
+            form.BringToFront();
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            kamera form = new kamera();
+            form.TopLevel = false;
+            panel3.Controls.Add(form);
+            form.Show();
+            form.Dock = DockStyle.Fill;
+            form.BringToFront();
+        }
     }
 }
