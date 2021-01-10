@@ -597,5 +597,17 @@ namespace panel
             aCHome.Dock = DockStyle.Fill;
             aCHome.BringToFront();
         }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            formAccountingHome accountHome = new formAccountingHome();
+            accountHome.TopLevel = false;
+            panel3.Controls.Add(accountHome);
+            accountHome.Show();
+            accountHome.Dock = DockStyle.Fill;
+            accountHome.BringToFront();
+        }
     }
 }
