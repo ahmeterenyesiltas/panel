@@ -1,17 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace panel
 {
-    public partial class formACHome : Form
+    public partial class formCarHome : Form
     {
-        public formACHome()
+        public formCarHome()
         {
             InitializeComponent();
         }
-
-        private void formACHome_Load(object sender, EventArgs e)
+        private void formCarHome_Load(object sender, EventArgs e)
         {
 
         }
@@ -34,12 +39,12 @@ namespace panel
 
                         if (button.Name == Name)
                         {
-                            button.BackColor = Color.Green;
+                            button.BackColor = Color.RoyalBlue;
                         }
 
                         else
                         {
-                            button.BackColor = Color.DarkRed;
+                            button.BackColor = Color.MidnightBlue;
                         }
                     }
                 }
@@ -57,10 +62,6 @@ namespace panel
             try
             {
                 UptadeBackground(((Button)sender).Name);
-
-                formCampaignAdd newForm = new formCampaignAdd();
-
-                newForm.ShowDialog();
             }
             catch (Exception Ex)
             {
@@ -74,10 +75,6 @@ namespace panel
             try
             {
                 UptadeBackground(((Button)sender).Name);
-
-                formCampaignUpdate newForm = new formCampaignUpdate();
-
-                newForm.ShowDialog();
             }
             catch (Exception Ex)
             {
@@ -91,10 +88,6 @@ namespace panel
             try
             {
                 UptadeBackground(((Button)sender).Name);
-
-                formCampaignDelete newForm = new formCampaignDelete();
-
-                newForm.ShowDialog();
             }
             catch (Exception Ex)
             {
@@ -108,10 +101,6 @@ namespace panel
             try
             {
                 UptadeBackground(((Button)sender).Name);
-
-                formAnnouncementAdd newForm = new formAnnouncementAdd();
-
-                newForm.ShowDialog();
             }
             catch (Exception Ex)
             {
@@ -125,10 +114,6 @@ namespace panel
             try
             {
                 UptadeBackground(((Button)sender).Name);
-
-                formAnnouncementUpdate newForm = new formAnnouncementUpdate();
-
-                newForm.ShowDialog();
             }
             catch (Exception Ex)
             {
@@ -142,10 +127,6 @@ namespace panel
             try
             {
                 UptadeBackground(((Button)sender).Name);
-
-                formAnnouncementDelete newForm = new formAnnouncementDelete();
-
-                newForm.ShowDialog();
             }
             catch (Exception Ex)
             {
@@ -158,13 +139,13 @@ namespace panel
         {
             try
             {
-                lblTitle.Text = "Campaign Details";
+                lblTitle.Text = "Car Details";
 
 
 
-                Campaign C1 = new Campaign();
+                Car C1 = new Car();
 
-                dataGridViewDATA.DataSource = C1.GetAllCampaign();
+                dataGridViewDATA.DataSource = C1.GetAllCar();
             }
             catch (Exception Ex)
             {
@@ -177,13 +158,41 @@ namespace panel
         {
             try
             {
-                lblTitle.Text = "Announcement Details";
+                formCarAdd newForm = new formCarAdd();
 
+                newForm.ShowDialog();
+            }
+            catch (Exception Ex)
+            {
 
+                MessageBox.Show(Ex.Message);
+            }
+        }
 
-                Announcement A1 = new Announcement();
+        private void button9_Click(object sender, EventArgs e)
+        {
+            try
+            {
 
-                dataGridViewDATA.DataSource = A1.GetAllAnnouncement();
+                formCarUpdate newForm = new formCarUpdate();
+
+                newForm.ShowDialog();
+            }
+            catch (Exception Ex)
+            {
+
+                MessageBox.Show(Ex.Message);
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                formCarDelete newForm = new formCarDelete();
+
+                newForm.ShowDialog();
             }
             catch (Exception Ex)
             {

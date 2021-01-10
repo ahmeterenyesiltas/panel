@@ -73,6 +73,7 @@
             this.buttonClose.BackColor = System.Drawing.Color.White;
             this.buttonClose.FlatAppearance.BorderSize = 2;
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClose.Image = global::panel.Properties.Resources.close_window_18px;
             this.buttonClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonClose.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.buttonClose.Location = new System.Drawing.Point(352, 200);
@@ -131,6 +132,7 @@
             this.buttonAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.buttonAdd.FlatAppearance.BorderSize = 2;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAdd.Image = global::panel.Properties.Resources.save_18px;
             this.buttonAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAdd.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.buttonAdd.Location = new System.Drawing.Point(250, 200);

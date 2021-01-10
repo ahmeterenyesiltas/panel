@@ -65,6 +65,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1460, 40);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panelLeftMenu
             // 
@@ -293,6 +294,7 @@
             this.buttonCampaign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCampaign.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonCampaign.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.buttonCampaign.Image = global::panel.Properties.Resources.discount_100px;
             this.buttonCampaign.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonCampaign.Location = new System.Drawing.Point(23, 23);
             this.buttonCampaign.Margin = new System.Windows.Forms.Padding(23);
@@ -300,7 +302,7 @@
             this.buttonCampaign.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.buttonCampaign.Size = new System.Drawing.Size(200, 150);
             this.buttonCampaign.TabIndex = 0;
-            this.buttonCampaign.Text = "CampaignX";
+            this.buttonCampaign.Text = "Campaign";
             this.buttonCampaign.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonCampaign.UseVisualStyleBackColor = true;
             this.buttonCampaign.Click += new System.EventHandler(this.button7_Click);
@@ -312,6 +314,7 @@
             this.buttonAnnouncement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAnnouncement.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonAnnouncement.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.buttonAnnouncement.Image = global::panel.Properties.Resources.megaphone_100px;
             this.buttonAnnouncement.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonAnnouncement.Location = new System.Drawing.Point(269, 23);
             this.buttonAnnouncement.Margin = new System.Windows.Forms.Padding(23);
