@@ -167,42 +167,54 @@
             // 
             // btnMusteri1
             // 
+            this.btnMusteri1.BackColor = System.Drawing.Color.Silver;
+            this.btnMusteri1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMusteri1.ForeColor = System.Drawing.Color.White;
             this.btnMusteri1.Location = new System.Drawing.Point(584, 314);
             this.btnMusteri1.Name = "btnMusteri1";
-            this.btnMusteri1.Size = new System.Drawing.Size(148, 61);
+            this.btnMusteri1.Size = new System.Drawing.Size(173, 61);
             this.btnMusteri1.TabIndex = 3;
             this.btnMusteri1.Text = "EKLE";
-            this.btnMusteri1.UseVisualStyleBackColor = true;
+            this.btnMusteri1.UseVisualStyleBackColor = false;
             this.btnMusteri1.Click += new System.EventHandler(this.btnMusteri1_Click);
             // 
             // btnMusteri2
             // 
+            this.btnMusteri2.BackColor = System.Drawing.Color.Silver;
+            this.btnMusteri2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMusteri2.ForeColor = System.Drawing.Color.White;
             this.btnMusteri2.Location = new System.Drawing.Point(584, 396);
             this.btnMusteri2.Name = "btnMusteri2";
-            this.btnMusteri2.Size = new System.Drawing.Size(148, 61);
+            this.btnMusteri2.Size = new System.Drawing.Size(173, 61);
             this.btnMusteri2.TabIndex = 4;
             this.btnMusteri2.Text = "SİL";
-            this.btnMusteri2.UseVisualStyleBackColor = true;
+            this.btnMusteri2.UseVisualStyleBackColor = false;
             this.btnMusteri2.Click += new System.EventHandler(this.btnMusteri2_Click);
             // 
             // btnMusteri3
             // 
+            this.btnMusteri3.BackColor = System.Drawing.Color.Silver;
+            this.btnMusteri3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMusteri3.ForeColor = System.Drawing.Color.White;
             this.btnMusteri3.Location = new System.Drawing.Point(584, 476);
             this.btnMusteri3.Name = "btnMusteri3";
-            this.btnMusteri3.Size = new System.Drawing.Size(148, 61);
+            this.btnMusteri3.Size = new System.Drawing.Size(173, 61);
             this.btnMusteri3.TabIndex = 5;
             this.btnMusteri3.Text = "GUNCELLE";
-            this.btnMusteri3.UseVisualStyleBackColor = true;
+            this.btnMusteri3.UseVisualStyleBackColor = false;
             this.btnMusteri3.Click += new System.EventHandler(this.btnMusteri3_Click);
             // 
             // btnMusteri4
             // 
+            this.btnMusteri4.BackColor = System.Drawing.Color.Silver;
+            this.btnMusteri4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMusteri4.ForeColor = System.Drawing.Color.White;
             this.btnMusteri4.Location = new System.Drawing.Point(584, 558);
             this.btnMusteri4.Name = "btnMusteri4";
-            this.btnMusteri4.Size = new System.Drawing.Size(148, 61);
+            this.btnMusteri4.Size = new System.Drawing.Size(173, 61);
             this.btnMusteri4.TabIndex = 6;
             this.btnMusteri4.Text = "GORUNTULE";
-            this.btnMusteri4.UseVisualStyleBackColor = true;
+            this.btnMusteri4.UseVisualStyleBackColor = false;
             this.btnMusteri4.Click += new System.EventHandler(this.btnMusteri4_Click);
             // 
             // dataGridView1
@@ -255,7 +267,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1942, 785);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);

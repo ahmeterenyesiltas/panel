@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.stok_gp1 = new System.Windows.Forms.GroupBox();
             this.stokLbl7 = new System.Windows.Forms.Label();
             this.stokLbl6 = new System.Windows.Forms.Label();
@@ -76,6 +79,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.stok_gp1.SuspendLayout();
             this.stok_gp2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -211,6 +218,9 @@
             // 
             // stok_gp2
             // 
+            this.stok_gp2.Controls.Add(this.textBox1);
+            this.stok_gp2.Controls.Add(this.label11);
+            this.stok_gp2.Controls.Add(this.button7);
             this.stok_gp2.Controls.Add(this.StoktextBox7);
             this.stok_gp2.Controls.Add(this.lblStokKodu);
             this.stok_gp2.Controls.Add(this.btnStokAra);
@@ -221,11 +231,11 @@
             this.stok_gp2.Size = new System.Drawing.Size(597, 264);
             this.stok_gp2.TabIndex = 1;
             this.stok_gp2.TabStop = false;
-            this.stok_gp2.Text = "STOK ARA";
+            this.stok_gp2.Text = "STOK-FİRMA ARA";
             // 
             // StoktextBox7
             // 
-            this.StoktextBox7.Location = new System.Drawing.Point(270, 119);
+            this.StoktextBox7.Location = new System.Drawing.Point(270, 75);
             this.StoktextBox7.Name = "StoktextBox7";
             this.StoktextBox7.Size = new System.Drawing.Size(152, 30);
             this.StoktextBox7.TabIndex = 2;
@@ -233,7 +243,7 @@
             // lblStokKodu
             // 
             this.lblStokKodu.AutoSize = true;
-            this.lblStokKodu.Location = new System.Drawing.Point(265, 66);
+            this.lblStokKodu.Location = new System.Drawing.Point(265, 43);
             this.lblStokKodu.Name = "lblStokKodu";
             this.lblStokKodu.Size = new System.Drawing.Size(141, 25);
             this.lblStokKodu.TabIndex = 1;
@@ -244,7 +254,7 @@
             this.btnStokAra.BackColor = System.Drawing.Color.Gray;
             this.btnStokAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnStokAra.ForeColor = System.Drawing.Color.White;
-            this.btnStokAra.Location = new System.Drawing.Point(28, 106);
+            this.btnStokAra.Location = new System.Drawing.Point(32, 43);
             this.btnStokAra.Name = "btnStokAra";
             this.btnStokAra.Size = new System.Drawing.Size(150, 62);
             this.btnStokAra.TabIndex = 0;
@@ -254,10 +264,27 @@
             // 
             // dataGridView1
             // 
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Gray;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridView1.Location = new System.Drawing.Point(503, 419);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Gray;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(597, 242);
             this.dataGridView1.TabIndex = 2;
@@ -357,7 +384,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Gray;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(345, 196);
+            this.label8.Location = new System.Drawing.Point(319, 191);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(100, 25);
             this.label8.TabIndex = 15;
@@ -368,7 +395,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Gray;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(345, 144);
+            this.label7.Location = new System.Drawing.Point(345, 143);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(74, 25);
             this.label7.TabIndex = 14;
@@ -379,7 +406,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Gray;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(345, 96);
+            this.label6.Location = new System.Drawing.Point(323, 96);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(96, 25);
             this.label6.TabIndex = 13;
@@ -390,7 +417,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Gray;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(345, 48);
+            this.label5.Location = new System.Drawing.Point(318, 48);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(101, 25);
             this.label5.TabIndex = 12;
@@ -442,6 +469,7 @@
             // 
             // StoktextBox15
             // 
+            this.StoktextBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.StoktextBox15.Location = new System.Drawing.Point(448, 191);
             this.StoktextBox15.Name = "StoktextBox15";
             this.StoktextBox15.Size = new System.Drawing.Size(143, 30);
@@ -449,6 +477,7 @@
             // 
             // StoktextBox14
             // 
+            this.StoktextBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.StoktextBox14.Location = new System.Drawing.Point(448, 141);
             this.StoktextBox14.Name = "StoktextBox14";
             this.StoktextBox14.Size = new System.Drawing.Size(143, 30);
@@ -456,6 +485,7 @@
             // 
             // StoktextBox13
             // 
+            this.StoktextBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.StoktextBox13.Location = new System.Drawing.Point(448, 91);
             this.StoktextBox13.Name = "StoktextBox13";
             this.StoktextBox13.Size = new System.Drawing.Size(143, 30);
@@ -463,6 +493,7 @@
             // 
             // StoktextBox12
             // 
+            this.StoktextBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.StoktextBox12.Location = new System.Drawing.Point(448, 43);
             this.StoktextBox12.Name = "StoktextBox12";
             this.StoktextBox12.Size = new System.Drawing.Size(143, 30);
@@ -470,6 +501,7 @@
             // 
             // StoktextBox11
             // 
+            this.StoktextBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.StoktextBox11.Location = new System.Drawing.Point(129, 193);
             this.StoktextBox11.Name = "StoktextBox11";
             this.StoktextBox11.Size = new System.Drawing.Size(143, 30);
@@ -477,6 +509,7 @@
             // 
             // StoktextBox10
             // 
+            this.StoktextBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.StoktextBox10.Location = new System.Drawing.Point(129, 143);
             this.StoktextBox10.Name = "StoktextBox10";
             this.StoktextBox10.Size = new System.Drawing.Size(143, 30);
@@ -484,6 +517,7 @@
             // 
             // StoktextBox9
             // 
+            this.StoktextBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.StoktextBox9.Location = new System.Drawing.Point(129, 93);
             this.StoktextBox9.Name = "StoktextBox9";
             this.StoktextBox9.Size = new System.Drawing.Size(143, 30);
@@ -491,6 +525,7 @@
             // 
             // StoktextBox8
             // 
+            this.StoktextBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.StoktextBox8.Location = new System.Drawing.Point(129, 45);
             this.StoktextBox8.Name = "StoktextBox8";
             this.StoktextBox8.Size = new System.Drawing.Size(143, 30);
@@ -498,7 +533,16 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView2.Location = new System.Drawing.Point(1106, 419);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
@@ -517,6 +561,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "GÖRÜNTÜLE";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -529,6 +574,7 @@
             this.button2.TabIndex = 11;
             this.button2.Text = "GÜNCELLE";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -541,6 +587,7 @@
             this.button3.TabIndex = 10;
             this.button3.Text = "SİL";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -553,6 +600,7 @@
             this.button4.TabIndex = 9;
             this.button4.Text = "EKLE";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label9
             // 
@@ -589,6 +637,48 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Gray;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(1330, 690);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(145, 69);
+            this.button6.TabIndex = 19;
+            this.button6.Text = "KAYDET";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Gray;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(32, 154);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(150, 62);
+            this.button7.TabIndex = 3;
+            this.button7.Text = "FİRMA ARA";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(265, 154);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(120, 25);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "FİRMA ADI";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(270, 182);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(152, 30);
+            this.textBox1.TabIndex = 5;
+            // 
             // stok_takip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -612,6 +702,7 @@
             this.Controls.Add(this.stok_gp1);
             this.Controls.Add(this.btnStok3);
             this.Controls.Add(this.button5);
+            this.Controls.Add(this.button6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "stok_takip";
             this.Text = "stok_takip";
@@ -678,5 +769,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button7;
     }
 }
