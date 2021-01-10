@@ -701,7 +701,7 @@ namespace panel
 
         private void button18_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://www.instagram.com/rms.vp/");
+            System.Diagnostics.Process.Start("https://www.instagram.com/efendirestoran/");
         }
     }
 }
