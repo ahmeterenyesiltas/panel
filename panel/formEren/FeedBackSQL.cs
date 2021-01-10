@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using panel.ModelEren;
-
+using panel.formEren;
 
 namespace panel
 {
@@ -105,6 +105,12 @@ namespace panel
 
             }
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ReviewDelete reviewDelete = new ReviewDelete();
+            reviewDelete.ShowDialog();
         }
     }
 }

@@ -63,6 +63,12 @@
       <DependentUpon>AddCampaign.cs</DependentUpon>
     </Compile>
     <Compile Include="DbOperations\Common.cs" />
+    <Compile Include="formEren\ReviewDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEren\ReviewDelete.Designer.cs">
+      <DependentUpon>ReviewDelete.cs</DependentUpon>
+    </Compile>
     <Compile Include="Yusuf\formYusuf\formAccountAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -296,6 +302,9 @@
     <Compile Include="formEren\YemekMenuTatlilarcs.Designer.cs">
       <DependentUpon>YemekMenuTatlilarcs.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="formEren\ReviewDelete.resx">
+      <DependentUpon>ReviewDelete.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Yusuf\formYusuf\formAccountAdd.resx">
       <DependentUpon>formAccountAdd.cs</DependentUpon>
     </EmbeddedResource>

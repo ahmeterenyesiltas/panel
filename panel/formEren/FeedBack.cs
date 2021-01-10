@@ -164,6 +164,14 @@ namespace panel
                 lblMessage.ForeColor = Color.Red;
             }
 
+            CustomerName.Text = "";
+            CustomerReview.Text = "";
+            CustomerPointNUD.Value = 1;
+            Radiobtn1.Checked = false;
+            Radiobtn2.Checked = false;
+            Radiobtn3.Checked = false;
+            Radiobtn4.Checked = false;
+            Radiobtn5.Checked = false;
 
         }
     }

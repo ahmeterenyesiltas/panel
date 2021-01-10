@@ -162,6 +162,25 @@ namespace panel
 
         }
 
+        public int FeedBackDelete(int customerID)   
+        {
+
+            SqlConnection connection = null;
+            try
+            {
+                string query = $"Delete Feedback WHERE CustomerID={customerID} ";  
+                                                                           
+                return dbHelper.ExecuteNonQuery(query);
+            }
+            catch (Exception Ex)
+            {
+
+                throw new Exception(Ex.Message);
+            }
+
+        }
+
+
 
     }
 }
