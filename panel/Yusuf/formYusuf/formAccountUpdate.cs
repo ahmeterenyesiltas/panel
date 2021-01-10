@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace panel
 {
-    public partial class formAccountAdd : Form
+    public partial class formAccountUpdate : Form
     {
-        public formAccountAdd()
+        public formAccountUpdate()
         {
             InitializeComponent();
         }
@@ -24,6 +24,7 @@ namespace panel
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
+            //int entryID;
 
             //string entryName;
 
@@ -39,6 +40,8 @@ namespace panel
 
                 labelMessage.ForeColor = Color.Black;
 
+                int entryID = int.Parse(tBEntryID.Text);
+
                 string entryName = tBEntryName.Text;
 
                 string entryMType = cBEntryMainType.Text;
@@ -53,21 +56,21 @@ namespace panel
 
                     throw new Exception("Entry Amount cannot be EMPTY!");
                 }
-                //.
-                //.
-                //.
+
+
 
                 Accounting A1 = new Accounting();
-                A1.EntryAmount = entryAmount;
+                A1.EntryID = entryID;
                 A1.EntryName = entryName;
                 A1.EntryMType = entryMType;
                 A1.EntryType = entryType;
+                A1.EntryAmount = entryAmount;
 
-                int Result = A1.AddAccount(A1);
+                int Result = A1.UpdateAccount(A1);
 
                 if (Result > 0)
                 {
-                    labelMessage.Text = "Account Added!";
+                    labelMessage.Text = "Account Updated!";
 
                     labelMessage.ForeColor = Color.Green;
                 }

@@ -159,8 +159,8 @@ namespace panel
             try
             {
 
-                string query = $"update Car set EntryName = {A1.EntryName}, EntryMType = '{A1.EntryMType}'," +
-                    $"EntryType = '{A1.EntryType}', EntryAmount = '{A1.EntryAmount}' where CarID = {A1.EntryID}";
+                string query = $"update Accounting set EntryName = '{A1.EntryName}', EntryMType = '{A1.EntryMType}'," +
+                    $"EntryType = '{A1.EntryType}', EntryAmount = {A1.EntryAmount} where EntryID = {A1.EntryID}";
 
                 return dbMain.ExecuteNonQuery(query);
 
@@ -173,12 +173,12 @@ namespace panel
             }
         }
 
-        public int DeleteCar(int EntryID)
+        public int DeleteAccount(int EntryID)
         {
             try
             {
 
-                string query = $"Delete Account where CarID = {EntryID}";
+                string query = $"Delete Accounting where EntryID = {EntryID}";
 
                 return dbMain.ExecuteNonQuery(query);
 

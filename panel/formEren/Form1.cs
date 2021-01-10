@@ -698,5 +698,10 @@ namespace panel
             form.Dock = DockStyle.Fill;
             form.BringToFront();
         }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.instagram.com/rms.vp/");
+        }
     }
 }

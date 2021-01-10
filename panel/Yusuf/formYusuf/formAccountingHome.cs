@@ -171,21 +171,32 @@ namespace panel
 
         private void button9_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    lblTitle.Text = "Department Details";
+            try
+            {
+                formAccountUpdate newForm = new formAccountUpdate();
 
+                newForm.ShowDialog();
+            }
+            catch (Exception Ex)
+            {
 
+                MessageBox.Show(Ex.Message);
+            }
+        }
 
-            //    Course D1 = new Course();
+        private void button10_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                formAccountDelete newForm = new formAccountDelete();
 
-            //    dataGridViewDATA.DataSource = D1.GetAllCourse();
-            //}
-            //catch (Exception Ex)
-            //{
+                newForm.ShowDialog();
+            }
+            catch (Exception Ex)
+            {
 
-            //    MessageBox.Show(Ex.Message);
-            //}
+                MessageBox.Show(Ex.Message);
+            }
         }
     }
 }

@@ -75,11 +75,23 @@
     <Compile Include="Yusuf\formYusuf\formAccountAdd.Designer.cs">
       <DependentUpon>formAccountAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Yusuf\formYusuf\formAccountDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yusuf\formYusuf\formAccountDelete.Designer.cs">
+      <DependentUpon>formAccountDelete.cs</DependentUpon>
+    </Compile>
     <Compile Include="Yusuf\formYusuf\formAccountingHome.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Yusuf\formYusuf\formAccountingHome.designer.cs">
       <DependentUpon>formAccountingHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yusuf\formYusuf\formAccountUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yusuf\formYusuf\formAccountUpdate.Designer.cs">
+      <DependentUpon>formAccountUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Yusuf\modelYusuf\Accounting.cs" />
     <Compile Include="Yusuf\modelYusuf\Announcement.cs" />
@@ -306,6 +318,9 @@
     <EmbeddedResource Include="Yusuf\formYusuf\formAccountAdd.resx">
       <DependentUpon>formAccountAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Yusuf\formYusuf\formAccountDelete.resx">
+      <DependentUpon>formAccountDelete.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Yusuf\formYusuf\formAccountingHome.resx">
       <DependentUpon>formAccountingHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -335,6 +350,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formEren\PersonelManager.resx">
       <DependentUpon>PersonelManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yusuf\formYusuf\formAccountUpdate.resx">
+      <DependentUpon>formAccountUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Yusuf\formYusuf\formACHome.resx">
       <DependentUpon>formACHome.cs</DependentUpon>
