@@ -29,16 +29,17 @@ namespace panel
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FoodShow));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.dgvData = new System.Windows.Forms.DataGridView();
             this.PanelDataGV = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
@@ -57,31 +58,22 @@ namespace panel
             this.panel1.Size = new System.Drawing.Size(1433, 281);
             this.panel1.TabIndex = 0;
             // 
-            // panel3
+            // button2
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 281);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(128, 540);
-            this.panel3.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.FlatAppearance.BorderSize = 13;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(474, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(249, 179);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Show Foods";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.FlatAppearance.BorderSize = 13;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(729, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(250, 179);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Show Desserts";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel4
             // 
@@ -104,10 +96,39 @@ namespace panel
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Details";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.FlatAppearance.BorderSize = 13;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(474, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(249, 179);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Show Foods";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 281);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(128, 540);
+            this.panel3.TabIndex = 2;
+            // 
             // dgvData
             // 
             this.dgvData.AllowUserToAddRows = false;
             this.dgvData.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.dgvData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvData.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvData.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -116,8 +137,8 @@ namespace panel
             this.dgvData.Name = "dgvData";
             this.dgvData.ReadOnly = true;
             this.dgvData.RowHeadersWidth = 100;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dgvData.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dgvData.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvData.RowTemplate.Height = 24;
             this.dgvData.Size = new System.Drawing.Size(1305, 540);
             this.dgvData.TabIndex = 1;
@@ -133,23 +154,6 @@ namespace panel
             this.PanelDataGV.Name = "PanelDataGV";
             this.PanelDataGV.Size = new System.Drawing.Size(1305, 540);
             this.PanelDataGV.TabIndex = 3;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.FlatAppearance.BorderSize = 13;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(729, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(250, 179);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Show Desserts";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FoodShow
             // 

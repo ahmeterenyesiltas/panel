@@ -17,7 +17,7 @@ namespace panel
     {
         SqlCommand cmd;
         SqlConnection con;
-        SqlDataAdapter da;
+       
 
 
         #region Değişkenler
@@ -72,7 +72,7 @@ namespace panel
             con = new SqlConnection("Server=94.73.144.8;Database=u8846052_DBRMS01;User Id=u8846052_RMS01;Password=TYgv18I1HFbi19X;");
             con.Open();
 
-            SqlCommand cmdSil = new SqlCommand("DELETE STOK WHERE STOK_ADET= '" + dataGridView1.CurrentRow.Cells[4].Value.ToString()+"'",con);
+            SqlCommand cmdSil = new SqlCommand("DELETE MUSTERILER WHERE ad_soyad= '" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + "'", con);
             cmdSil.ExecuteNonQuery();
 
             musteriGoruntule();

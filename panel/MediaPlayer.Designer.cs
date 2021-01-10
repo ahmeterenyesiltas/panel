@@ -91,6 +91,7 @@
             this.btnMediaDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMediaDelete.BackgroundImage")));
             this.btnMediaDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMediaDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMediaDelete.ForeColor = System.Drawing.Color.White;
             this.btnMediaDelete.Location = new System.Drawing.Point(1477, 18);
             this.btnMediaDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMediaDelete.Name = "btnMediaDelete";
@@ -104,6 +105,7 @@
             this.btnVolumeUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVolumeUp.BackgroundImage")));
             this.btnVolumeUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnVolumeUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolumeUp.ForeColor = System.Drawing.Color.White;
             this.btnVolumeUp.Location = new System.Drawing.Point(1249, 18);
             this.btnVolumeUp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVolumeUp.Name = "btnVolumeUp";
@@ -117,6 +119,7 @@
             this.btnVolumeDown.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVolumeDown.BackgroundImage")));
             this.btnVolumeDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnVolumeDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolumeDown.ForeColor = System.Drawing.Color.White;
             this.btnVolumeDown.Location = new System.Drawing.Point(1340, 18);
             this.btnVolumeDown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVolumeDown.Name = "btnVolumeDown";
@@ -130,6 +133,7 @@
             this.btnStart.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnStart.BackgroundImage")));
             this.btnStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStart.ForeColor = System.Drawing.Color.White;
             this.btnStart.Location = new System.Drawing.Point(811, 21);
             this.btnStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStart.Name = "btnStart";
@@ -143,6 +147,7 @@
             this.btnForward.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnForward.BackgroundImage")));
             this.btnForward.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnForward.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnForward.ForeColor = System.Drawing.Color.White;
             this.btnForward.Location = new System.Drawing.Point(1007, 21);
             this.btnForward.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnForward.Name = "btnForward";
@@ -156,6 +161,7 @@
             this.btnPause.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPause.BackgroundImage")));
             this.btnPause.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnPause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPause.ForeColor = System.Drawing.Color.White;
             this.btnPause.Location = new System.Drawing.Point(908, 21);
             this.btnPause.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPause.Name = "btnPause";
@@ -169,6 +175,7 @@
             this.btnMediaDown.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMediaDown.BackgroundImage")));
             this.btnMediaDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMediaDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMediaDown.ForeColor = System.Drawing.Color.White;
             this.btnMediaDown.Location = new System.Drawing.Point(351, 18);
             this.btnMediaDown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMediaDown.Name = "btnMediaDown";
@@ -182,6 +189,7 @@
             this.btnRestart.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRestart.BackgroundImage")));
             this.btnRestart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnRestart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestart.ForeColor = System.Drawing.Color.White;
             this.btnRestart.Location = new System.Drawing.Point(493, 18);
             this.btnRestart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRestart.Name = "btnRestart";
@@ -195,6 +203,7 @@
             this.btnMediaUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMediaUp.BackgroundImage")));
             this.btnMediaUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMediaUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMediaUp.ForeColor = System.Drawing.Color.White;
             this.btnMediaUp.Location = new System.Drawing.Point(269, 18);
             this.btnMediaUp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMediaUp.Name = "btnMediaUp";
@@ -208,6 +217,7 @@
             this.btnReverse.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReverse.BackgroundImage")));
             this.btnReverse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnReverse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReverse.ForeColor = System.Drawing.Color.White;
             this.btnReverse.Location = new System.Drawing.Point(708, 21);
             this.btnReverse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReverse.Name = "btnReverse";
@@ -221,6 +231,7 @@
             this.btnMediaAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMediaAdd.BackgroundImage")));
             this.btnMediaAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMediaAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMediaAdd.ForeColor = System.Drawing.Color.White;
             this.btnMediaAdd.Location = new System.Drawing.Point(151, 18);
             this.btnMediaAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMediaAdd.Name = "btnMediaAdd";
@@ -300,7 +311,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1661, 793);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
