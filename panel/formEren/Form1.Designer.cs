@@ -83,6 +83,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelFloorDrop.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -96,6 +97,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.Controls.Add(this.button26);
             this.panel1.Controls.Add(this.button12);
             this.panel1.Controls.Add(this.button10);
             this.panel1.Controls.Add(this.panelFloorDrop);
@@ -121,8 +123,9 @@
             this.button12.BackColor = System.Drawing.Color.BurlyWood;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
             this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(11, 862);
+            this.button12.Location = new System.Drawing.Point(11, 930);
             this.button12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button12.MaximumSize = new System.Drawing.Size(181, 64);
             this.button12.MinimumSize = new System.Drawing.Size(181, 64);
@@ -131,6 +134,7 @@
             this.button12.Size = new System.Drawing.Size(181, 64);
             this.button12.TabIndex = 38;
             this.button12.Text = "Müşteri Yönetim";
+            this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button12_Click_1);
             // 
@@ -139,8 +143,9 @@
             this.button10.BackColor = System.Drawing.Color.BurlyWood;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
             this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(11, 793);
+            this.button10.Location = new System.Drawing.Point(11, 861);
             this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button10.MaximumSize = new System.Drawing.Size(181, 64);
             this.button10.MinimumSize = new System.Drawing.Size(181, 64);
@@ -149,6 +154,7 @@
             this.button10.Size = new System.Drawing.Size(181, 64);
             this.button10.TabIndex = 37;
             this.button10.Text = "Kameralar";
+            this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
@@ -158,7 +164,7 @@
             this.panelFloorDrop.Controls.Add(this.leftfloor2btn);
             this.panelFloorDrop.Controls.Add(this.leftfloor1btn);
             this.panelFloorDrop.Controls.Add(this.button2);
-            this.panelFloorDrop.Location = new System.Drawing.Point(11, 519);
+            this.panelFloorDrop.Location = new System.Drawing.Point(11, 587);
             this.panelFloorDrop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelFloorDrop.MaximumSize = new System.Drawing.Size(181, 206);
             this.panelFloorDrop.MinimumSize = new System.Drawing.Size(181, 64);
@@ -275,7 +281,7 @@
             this.btnInfoLeft.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnInfoLeft.Image = ((System.Drawing.Image)(resources.GetObject("btnInfoLeft.Image")));
             this.btnInfoLeft.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInfoLeft.Location = new System.Drawing.Point(11, 452);
+            this.btnInfoLeft.Location = new System.Drawing.Point(11, 520);
             this.btnInfoLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInfoLeft.MaximumSize = new System.Drawing.Size(181, 64);
             this.btnInfoLeft.MinimumSize = new System.Drawing.Size(181, 64);
@@ -313,7 +319,7 @@
             this.OrderLeftbtn.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.OrderLeftbtn.Image = ((System.Drawing.Image)(resources.GetObject("OrderLeftbtn.Image")));
             this.OrderLeftbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.OrderLeftbtn.Location = new System.Drawing.Point(11, 384);
+            this.OrderLeftbtn.Location = new System.Drawing.Point(11, 452);
             this.OrderLeftbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.OrderLeftbtn.MaximumSize = new System.Drawing.Size(181, 64);
             this.OrderLeftbtn.MinimumSize = new System.Drawing.Size(181, 64);
@@ -333,7 +339,7 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.button1.Location = new System.Drawing.Point(11, 246);
+            this.button1.Location = new System.Drawing.Point(11, 314);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.MaximumSize = new System.Drawing.Size(181, 64);
             this.button1.MinimumSize = new System.Drawing.Size(181, 64);
@@ -370,7 +376,7 @@
             this.button13.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
             this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.Location = new System.Drawing.Point(11, 316);
+            this.button13.Location = new System.Drawing.Point(11, 384);
             this.button13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button13.MaximumSize = new System.Drawing.Size(181, 64);
             this.button13.MinimumSize = new System.Drawing.Size(181, 64);
@@ -386,7 +392,7 @@
             // 
             this.panelParkDroop.Controls.Add(this.button24);
             this.panelParkDroop.Controls.Add(this.button25);
-            this.panelParkDroop.Location = new System.Drawing.Point(12, 587);
+            this.panelParkDroop.Location = new System.Drawing.Point(12, 655);
             this.panelParkDroop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelParkDroop.MaximumSize = new System.Drawing.Size(181, 114);
             this.panelParkDroop.MinimumSize = new System.Drawing.Size(181, 64);
@@ -439,7 +445,7 @@
             this.panel6.BackColor = System.Drawing.Color.Chartreuse;
             this.panel6.Controls.Add(this.button4);
             this.panel6.Controls.Add(this.button9);
-            this.panel6.Location = new System.Drawing.Point(12, 655);
+            this.panel6.Location = new System.Drawing.Point(12, 723);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.MaximumSize = new System.Drawing.Size(181, 114);
             this.panel6.MinimumSize = new System.Drawing.Size(181, 64);
@@ -493,8 +499,9 @@
             this.button7.BackColor = System.Drawing.Color.BurlyWood;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(11, 724);
+            this.button7.Location = new System.Drawing.Point(11, 792);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.MaximumSize = new System.Drawing.Size(181, 64);
             this.button7.MinimumSize = new System.Drawing.Size(181, 64);
@@ -548,12 +555,13 @@
             this.panel3.BackColor = System.Drawing.Color.Maroon;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel3.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.panel3.Location = new System.Drawing.Point(1671, 105);
+            this.panel3.Location = new System.Drawing.Point(199, 105);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(229, 979);
+            this.panel3.Size = new System.Drawing.Size(1701, 979);
             this.panel3.TabIndex = 3;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -847,7 +855,7 @@
             this.FoodDeliverybtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.FoodDeliverybtn.FlatAppearance.BorderSize = 5;
             this.FoodDeliverybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FoodDeliverybtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.FoodDeliverybtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FoodDeliverybtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.FoodDeliverybtn.Image = ((System.Drawing.Image)(resources.GetObject("FoodDeliverybtn.Image")));
             this.FoodDeliverybtn.Location = new System.Drawing.Point(341, 485);
@@ -976,6 +984,26 @@
             this.btnMenu.UseVisualStyleBackColor = false;
             this.btnMenu.Click += new System.EventHandler(this.button4_Click_1);
             // 
+            // button26
+            // 
+            this.button26.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button26.BackColor = System.Drawing.Color.BurlyWood;
+            this.button26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button26.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.button26.Image = ((System.Drawing.Image)(resources.GetObject("button26.Image")));
+            this.button26.Location = new System.Drawing.Point(11, 246);
+            this.button26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button26.MaximumSize = new System.Drawing.Size(181, 64);
+            this.button26.MinimumSize = new System.Drawing.Size(181, 64);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(181, 64);
+            this.button26.TabIndex = 39;
+            this.button26.Text = "Personel";
+            this.button26.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button26.UseVisualStyleBackColor = false;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1079,6 +1107,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button26;
     }
 }
 

@@ -686,5 +686,17 @@ namespace panel
             form.Dock = DockStyle.Fill;
             form.BringToFront();
         }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            PersonelManager form = new PersonelManager();
+            form.TopLevel = false;
+            panel3.Controls.Add(form);
+            form.Show();
+            form.Dock = DockStyle.Fill;
+            form.BringToFront();
+        }
     }
 }
