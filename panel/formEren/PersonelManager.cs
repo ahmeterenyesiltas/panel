@@ -19,34 +19,24 @@ namespace panel
         }
 
         int ID = -1;
-
+        public string Email;
+        public string Password;
         //public Person Person { get; set; }
 
        
+        
+
+
         public PersonelManager()
         {
             InitializeComponent();
-            //Person = p;
+           
         }
 
         private void formEmployeeHome_Load(object sender, EventArgs e)     //labela giren kişinin adını yazdırıcaz ama bunu load da yapıyoruz bu kısım önemli
         {                                                                //10 aralık dersi dakika 20 den sonra gösteriyor yaklaşık olarak 10.12 dersi
-            //try
-            //{
-            //    if (Person != null)    //BURDA YAPILDIĞI GİBİ SAĞ ÜSTTEKİ LABELA İSTENİLEN KİŞİNİN İLK VE SON ADI YAZILDI SADECE BU BENİM PERSONEL MANAGEMENT CLASSIM İÇİN
-            //    {                      // HARİKA BİR ÖRNEK AMA YAPMASI BİRAZ ZOR KULLANABİLİRSEN HARİKA ŞEYLER OLUR                    
-
-            //        lblWelcome.Text = Person.FirstName + " " + Person.LastName;
-            //    }
-
-
-            //    }
-            //catch (Exception)
-            //{
-
-            //    throw;
-            //}
-
+            
+            
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -124,6 +114,10 @@ namespace panel
                 lblTitle.Text = "Employee Details";
                 Employee emp = new Employee();               //BURADA TÜM SATIRLARI ALMAK İÇİN GEREKLİ OLAN İŞLEMİ BÖYLE ÇAĞIRIYORUZ
                 dgvData.DataSource = emp.GetAllEmployee();   //FONKSİYONU ZATEN EMPLOYEE.CS DE YAZMIŞTIK
+
+
+                lblWelcome.Text=Email;
+            
             }
             catch (Exception ex)
             {

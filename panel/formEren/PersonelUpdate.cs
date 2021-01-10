@@ -30,23 +30,18 @@ namespace panel
         {
             try
             {
-                //if (course != null)
-                //{
-                //    tbCourseID.Text = course.CourseID.ToString();        //BU 3 Ü DEFAULT OLARAK BİLGİLERİ YAZDIRICAK COURSEUN
-                //    tbName.Text = course.Name;
-                //    nudCredit.Value = course.Credit;
-                //}
+                
 
                 if(employee != null)
                 {
-                    tbCourseID.Text = employee.EmployeeID.ToString();
-                    //tbFirstName.Text = employee.Firstname.ToString();
-                    //tbLastName.Text = employee.LastName.ToString();
-                    //tbEmail.Text = employee.Email1.ToString();
-                    //tbPassword.Text = employee.Password1.ToString();
-                    //tbSalary.Text = employee.Salary.ToString();
-                    //tbGender.Text = employee.Gender1.ToString();
-                    //tbDepartmentID.Text = employee.DepartmentID1.ToString();
+                    tbPersonelID.Text = employee.EmployeeID.ToString();
+                    tbFirstName.Text = employee.FirstName.ToString();
+                    tbLastName.Text = employee.Lastname.ToString();
+                    tbEmail.Text = employee.Email1.ToString();
+                    tbPassword.Text = employee.Password1.ToString();
+                    tbSalary.Text = employee.Salary.ToString();
+                    comboBoxGender.Text = employee.Gender1.ToString();
+                    tbDepartmentID.Text = employee.DepartmentID1.ToString();
 ;
                        
                 }

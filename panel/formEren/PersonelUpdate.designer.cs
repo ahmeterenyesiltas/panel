@@ -33,7 +33,7 @@ namespace panel
             this.lblMessage = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.tbCourseID = new System.Windows.Forms.TextBox();
+            this.tbPersonelID = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tbFirstName = new System.Windows.Forms.TextBox();
             this.tbDepartmentID = new System.Windows.Forms.TextBox();
@@ -48,9 +48,9 @@ namespace panel
             this.label5 = new System.Windows.Forms.Label();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBoxGender = new System.Windows.Forms.ComboBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBoxGender = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,15 +88,15 @@ namespace panel
             this.label4.TabIndex = 27;
             this.label4.Text = "Personel ID:";
             // 
-            // tbCourseID
+            // tbPersonelID
             // 
-            this.tbCourseID.Location = new System.Drawing.Point(208, 102);
-            this.tbCourseID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbCourseID.MaxLength = 40;
-            this.tbCourseID.Name = "tbCourseID";
-            this.tbCourseID.ReadOnly = true;
-            this.tbCourseID.Size = new System.Drawing.Size(379, 22);
-            this.tbCourseID.TabIndex = 28;
+            this.tbPersonelID.Location = new System.Drawing.Point(208, 102);
+            this.tbPersonelID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbPersonelID.MaxLength = 40;
+            this.tbPersonelID.Name = "tbPersonelID";
+            this.tbPersonelID.ReadOnly = true;
+            this.tbPersonelID.Size = new System.Drawing.Size(379, 22);
+            this.tbPersonelID.TabIndex = 28;
             // 
             // label8
             // 
@@ -248,7 +248,7 @@ namespace panel
             this.panel1.Controls.Add(this.tbFirstName);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.tbDepartmentID);
-            this.panel1.Controls.Add(this.tbCourseID);
+            this.panel1.Controls.Add(this.tbPersonelID);
             this.panel1.Controls.Add(this.tbEmail);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label1);
@@ -264,6 +264,18 @@ namespace panel
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(784, 539);
             this.panel1.TabIndex = 45;
+            // 
+            // comboBoxGender
+            // 
+            this.comboBoxGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxGender.FormattingEnabled = true;
+            this.comboBoxGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.comboBoxGender.Location = new System.Drawing.Point(208, 353);
+            this.comboBoxGender.Name = "comboBoxGender";
+            this.comboBoxGender.Size = new System.Drawing.Size(379, 24);
+            this.comboBoxGender.TabIndex = 6;
             // 
             // btnUpdate
             // 
@@ -299,18 +311,6 @@ namespace panel
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // comboBoxGender
-            // 
-            this.comboBoxGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxGender.FormattingEnabled = true;
-            this.comboBoxGender.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.comboBoxGender.Location = new System.Drawing.Point(208, 353);
-            this.comboBoxGender.Name = "comboBoxGender";
-            this.comboBoxGender.Size = new System.Drawing.Size(379, 24);
-            this.comboBoxGender.TabIndex = 6;
-            // 
             // PersonelUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -334,7 +334,7 @@ namespace panel
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tbCourseID;
+        private System.Windows.Forms.TextBox tbPersonelID;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox tbFirstName;
         private System.Windows.Forms.TextBox tbDepartmentID;

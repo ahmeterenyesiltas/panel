@@ -31,7 +31,7 @@ namespace panel
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PersonelManager));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,9 +39,9 @@ namespace panel
             this.editToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblWelcome = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lblWelcome = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Cancelbtn = new System.Windows.Forms.Button();
             this.PanelLeftMenu = new System.Windows.Forms.Panel();
@@ -138,18 +138,6 @@ namespace panel
             this.addToolStripMenuItem1.Text = "Add";
             this.addToolStripMenuItem1.Click += new System.EventHandler(this.addToolStripMenuItem1_Click);
             // 
-            // lblWelcome
-            // 
-            this.lblWelcome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Font = new System.Drawing.Font("Century Gothic", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblWelcome.ForeColor = System.Drawing.Color.AliceBlue;
-            this.lblWelcome.Location = new System.Drawing.Point(55, 25);
-            this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(69, 23);
-            this.lblWelcome.TabIndex = 1;
-            this.lblWelcome.Text = "label1";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -168,11 +156,22 @@ namespace panel
             this.panel5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel5.Controls.Add(this.lblWelcome);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(1187, 0);
+            this.panel5.Location = new System.Drawing.Point(943, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 78);
+            this.panel5.Size = new System.Drawing.Size(444, 78);
             this.panel5.TabIndex = 6;
+            // 
+            // lblWelcome
+            // 
+            this.lblWelcome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblWelcome.AutoSize = true;
+            this.lblWelcome.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblWelcome.ForeColor = System.Drawing.Color.AliceBlue;
+            this.lblWelcome.Location = new System.Drawing.Point(13, 25);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(0, 17);
+            this.lblWelcome.TabIndex = 1;
             // 
             // panel4
             // 
@@ -270,8 +269,8 @@ namespace panel
             // 
             this.dgvData.AllowUserToAddRows = false;
             this.dgvData.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvData.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -306,9 +305,8 @@ namespace panel
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(532, 14);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(70, 23);
+            this.lblTitle.Size = new System.Drawing.Size(0, 23);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "label4";
             // 
             // flowLayoutPanel1
             // 
@@ -440,7 +438,6 @@ namespace panel
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem1;
-        private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel PanelLeftMenu;
         private System.Windows.Forms.Label label3;
@@ -458,5 +455,6 @@ namespace panel
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Label lblWelcome;
     }
 }

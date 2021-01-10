@@ -64,7 +64,8 @@ namespace panel
 
             Employee emp = new Employee();                   //BURDA OLUŞTURDUĞUMUZ NESNEYİ EMPLOYEE CLASSI İÇİNDEKİ LOGİN ÖZELLİĞİNİ KULLANARAK ÇAĞIRDIK
             var employee = emp.Login(email, password);        //VE BU FONKSİYON Employee tipinde bir değişken döndürüyor ve bu değişken boş değilse LOGİN YAPIYOR
-         
+
+            
             
             if (employee != null)
             {
