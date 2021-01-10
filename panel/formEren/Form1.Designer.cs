@@ -548,13 +548,12 @@
             this.panel3.BackColor = System.Drawing.Color.Maroon;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel3.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.panel3.Location = new System.Drawing.Point(199, 105);
+            this.panel3.Location = new System.Drawing.Point(1469, 105);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1701, 979);
+            this.panel3.Size = new System.Drawing.Size(431, 979);
             this.panel3.TabIndex = 3;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -633,6 +632,7 @@
             this.button23.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button23.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button23.UseVisualStyleBackColor = false;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // button22
             // 
@@ -781,6 +781,7 @@
             this.button15.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button14
             // 
@@ -799,6 +800,7 @@
             this.button14.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // Courierbtn
             // 
@@ -949,6 +951,7 @@
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // btnMenu
             // 

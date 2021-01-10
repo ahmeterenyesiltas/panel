@@ -609,5 +609,53 @@ namespace panel
             accountHome.Dock = DockStyle.Fill;
             accountHome.BringToFront();
         }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            MediaPlayer mediaplayer = new MediaPlayer();
+            mediaplayer.TopLevel = false;
+            panel3.Controls.Add(mediaplayer);
+            mediaplayer.Show();
+            mediaplayer.Dock = DockStyle.Fill;
+            mediaplayer.BringToFront();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            ilkform form = new ilkform();
+            form.TopLevel = false;
+            panel3.Controls.Add(form);
+            form.Show();
+            form.Dock = DockStyle.Fill;
+            form.BringToFront();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            floors form = new floors();
+            form.TopLevel = false;
+            panel3.Controls.Add(form);
+            form.Show();
+            form.Dock = DockStyle.Fill;
+            form.BringToFront();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel3.Controls.Clear();
+            müsteri_takip form = new müsteri_takip();
+            form.TopLevel = false;
+            panel3.Controls.Add(form);
+            form.Show();
+            form.Dock = DockStyle.Fill;
+            form.BringToFront();
+        }
     }
 }
