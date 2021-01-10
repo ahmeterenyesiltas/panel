@@ -139,12 +139,7 @@ namespace panel.Models
 
                 }
 
-                if (P is Student)
-                {
 
-                    Console.WriteLine($"Thank you {P.FirstName}; you are an Student!");
-
-                }
 
             }
             catch (Exception)

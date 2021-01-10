@@ -129,7 +129,7 @@ namespace panel.Models
             {
                  //connection string bizim sql serverımıza bağlanmak için kullandığımız string bu
 
-                string conString = "Server = DESKTOP-HCPGI0N; Database = SMSBIM; Trusted_Connection = True";
+                string conString = "Server=94.73.144.8;Database=u8846052_DBRMS01;User Id=u8846052_RMS01;Password=TYgv18I1HFbi19X;";
                 connection = new SqlConnection(conString);     //using System.Data.SqlClient; bunu import etmeliyiz unutma
                 connection.Open();
               if (connection.State == System.Data.ConnectionState.Open)
@@ -181,7 +181,7 @@ namespace panel.Models
             {
                 
 
-                string conString = "Server = DESKTOP-HCPGI0N; Database = SMSBIM; Trusted_Connection = True";
+                string conString = "Server=94.73.144.8;Database=u8846052_DBRMS01;User Id=u8846052_RMS01;Password=TYgv18I1HFbi19X;";
                 connection = new SqlConnection(conString);     
                 connection.Open();
                 if (connection.State == System.Data.ConnectionState.Open)

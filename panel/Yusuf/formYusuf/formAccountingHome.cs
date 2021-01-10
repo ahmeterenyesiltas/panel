@@ -156,17 +156,17 @@ namespace panel
 
         private void button8_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    formCarAdd newForm = new formAccountAdd();
+            try
+            {
+                formAccountAdd newForm = new formAccountAdd();
 
-            //    newForm.ShowDialog();
-            //}
-            //catch (Exception Ex)
-            //{
+                newForm.ShowDialog();
+            }
+            catch (Exception Ex)
+            {
 
-            //    MessageBox.Show(Ex.Message);
-            //}
+                MessageBox.Show(Ex.Message);
+            }
         }
 
         private void button9_Click(object sender, EventArgs e)

@@ -18,7 +18,7 @@ namespace panel
 
         string entryType;
 
-        int entryAmount;    
+        float entryAmount;    
 
         public int EntryID { get => entryID; set => entryID = value; }
         public string EntryName
@@ -75,7 +75,7 @@ namespace panel
             }
 
         }
-        public int EntryAmount
+        public float EntryAmount
         {
             get => EntryAmount;
 

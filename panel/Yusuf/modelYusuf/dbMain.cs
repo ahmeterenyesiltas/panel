@@ -21,7 +21,8 @@ namespace panel
 
             try
             {
-                string conString = "Server=DESKTOP-HVQ9HC3;Database=SMSBIM;Trusted_Connection=True;";
+                string conString = "Server=94.73.144.8;Database=u8846052_DBRMS01;User Id=u8846052_RMS01;Password=TYgv18I1HFbi19X;";
+                //Server=94.73.144.8;Database=u8846052_DBRMS01;User Id=u8846052_RMS01;Password=TYgv18I1HFbi19X;
 
                 connection = new SqlConnection(conString);
 
@@ -67,7 +68,7 @@ namespace panel
 
             try
             {
-                string conString = "Server=DESKTOP-HVQ9HC3;Database=SMSBIM;Trusted_Connection=True;";
+                string conString = "Server=94.73.144.8;Database=u8846052_DBRMS01;User Id=u8846052_RMS01;Password=TYgv18I1HFbi19X;";
 
                 connection = new SqlConnection(conString);
 

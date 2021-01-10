@@ -1,4 +1,4 @@
-﻿namespace panel.Yusuf.formYusuf
+﻿namespace panel
 {
     partial class formAccountAdd
     {
@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tBHourRate = new System.Windows.Forms.TextBox();
+            this.tBEntryMainType = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonClose = new System.Windows.Forms.Button();
             this.labelMessage = new System.Windows.Forms.Label();
             this.label0 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonAdd = new System.Windows.Forms.Button();
-            this.tBNumberPlate = new System.Windows.Forms.TextBox();
+            this.tBEntryName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tBEntryType = new System.Windows.Forms.TextBox();
+            this.tBEntryAmount = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // tBHourRate
+            // tBEntryMainType
             // 
-            this.tBHourRate.Location = new System.Drawing.Point(261, 137);
-            this.tBHourRate.MaxLength = 40;
-            this.tBHourRate.Name = "tBHourRate";
-            this.tBHourRate.Size = new System.Drawing.Size(346, 20);
-            this.tBHourRate.TabIndex = 51;
+            this.tBEntryMainType.Location = new System.Drawing.Point(261, 137);
+            this.tBEntryMainType.MaxLength = 40;
+            this.tBEntryMainType.Name = "tBEntryMainType";
+            this.tBEntryMainType.Size = new System.Drawing.Size(346, 20);
+            this.tBEntryMainType.TabIndex = 51;
             // 
             // label2
             // 
@@ -74,6 +74,7 @@
             this.buttonClose.TabIndex = 44;
             this.buttonClose.Text = "     Close  ";
             this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // labelMessage
             // 
@@ -122,14 +123,15 @@
             this.buttonAdd.TabIndex = 39;
             this.buttonAdd.Text = "     Add ";
             this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
-            // tBNumberPlate
+            // tBEntryName
             // 
-            this.tBNumberPlate.Location = new System.Drawing.Point(261, 111);
-            this.tBNumberPlate.MaxLength = 40;
-            this.tBNumberPlate.Name = "tBNumberPlate";
-            this.tBNumberPlate.Size = new System.Drawing.Size(346, 20);
-            this.tBNumberPlate.TabIndex = 38;
+            this.tBEntryName.Location = new System.Drawing.Point(261, 111);
+            this.tBEntryName.MaxLength = 40;
+            this.tBEntryName.Name = "tBEntryName";
+            this.tBEntryName.Size = new System.Drawing.Size(346, 20);
+            this.tBEntryName.TabIndex = 38;
             // 
             // label3
             // 
@@ -151,39 +153,39 @@
             this.label4.TabIndex = 53;
             this.label4.Text = "Entry Amount :";
             // 
-            // textBox1
+            // tBEntryType
             // 
-            this.textBox1.Location = new System.Drawing.Point(261, 163);
-            this.textBox1.MaxLength = 40;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(346, 20);
-            this.textBox1.TabIndex = 54;
+            this.tBEntryType.Location = new System.Drawing.Point(261, 163);
+            this.tBEntryType.MaxLength = 40;
+            this.tBEntryType.Name = "tBEntryType";
+            this.tBEntryType.Size = new System.Drawing.Size(346, 20);
+            this.tBEntryType.TabIndex = 54;
             // 
-            // textBox2
+            // tBEntryAmount
             // 
-            this.textBox2.Location = new System.Drawing.Point(261, 189);
-            this.textBox2.MaxLength = 40;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(346, 20);
-            this.textBox2.TabIndex = 55;
+            this.tBEntryAmount.Location = new System.Drawing.Point(261, 189);
+            this.tBEntryAmount.MaxLength = 40;
+            this.tBEntryAmount.Name = "tBEntryAmount";
+            this.tBEntryAmount.Size = new System.Drawing.Size(346, 20);
+            this.tBEntryAmount.TabIndex = 55;
             // 
             // formAccountAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 361);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tBEntryAmount);
+            this.Controls.Add(this.tBEntryType);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.tBHourRate);
+            this.Controls.Add(this.tBEntryMainType);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.labelMessage);
             this.Controls.Add(this.label0);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonAdd);
-            this.Controls.Add(this.tBNumberPlate);
+            this.Controls.Add(this.tBEntryName);
             this.MaximumSize = new System.Drawing.Size(800, 400);
             this.MinimumSize = new System.Drawing.Size(800, 400);
             this.Name = "formAccountAdd";
@@ -195,17 +197,17 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox tBHourRate;
+        private System.Windows.Forms.TextBox tBEntryMainType;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Label labelMessage;
         private System.Windows.Forms.Label label0;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonAdd;
-        private System.Windows.Forms.TextBox tBNumberPlate;
+        private System.Windows.Forms.TextBox tBEntryName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tBEntryType;
+        private System.Windows.Forms.TextBox tBEntryAmount;
     }
 }

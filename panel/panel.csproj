@@ -243,7 +243,6 @@
     <Compile Include="ilkform.Designer.cs">
       <DependentUpon>ilkform.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModelEren\Course.cs" />
     <Compile Include="ModelEren\dbHelper.cs" />
     <Compile Include="ModelEren\Department.cs" />
     <Compile Include="ModelEren\Employee.cs" />
@@ -251,7 +250,6 @@
     <Compile Include="ModelEren\FoodDesserts.cs" />
     <Compile Include="ModelEren\Person.cs" />
     <Compile Include="ModelEren\Register.cs" />
-    <Compile Include="ModelEren\Student.cs" />
     <Compile Include="motorcuKURYE.cs">
       <SubType>Form</SubType>
     </Compile>
